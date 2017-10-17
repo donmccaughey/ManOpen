@@ -1,0 +1,12 @@
+{
+    Name = ManOpen;
+    AppleEventCode = "Mopn";
+
+    Commands = {
+        "GetURL" = {
+            CommandClass = ManOpenURLHandlerCommand;
+            AppleEventCode = GURL;
+            AppleEventClassCode = GURL;
+         };
+    };
+}

@@ -1,0 +1,26 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {enterSelection = id; findNext = id; findPrevious = id; jumpToSelection = id; }; 
+            CLASS = FindPanelController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                ignoreCaseButton = id; 
+                nextButton = id; 
+                previousButton = id; 
+                statusField = id; 
+                stringField = id; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {showWindow = id; }; 
+            CLASS = NSWindowController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

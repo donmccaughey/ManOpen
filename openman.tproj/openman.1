@@ -1,0 +1,93 @@
+.TH OPENMAN 1
+.SH NAME
+openman \- display manual pages in ManOpen.app
+.SH SYNOPSIS
+.B openman
+[
+.BI \-kb
+]
+[
+.BI \-M
+.I path
+]
+[
+.BI \-m
+.I path
+]
+[
+.BI \-f
+.I file
+]
+[
+.I section
+]
+[
+.I name ...
+]
+
+.SH DESCRIPTION
+.I Openman
+is a command-line utility to open Unix man pages in ManOpen.app.  The
+syntax is generally the same as the man(1) command, with an additional
+option to directly open files.
+.PP
+.I Openman
+will open a page in ManOpen.app for every title given.  If a section
+specifier is given,
+.I openman
+looks in that section of the manual for the given
+.I titles.
+.I Section
+is typically an Arabic section number (``1'' for user commands,
+``8'' for administrative commands, etc), but it can be a named
+section as well.  If
+.I section
+is omitted,
+.I openman
+searches all sections of the manual, giving preference to commands
+over subroutines in system libraries, and printing the first section
+it finds, if any.
+.PP
+If the 
+.B \-k
+flag is specified, then apropos(1) mode is used, with each given title
+used as an Apropos lookup in ManOpen.app instead of being opened as
+an individual page.
+.PP
+Normally, ManOpen.app is brought forward to be the active application
+when messaged by openman (meaning Terminal.app will no longer be the
+active application).  If the
+.B \-b
+flag is specfied, ManOpen.app not be forcibly be made active (i.e.
+will stay in the background).
+.PP
+The man search path can be specified with the
+.B \-M
+or
+.B \-m
+flag.  The search path is a colon (`:') separated list of directories
+in which manual subdirectories may be found; e.g. ``/usr/local/man:/usr/share/man''.  
+.hw MANPATH
+If a search path is not supplied, the value of the environment variable
+`MANPATH' is used for the search path.  If that isn't set, ManOpen's
+man path (as specified in the application's preferences) is used.
+.PP
+A file can be directly specified with the
+.B \-f
+flag.  If it's an nroff source file, ManOpen's "Nroff command" (as set in
+the applications's preferences) will be used to process the file,
+otherwise ManOpen will open it directly.  The argument can be a full or
+relative path.
+.PP
+If you use the tcsh shell, you can set openman's completion settings to
+be similar to man(1)'s, which causes it to complete using command names.
+Add the following to your ~/.cshrc or ~/.tchrc:
+.IP
+complete openman 'n/-M/d/' 'p/*/c/'
+.PP
+.SH "SEE ALSO"
+ManOpen.app, man(1), apropos(1), whereis(1)
+.SH AUTHOR
+Carl Lindberg <lindberg@clindberg.org>
+.PP
+Please send any bug reports/suggestions.

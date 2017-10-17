@@ -1,0 +1,11 @@
+{  
+    Name = "ManOpen commands";
+    Description = "Commands to handle a URL";
+    
+    Commands = {
+        "GetURL" = {
+            "Name" = "GetURL";
+            "Description" = "Opens an x-man-page: URL";
+        };
+    };
+}

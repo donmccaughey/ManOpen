@@ -1,0 +1,6 @@
+/* Localizations for the type names so that RCDefaultApp shows them well */
+man = "Man Page";
+cat = "Preformatted Man Page";
+mangz = "Compressed Man Page";
+catgz = "Compressed Preformatted Man Page";
+

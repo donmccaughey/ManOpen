@@ -1,0 +1,1060 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D38A23F314E4C3FE00F6AFFE /* ManOpen (Aggregate) */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D38A23FA14E4C3FE00F6AFFE /* Build configuration list for PBXAggregateTarget "ManOpen (Aggregate)" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D38A245414E4C3FE00F6AFFE /* PBXTargetDependency */,
+				D38A247D14E4C7FC00F6AFFE /* PBXTargetDependency */,
+			);
+			name = "ManOpen (Aggregate)";
+			productName = "ManOpen (Aggregate)";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D38A240314E4C3FE00F6AFFE /* AproposDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D39278FF0821FFA400376676 /* AproposDocument.h */; };
+		D38A240514E4C3FE00F6AFFE /* ManDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279030821FFA400376676 /* ManDocument.h */; };
+		D38A240614E4C3FE00F6AFFE /* ManDocumentController.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279050821FFA400376676 /* ManDocumentController.h */; };
+		D38A240714E4C3FE00F6AFFE /* ManOpenProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279070821FFA400376676 /* ManOpenProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D38A240814E4C3FE00F6AFFE /* NSData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279090821FFA400376676 /* NSData+Utils.h */; };
+		D38A240914E4C3FE00F6AFFE /* PrefPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790B0821FFA400376676 /* PrefPanelController.h */; };
+		D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790D0821FFA400376676 /* SystemType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279130821FFA400376676 /* ManPage.nib */; };
+		D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279160821FFA400376676 /* PrefPanel.nib */; };
+		D38A240E14E4C3FE00F6AFFE /* FindPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279190821FFA400376676 /* FindPanel.nib */; };
+		D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791C0821FFA400376676 /* Apropos.nib */; };
+		D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791F0821FFA400376676 /* ManOpen.nib */; };
+		D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279240821FFA400376676 /* DocController.nib */; };
+		D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D39279280821FFA400376676 /* LinkCursor.tiff */; };
+		D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D392792C0821FFA400376676 /* ManOpen.tiff */; };
+		D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D392792F0821FFA400376676 /* ManOpen.scriptSuite */; };
+		D38A241614E4C3FE00F6AFFE /* ManOpen.icns in Resources */ = {isa = PBXBuildFile; fileRef = D39279310821FFA400376676 /* ManOpen.icns */; };
+		D38A241714E4C3FE00F6AFFE /* ManOpen.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = D39279330821FFA400376676 /* ManOpen.scriptTerminology */; };
+		D38A241814E4C3FE00F6AFFE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D39279350821FFA400376676 /* Credits.rtf */; };
+		D38A241914E4C3FE00F6AFFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39279380821FFA400376676 /* InfoPlist.strings */; };
+		D38A241B14E4C3FE00F6AFFE /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F20821FFA400376676 /* AproposDocument.m */; settings = {ATTRIBUTES = (); }; };
+		D38A241D14E4C3FE00F6AFFE /* ManDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F60821FFA400376676 /* ManDocument.m */; settings = {ATTRIBUTES = (); }; };
+		D38A241E14E4C3FE00F6AFFE /* ManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F80821FFA400376676 /* ManDocumentController.m */; settings = {ATTRIBUTES = (); }; };
+		D38A241F14E4C3FE00F6AFFE /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278FA0821FFA400376676 /* NSData+Utils.m */; settings = {ATTRIBUTES = (); }; };
+		D38A242014E4C3FE00F6AFFE /* PrefPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278FC0821FFA400376676 /* PrefPanelController.m */; settings = {ATTRIBUTES = (); }; };
+		D38A242114E4C3FE00F6AFFE /* ManOpen_main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279100821FFA400376676 /* ManOpen_main.m */; settings = {ATTRIBUTES = (); }; };
+		D38A242314E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
+		D38A242414E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
+		D38A243F14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
+		D38A244914E4C3FE00F6AFFE /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279770821FFA400376676 /* openman.m */; settings = {ATTRIBUTES = (); }; };
+		D38A244B14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
+		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
+		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; };
+		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; };
+		D38A24F414E5AC0600F6AFFE /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279560821FFA400376676 /* cat2rtf.l */; };
+		D38A250514E5B05300F6AFFE /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279690821FFA400376676 /* cat2html.l */; };
+		D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */; };
+		D3EA5C4014EDC3BE00AB000A /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D392797F0821FFA400376676 /* openman.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D38A245314E4C3FE00F6AFFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39279890821FFA400376676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38A23FD14E4C3FE00F6AFFE;
+			remoteInfo = "ManOpen (Application) (Upgraded)";
+		};
+		D38A245714E4C3FE00F6AFFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39279890821FFA400376676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38A242F14E4C3FE00F6AFFE;
+			remoteInfo = "cat2rtf (Tool) (Upgraded)";
+		};
+		D38A245914E4C3FE00F6AFFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39279890821FFA400376676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38A243A14E4C3FE00F6AFFE;
+			remoteInfo = "cat2html (Tool) (Upgraded)";
+		};
+		D38A247C14E4C7FC00F6AFFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39279890821FFA400376676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38A244614E4C3FE00F6AFFE;
+			remoteInfo = "openman (Tool)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D38A242614E4C3FE00F6AFFE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */,
+				D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3EA5C4314EDC3C100AB000A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "/$(INSTALL_PATH)";
+			dstSubfolderSpec = 0;
+			files = (
+				D3EA5C4014EDC3BE00AB000A /* openman.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D38A242C14E4C3FE00F6AFFE /* Info-ManOpen.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-ManOpen.plist"; sourceTree = "<group>"; };
+		D38A242D14E4C3FE00F6AFFE /* ManOpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManOpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38A243814E4C3FE00F6AFFE /* cat2rtf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cat2rtf; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38A244414E4C3FE00F6AFFE /* cat2html */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cat2html; sourceTree = BUILT_PRODUCTS_DIR; };
+		D38A245114E4C3FE00F6AFFE /* openman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openman; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39278F20821FFA400376676 /* AproposDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
+		D39278F60821FFA400376676 /* ManDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocument.m; sourceTree = "<group>"; };
+		D39278F80821FFA400376676 /* ManDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocumentController.m; sourceTree = "<group>"; };
+		D39278FA0821FFA400376676 /* NSData+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		D39278FC0821FFA400376676 /* PrefPanelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrefPanelController.m; sourceTree = "<group>"; };
+		D39278FF0821FFA400376676 /* AproposDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
+		D39279030821FFA400376676 /* ManDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManDocument.h; sourceTree = "<group>"; };
+		D39279050821FFA400376676 /* ManDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManDocumentController.h; sourceTree = "<group>"; };
+		D39279070821FFA400376676 /* ManOpenProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenProtocol.h; sourceTree = "<group>"; };
+		D39279090821FFA400376676 /* NSData+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		D392790B0821FFA400376676 /* PrefPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
+		D392790D0821FFA400376676 /* SystemType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
+		D39279100821FFA400376676 /* ManOpen_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
+		D39279150821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManPage.nib; sourceTree = "<group>"; };
+		D39279180821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PrefPanel.nib; sourceTree = "<group>"; };
+		D392791B0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FindPanel.nib; sourceTree = "<group>"; };
+		D392791E0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Apropos.nib; sourceTree = "<group>"; };
+		D39279210821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManOpen.nib; sourceTree = "<group>"; };
+		D39279260821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DocController.nib; sourceTree = "<group>"; };
+		D39279280821FFA400376676 /* LinkCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = LinkCursor.tiff; sourceTree = "<group>"; };
+		D392792C0821FFA400376676 /* ManOpen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ManOpen.tiff; sourceTree = "<group>"; };
+		D392792F0821FFA400376676 /* ManOpen.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptSuite; path = ManOpen.scriptSuite; sourceTree = "<group>"; };
+		D39279310821FFA400376676 /* ManOpen.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ManOpen.icns; sourceTree = "<group>"; };
+		D39279330821FFA400376676 /* ManOpen.scriptTerminology */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; path = ManOpen.scriptTerminology; sourceTree = "<group>"; };
+		D39279370821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D392793A0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D39279560821FFA400376676 /* cat2rtf.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; path = cat2rtf.l; sourceTree = "<group>"; };
+		D39279690821FFA400376676 /* cat2html.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
+		D39279770821FFA400376676 /* openman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
+		D392797F0821FFA400376676 /* openman.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = openman.1; sourceTree = "<group>"; };
+		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = helpQMark.tiff; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D38A242214E4C3FE00F6AFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A242314E4C3FE00F6AFFE /* Foundation.framework in Frameworks */,
+				D38A242414E4C3FE00F6AFFE /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243314E4C3FE00F6AFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243E14E4C3FE00F6AFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A243F14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A244A14E4C3FE00F6AFFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A244B14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */,
+				D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D39278DB0821FF9D00376676 /* ManOpen */ = {
+			isa = PBXGroup;
+			children = (
+				D39278E00821FFA400376676 /* Supporting Files */,
+				D39278E40821FFA400376676 /* Subprojects */,
+				D39279800821FFA400376676 /* External Frameworks and Libraries */,
+				D39278ED0821FFA400376676 /* Products */,
+			);
+			name = ManOpen;
+			sourceTree = "<group>";
+		};
+		D39278E00821FFA400376676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D39278E40821FFA400376676 /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+				D39278E50821FFA400376676 /* ManOpen */,
+				D392796A0821FFA400376676 /* openman */,
+			);
+			name = Subprojects;
+			sourceTree = "<group>";
+		};
+		D39278E50821FFA400376676 /* ManOpen */ = {
+			isa = PBXGroup;
+			children = (
+				D39278F10821FFA400376676 /* Classes */,
+				D39278FE0821FFA400376676 /* Headers */,
+				D392790F0821FFA400376676 /* Other Sources */,
+				D39279120821FFA400376676 /* Interfaces */,
+				D39279270821FFA400376676 /* Images */,
+				D392792E0821FFA400376676 /* Resources */,
+				D392793B0821FFA400376676 /* Supporting Files */,
+				D39279420821FFA400376676 /* Subprojects */,
+			);
+			path = ManOpen;
+			sourceTree = "<group>";
+		};
+		D39278ED0821FFA400376676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D38A242D14E4C3FE00F6AFFE /* ManOpen.app */,
+				D38A243814E4C3FE00F6AFFE /* cat2rtf */,
+				D38A244414E4C3FE00F6AFFE /* cat2html */,
+				D38A245114E4C3FE00F6AFFE /* openman */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D39278F10821FFA400376676 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D39278F20821FFA400376676 /* AproposDocument.m */,
+				D39278F60821FFA400376676 /* ManDocument.m */,
+				D39278F80821FFA400376676 /* ManDocumentController.m */,
+				D39278FA0821FFA400376676 /* NSData+Utils.m */,
+				D39278FC0821FFA400376676 /* PrefPanelController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		D39278FE0821FFA400376676 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				D39278FF0821FFA400376676 /* AproposDocument.h */,
+				D39279030821FFA400376676 /* ManDocument.h */,
+				D39279050821FFA400376676 /* ManDocumentController.h */,
+				D39279070821FFA400376676 /* ManOpenProtocol.h */,
+				D39279090821FFA400376676 /* NSData+Utils.h */,
+				D392790B0821FFA400376676 /* PrefPanelController.h */,
+				D392790D0821FFA400376676 /* SystemType.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		D392790F0821FFA400376676 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D39279100821FFA400376676 /* ManOpen_main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D39279120821FFA400376676 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				D39279130821FFA400376676 /* ManPage.nib */,
+				D39279160821FFA400376676 /* PrefPanel.nib */,
+				D39279190821FFA400376676 /* FindPanel.nib */,
+				D392791C0821FFA400376676 /* Apropos.nib */,
+				D392791F0821FFA400376676 /* ManOpen.nib */,
+				D39279240821FFA400376676 /* DocController.nib */,
+			);
+			name = Interfaces;
+			sourceTree = "<group>";
+		};
+		D39279270821FFA400376676 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */,
+				D39279280821FFA400376676 /* LinkCursor.tiff */,
+				D392792C0821FFA400376676 /* ManOpen.tiff */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D392792E0821FFA400376676 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D392792F0821FFA400376676 /* ManOpen.scriptSuite */,
+				D39279310821FFA400376676 /* ManOpen.icns */,
+				D39279330821FFA400376676 /* ManOpen.scriptTerminology */,
+				D39279350821FFA400376676 /* Credits.rtf */,
+				D39279380821FFA400376676 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D392793B0821FFA400376676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D38A242C14E4C3FE00F6AFFE /* Info-ManOpen.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D39279420821FFA400376676 /* Subprojects */ = {
+			isa = PBXGroup;
+			children = (
+				D39279430821FFA400376676 /* cat2rtf */,
+				D39279570821FFA400376676 /* cat2html */,
+			);
+			name = Subprojects;
+			sourceTree = "<group>";
+		};
+		D39279430821FFA400376676 /* cat2rtf */ = {
+			isa = PBXGroup;
+			children = (
+				D392794F0821FFA400376676 /* Other Sources */,
+				D39279520821FFA400376676 /* Supporting Files */,
+			);
+			name = cat2rtf;
+			path = cat2rtf.tproj;
+			sourceTree = "<group>";
+		};
+		D392794F0821FFA400376676 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D39279560821FFA400376676 /* cat2rtf.l */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D39279520821FFA400376676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D39279570821FFA400376676 /* cat2html */ = {
+			isa = PBXGroup;
+			children = (
+				D39279620821FFA400376676 /* Other Sources */,
+				D39279650821FFA400376676 /* Supporting Files */,
+			);
+			name = cat2html;
+			path = cat2html.tproj;
+			sourceTree = "<group>";
+		};
+		D39279620821FFA400376676 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D39279690821FFA400376676 /* cat2html.l */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D39279650821FFA400376676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D392796A0821FFA400376676 /* openman */ = {
+			isa = PBXGroup;
+			children = (
+				D39279760821FFA400376676 /* Other Sources */,
+				D39279790821FFA400376676 /* Supporting Files */,
+			);
+			name = openman;
+			path = openman.tproj;
+			sourceTree = "<group>";
+		};
+		D39279760821FFA400376676 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D39279770821FFA400376676 /* openman.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D39279790821FFA400376676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D392797F0821FFA400376676 /* openman.1 */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D39279800821FFA400376676 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D39279810821FFA400376676 /* Foundation.framework */,
+				D39279850821FFA400376676 /* AppKit.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D38A240214E4C3FE00F6AFFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A240314E4C3FE00F6AFFE /* AproposDocument.h in Headers */,
+				D38A240514E4C3FE00F6AFFE /* ManDocument.h in Headers */,
+				D38A240614E4C3FE00F6AFFE /* ManDocumentController.h in Headers */,
+				D38A240714E4C3FE00F6AFFE /* ManOpenProtocol.h in Headers */,
+				D38A240814E4C3FE00F6AFFE /* NSData+Utils.h in Headers */,
+				D38A240914E4C3FE00F6AFFE /* PrefPanelController.h in Headers */,
+				D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243014E4C3FE00F6AFFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243B14E4C3FE00F6AFFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A244714E4C3FE00F6AFFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38A242914E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "ManOpen (Application)" */;
+			buildPhases = (
+				D38A240214E4C3FE00F6AFFE /* Headers */,
+				D38A240B14E4C3FE00F6AFFE /* Resources */,
+				D38A241A14E4C3FE00F6AFFE /* Sources */,
+				D38A242214E4C3FE00F6AFFE /* Frameworks */,
+				D38A242514E4C3FE00F6AFFE /* Rez */,
+				D38A242614E4C3FE00F6AFFE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D38A245814E4C3FE00F6AFFE /* PBXTargetDependency */,
+				D38A245A14E4C3FE00F6AFFE /* PBXTargetDependency */,
+			);
+			name = "ManOpen (Application)";
+			productInstallPath = "$(HOME)/Apps";
+			productName = "ManOpen (Application)";
+			productReference = D38A242D14E4C3FE00F6AFFE /* ManOpen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38A243514E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2rtf (Tool)" */;
+			buildPhases = (
+				D38A243014E4C3FE00F6AFFE /* Headers */,
+				D38A243114E4C3FE00F6AFFE /* Sources */,
+				D38A243314E4C3FE00F6AFFE /* Frameworks */,
+				D38A243414E4C3FE00F6AFFE /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cat2rtf (Tool)";
+			productName = "cat2rtf (Tool)";
+			productReference = D38A243814E4C3FE00F6AFFE /* cat2rtf */;
+			productType = "com.apple.product-type.tool";
+		};
+		D38A243A14E4C3FE00F6AFFE /* cat2html (Tool) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38A244114E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2html (Tool)" */;
+			buildPhases = (
+				D38A243B14E4C3FE00F6AFFE /* Headers */,
+				D38A243C14E4C3FE00F6AFFE /* Sources */,
+				D38A243E14E4C3FE00F6AFFE /* Frameworks */,
+				D38A244014E4C3FE00F6AFFE /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cat2html (Tool)";
+			productName = "cat2html (Tool)";
+			productReference = D38A244414E4C3FE00F6AFFE /* cat2html */;
+			productType = "com.apple.product-type.tool";
+		};
+		D38A244614E4C3FE00F6AFFE /* openman (Tool) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D38A244E14E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "openman (Tool)" */;
+			buildPhases = (
+				D38A244714E4C3FE00F6AFFE /* Headers */,
+				D38A244814E4C3FE00F6AFFE /* Sources */,
+				D38A244A14E4C3FE00F6AFFE /* Frameworks */,
+				D38A244D14E4C3FE00F6AFFE /* Rez */,
+				D3EA5C4314EDC3C100AB000A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "openman (Tool)";
+			productInstallPath = /usr/local/bin;
+			productName = "openman (Tool)";
+			productReference = D38A245114E4C3FE00F6AFFE /* openman */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D39279890821FFA400376676 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D38A23BC14E38E1E00F6AFFE /* Build configuration list for PBXProject "ManOpen" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			knownPlatforms = (
+				macos,
+				macosclassic,
+				windows,
+				solaris,
+				hpux,
+				macintosh,
+			);
+			mainGroup = D39278DB0821FF9D00376676 /* ManOpen */;
+			productRefGroup = D39278ED0821FFA400376676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D38A23F314E4C3FE00F6AFFE /* ManOpen (Aggregate) */,
+				D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */,
+				D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */,
+				D38A243A14E4C3FE00F6AFFE /* cat2html (Tool) */,
+				D38A244614E4C3FE00F6AFFE /* openman (Tool) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D38A240B14E4C3FE00F6AFFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */,
+				D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */,
+				D38A240E14E4C3FE00F6AFFE /* FindPanel.nib in Resources */,
+				D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */,
+				D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */,
+				D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */,
+				D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */,
+				D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */,
+				D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */,
+				D38A241614E4C3FE00F6AFFE /* ManOpen.icns in Resources */,
+				D38A241714E4C3FE00F6AFFE /* ManOpen.scriptTerminology in Resources */,
+				D38A241814E4C3FE00F6AFFE /* Credits.rtf in Resources */,
+				D38A241914E4C3FE00F6AFFE /* InfoPlist.strings in Resources */,
+				D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		D38A242514E4C3FE00F6AFFE /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243414E4C3FE00F6AFFE /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A244014E4C3FE00F6AFFE /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A244D14E4C3FE00F6AFFE /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D38A241A14E4C3FE00F6AFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A241B14E4C3FE00F6AFFE /* AproposDocument.m in Sources */,
+				D38A241D14E4C3FE00F6AFFE /* ManDocument.m in Sources */,
+				D38A241E14E4C3FE00F6AFFE /* ManDocumentController.m in Sources */,
+				D38A241F14E4C3FE00F6AFFE /* NSData+Utils.m in Sources */,
+				D38A242014E4C3FE00F6AFFE /* PrefPanelController.m in Sources */,
+				D38A242114E4C3FE00F6AFFE /* ManOpen_main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243114E4C3FE00F6AFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A24F414E5AC0600F6AFFE /* cat2rtf.l in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A243C14E4C3FE00F6AFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A250514E5B05300F6AFFE /* cat2html.l in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D38A244814E4C3FE00F6AFFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D38A244914E4C3FE00F6AFFE /* openman.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D38A245414E4C3FE00F6AFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */;
+			targetProxy = D38A245314E4C3FE00F6AFFE /* PBXContainerItemProxy */;
+		};
+		D38A245814E4C3FE00F6AFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */;
+			targetProxy = D38A245714E4C3FE00F6AFFE /* PBXContainerItemProxy */;
+		};
+		D38A245A14E4C3FE00F6AFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38A243A14E4C3FE00F6AFFE /* cat2html (Tool) */;
+			targetProxy = D38A245914E4C3FE00F6AFFE /* PBXContainerItemProxy */;
+		};
+		D38A247D14E4C7FC00F6AFFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38A244614E4C3FE00F6AFFE /* openman (Tool) */;
+			targetProxy = D38A247C14E4C7FC00F6AFFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D39279130821FFA400376676 /* ManPage.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39279150821FFA400376676 /* English */,
+			);
+			name = ManPage.nib;
+			sourceTree = "<group>";
+		};
+		D39279160821FFA400376676 /* PrefPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39279180821FFA400376676 /* English */,
+			);
+			name = PrefPanel.nib;
+			sourceTree = "<group>";
+		};
+		D39279190821FFA400376676 /* FindPanel.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D392791B0821FFA400376676 /* English */,
+			);
+			name = FindPanel.nib;
+			sourceTree = "<group>";
+		};
+		D392791C0821FFA400376676 /* Apropos.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D392791E0821FFA400376676 /* English */,
+			);
+			name = Apropos.nib;
+			sourceTree = "<group>";
+		};
+		D392791F0821FFA400376676 /* ManOpen.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39279210821FFA400376676 /* English */,
+			);
+			name = ManOpen.nib;
+			sourceTree = "<group>";
+		};
+		D39279240821FFA400376676 /* DocController.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39279260821FFA400376676 /* English */,
+			);
+			name = DocController.nib;
+			sourceTree = "<group>";
+		};
+		D39279350821FFA400376676 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39279370821FFA400376676 /* English */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D39279380821FFA400376676 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D392793A0821FFA400376676 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D38A23AA14E38E1E00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Development;
+		};
+		D38A23AB14E38E1E00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+					x86_64,
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
+				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Deployment;
+		};
+		D38A23FB14E4C3FE00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ManOpen;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		D38A23FC14E4C3FE00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ManOpen;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		D38A242A14E4C3FE00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
+				INSTALL_PATH = "$(HOME)/Apps";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ManOpen;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Development;
+		};
+		D38A242B14E4C3FE00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
+				INSTALL_PATH = "$(HOME)/Apps";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ManOpen;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+				WRAPPER_EXTENSION = app;
+			};
+			name = Deployment;
+		};
+		D38A243614E4C3FE00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cat2rtf;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		D38A243714E4C3FE00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cat2rtf;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		D38A244214E4C3FE00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cat2html;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		D38A244314E4C3FE00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cat2html;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+		D38A244F14E4C3FE00F6AFFE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = openman;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Development;
+		};
+		D38A245014E4C3FE00F6AFFE /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = openman;
+				REZ_EXECUTABLE = YES;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Deployment;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D38A23BC14E38E1E00F6AFFE /* Build configuration list for PBXProject "ManOpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A23AA14E38E1E00F6AFFE /* Development */,
+				D38A23AB14E38E1E00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D38A23FA14E4C3FE00F6AFFE /* Build configuration list for PBXAggregateTarget "ManOpen (Aggregate)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A23FB14E4C3FE00F6AFFE /* Development */,
+				D38A23FC14E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D38A242914E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "ManOpen (Application)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A242A14E4C3FE00F6AFFE /* Development */,
+				D38A242B14E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D38A243514E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2rtf (Tool)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A243614E4C3FE00F6AFFE /* Development */,
+				D38A243714E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D38A244114E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2html (Tool)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A244214E4C3FE00F6AFFE /* Development */,
+				D38A244314E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D38A244E14E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "openman (Tool)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D38A244F14E4C3FE00F6AFFE /* Development */,
+				D38A245014E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D39279890821FFA400376676 /* Project object */;
+}

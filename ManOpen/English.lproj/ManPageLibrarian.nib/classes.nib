@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {openSelection = id; searchForSelection = id; }; 
+            CLASS = ManDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {textView = id; titleStringField = id; }; 
+            SUPERCLASS = NSDocument; 
+        }, 
+        {
+            ACTIONS = {
+                printDocument = id; 
+                revertDocumentToSaved = id; 
+                runPageLayout = id; 
+                saveDocument = id; 
+                saveDocumentAs = id; 
+                saveDocumentTo = id; 
+            }; 
+            CLASS = NSDocument; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

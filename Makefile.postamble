@@ -1,0 +1,168 @@
+###############################################################################
+#  Makefile.postamble
+#  Copyright 1997, Apple Computer, Inc.
+#
+#  Use this makefile, which is imported after all other makefiles, to
+#  override attributes for a project's Makefile environment. This allows you  
+#  to take advantage of the environment set up by the other Makefiles. 
+#  You can also define custom rules at the end of this file.
+#
+###############################################################################
+# 
+# These variables are exported by the standard makefiles and can be 
+# used in any customizations you make.  They are *outputs* of
+# the Makefiles and should be used, not set.
+# 
+#  PRODUCTS: products to install.  All of these products will be placed in
+#	 the directory $(DSTROOT)$(INSTALLDIR)
+#  GLOBAL_RESOURCE_DIR: The directory to which resources are copied.
+#  LOCAL_RESOURCE_DIR: The directory to which localized resources are copied.
+#  OFILE_DIR: Directory into which .o object files are generated.
+#  DERIVED_SRC_DIR: Directory used for all other derived files
+#
+#  ALL_CFLAGS:  flags to pass when compiling .c files
+#  ALL_MFLAGS:  flags to pass when compiling .m files
+#  ALL_CCFLAGS:  flags to pass when compiling .cc, .cxx, and .C files
+#  ALL_MMFLAGS:  flags to pass when compiling .mm, .mxx, and .M files
+#  ALL_PRECOMPFLAGS:  flags to pass when precompiling .h files
+#  ALL_LDFLAGS:  flags to pass when linking object files
+#  ALL_LIBTOOL_FLAGS:  flags to pass when libtooling object files
+#  ALL_PSWFLAGS:  flags to pass when processing .psw and .pswm (pswrap) files
+#  ALL_RPCFLAGS:  flags to pass when processing .rpc (rpcgen) files
+#  ALL_YFLAGS:  flags to pass when processing .y (yacc) files
+#  ALL_LFLAGS:  flags to pass when processing .l (lex) files
+#
+#  NAME: name of application, bundle, subproject, palette, etc.
+#  LANGUAGE: langage in which the project is written (default "English")
+#  LOCAL_RESOURCES: localized resources (e.g. nib's, images) of project
+#  GLOBAL_RESOURCES: non-localized resources of project
+#
+#  SRCROOT:  base directory in which to place the new source files
+#  SRCPATH:  relative path from SRCROOT to present subdirectory
+#
+#  INSTALLDIR: Directory the product will be installed into by 'install' target
+#  PUBLIC_HDR_INSTALLDIR: where to install public headers.  Don't forget
+#        to prefix this with DSTROOT when you use it.
+#  PRIVATE_HDR_INSTALLDIR: where to install private headers.  Don't forget
+#	 to prefix this with DSTROOT when you use it.
+#
+#  EXECUTABLE_EXT: Executable extension for the platform (i.e. .exe on Windows)
+#
+###############################################################################
+
+# Some compiler flags can be overridden here for certain build situations.
+#
+#    WARNING_CFLAGS:  flag used to set warning level (defaults to -Wmost)
+#    DEBUG_SYMBOLS_CFLAGS:  debug-symbol flag passed to all builds (defaults
+#	to -g)
+#    DEBUG_BUILD_CFLAGS:  flags passed during debug builds (defaults to -DDEBUG)
+#    OPTIMIZE_BUILD_CFLAGS:  flags passed during optimized builds (defaults
+#	to -O)
+#    PROFILE_BUILD_CFLAGS:  flags passed during profile builds (defaults
+#	to -pg -DPROFILE)
+#    LOCAL_DIR_INCLUDE_DIRECTIVE:  flag used to add current directory to
+#	the include path (defaults to -I.)
+#    DEBUG_BUILD_LDFLAGS, OPTIMIZE_BUILD_LDFLAGS, PROFILE_BUILD_LDFLAGS: flags
+#	passed to ld/libtool (defaults to nothing)
+
+
+# Library and Framework projects only:
+#    INSTALL_NAME_DIRECTIVE:  This directive ensures that executables linked
+#	against the framework will run against the correct version even if
+#	the current version of the framework changes.  You may override this
+#	to "" as an alternative to using the DYLD_LIBRARY_PATH during your
+#	development cycle, but be sure to restore it before installing.
+
+
+# Ownership and permissions of files installed by 'install' target
+
+#INSTALL_AS_USER = root
+        # User/group ownership 
+#INSTALL_AS_GROUP = wheel
+        # (probably want to set both of these) 
+#INSTALL_PERMISSIONS =
+        # If set, 'install' chmod's executable to this
+
+
+# Options to strip.  Note: -S strips debugging symbols (executables can be stripped
+# down further with -x or, if they load no bundles, with no options at all).
+
+#STRIPFLAGS = -S
+
+
+#########################################################################
+# Put rules to extend the behavior of the standard Makefiles here.  Include them in
+# the dependency tree via cvariables like AFTER_INSTALL in the Makefile.preamble.
+#
+# You should avoid redefining things like "install" or "app", as they are
+# owned by the top-level Makefile API and no context has been set up for where 
+# derived files should go.
+#
+
+PRODUCT_NAME = ManOpen
+GREP = $(firstword $(wildcard /bin/grep /usr/bin/grep))
+CVS = $(firstword $(wildcard /usr/local/bin/ocvs /usr/bin/ocvs) cvs)
+#PACKAGE_VERSION := $(shell $(GREP) NSAppVersion ManOpen/CustomInfo.plist | $(SED) 's/.* \([0-9][.0-9]*\)";/\1/g' )
+PACKAGE_VERSION := $(shell $(GREP) --context=1 CFBundleShortVersionString ManOpen/Info-ManOpen.plist | $(TAIL) -1 | $(SED) 's/.*>\([0-9][.0-9]*\).*/\1/g' )
+PACKAGE_BASE = $(PRODUCT_NAME)-$(PACKAGE_VERSION)
+PACKAGE_DIR = $(shell pwd)/package/$(PACKAGE_BASE)
+PACKAGE_SRC = $(PACKAGE_DIR)
+
+ifeq "nextstep" "$(PLATFORM_OS)"
+  ifneq "" "$(wildcard /bin/mkdirs)"
+    PACKAGE_TYPE = NIS.bs
+    INSTALL_OPTS += TARGET_ARCHS="m68k i386 sparc"
+  else
+    PACKAGE_TYPE = P.b
+  endif
+endif
+ifeq "macos" "$(PLATFORM_OS)"
+  PACKAGE_TYPE = X.b
+  INSTALL_TARGET_ARCHS="i386 ppc x86_64"
+  INSTALL_OPTS += TARGET_ARCHS=$(INSTALL_TARGET_ARCHS)
+endif
+
+
+GROUPS = $(firstword $(wildcard /usr/bin/groups /usr/ucb/groups))
+export INSTALL_AS_GROUP = $(firstword $(shell $(GROUPS)))
+export INSTALL_AS_USER = $(USER)
+export INSTALL_PERMISSIONS = a+rX,u+w
+
+$(PACKAGE_DIR) $(PACKAGE_SRC):
+	$(MKDIRS) $@
+
+# The MAN_PAGE_DIRECTORIES setting to blank avoids a bug in pb_makefiles
+distpackage: $(PACKAGE_DIR)
+	$(MAKE) -s install $(INSTALL_OPTS) INSTALLDIR=$(PACKAGE_DIR) MAN_PAGE_DIRECTORIES=
+	$(CP) -p openman.tproj/openman.1 $(PACKAGE_DIR)
+	$(CP) -p README.txt $(PACKAGE_DIR)/README.txt
+	@if [ -f /bin/mkdirs ] ; then \
+		$(MAKE) srcpackage PACKAGE_VERSION=$(PACKAGE_VERSION) PACKAGE_SRC=$(PACKAGE_DIR)/Source ;\
+	fi
+
+distpackage_xcode: $(PACKAGE_DIR)
+	xcodebuild -configuration Deployment -target "ManOpen (Aggregate)" install INSTALL_PATH="$(PACKAGE_DIR)" DSTROOT="/"
+	$(CP) -p README.txt $(PACKAGE_DIR)/README.txt
+
+srcpackage: $(PACKAGE_SRC)
+	$(RM) -rf $(PACKAGE_SRC) ExportSource
+	$(CVS) export -D now -d ExportSource $(PRODUCT_NAME)
+	$(MV) ExportSource $(PACKAGE_SRC)
+	$(MV) -f $(PACKAGE_SRC)/README.txt $(PACKAGE_SRC)/README.txt
+	$(RM) -f $(PACKAGE_SRC)/TODO
+	$(RM) -f $(PACKAGE_SRC)/CHANGES
+	@if [ ! -f /bin/mkdirs ] ; then \
+		$(RM) -rf $(PACKAGE_SRC)/ManOpen/OpenStep.subproj ; \
+	fi
+
+tarball: distpackage
+	@cd package ; \
+	$(TAR) cvzf $(PACKAGE_BASE).$(PACKAGE_TYPE).tar.gz $(PACKAGE_BASE)
+
+srctarball:
+	@cd package ; \
+	$(TAR) cvzf $(PACKAGE_BASE).s.tar.gz $(PACKAGE_BASE)
+
+dmgball:
+	cd package ; \
+	$$HOME/Projects/BlackOps/Source/BFMake/Tools/dmgmaker -q -f "$(PACKAGE_BASE)" "$(PACKAGE_BASE)"

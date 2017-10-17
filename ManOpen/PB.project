@@ -1,0 +1,75 @@
+{
+    APPCLASS = NSApplication; 
+    "DYNAMIC_CODE_GEN" = YES; 
+    "English_RESOURCES" = {}; 
+    FILESTABLE = {
+        CLASSES = (
+            "AproposDocument.m", 
+            "FindPanelController.m", 
+            "ManDocument.m", 
+            "ManDocumentController.m", 
+            "NSData+Utils.m", 
+            "PrefPanelController.m"
+        ); 
+        "English_INTERFACES" = (
+            "ManOpen.nib", 
+            "PrefPanel.nib", 
+            "DocController.nib", 
+            "ManOpen-macintosh.nib", 
+            "Apropos.nib", 
+            "ManOpen-macos.nib", 
+            "ManPage.nib", 
+            "FindPanel.nib"
+        ); 
+        "English_OTHER_RESOURCES" = ("Credits.rtf", "InfoPlist.strings"); 
+        FRAMEWORKS = ("AppKit.framework", "Foundation.framework"); 
+        FRAMEWORKSEARCH = (); 
+        "H_FILES" = (
+            "AproposDocument.h", 
+            "FindPanelController.h", 
+            "ManDocument.h", 
+            "ManDocumentController.h", 
+            "ManOpenProtocol.h", 
+            "NSData+Utils.h", 
+            "PrefPanelController.h", 
+            "SystemType.h"
+        ); 
+        IMAGES = ("LinkCursor.tiff", "helpQMark.tiff", "ManOpen-nextstep.tiff", "ManOpen.tiff"); 
+        INTERFACES = (); 
+        "OTHER_LINKED" = ("ManOpen_main.m"); 
+        "OTHER_RESOURCES" = ("ManOpen.icns", "ManOpen.scriptSuite", "ManOpen.scriptTerminology"); 
+        "OTHER_SOURCES" = (
+            "CustomInfo.plist", 
+            "h.template", 
+            "m.template", 
+            Makefile, 
+            "Makefile.postamble", 
+            "Makefile.preamble"
+        ); 
+        "PRECOMPILED_HEADERS" = (); 
+        "PROJECT_HEADERS" = ("ManOpenProtocol.h", "SystemType.h"); 
+        "PUBLIC_HEADERS" = (); 
+        SUBPROJECTS = ("cat2rtf.tproj", "cat2html.tproj"); 
+    }; 
+    LANGUAGE = English; 
+    MAKEFILEDIR = "$(NEXT_ROOT)/NextDeveloper/Makefiles/pb_makefiles"; 
+    "NEXTSTEP_APPICON" = "ManOpen.tiff"; 
+    "NEXTSTEP_BUILDTOOL" = "/usr/bin/gnumake"; 
+    "NEXTSTEP_DOCUMENTEXTENSIONS" = ({Extension = man; Image = "ManOpen.tiff"; }); 
+    "NEXTSTEP_INSTALLDIR" = "$(HOME)/Apps"; 
+    "NEXTSTEP_JAVA_COMPILER" = "/usr/bin/javac"; 
+    "NEXTSTEP_MAINNIB" = "ManOpen.nib"; 
+    "NEXTSTEP_OBJCPLUS_COMPILER" = "/usr/bin/cc"; 
+    "PDO_UNIX_BUILDTOOL" = "$NEXT_ROOT/NextDeveloper/bin/make"; 
+    "PDO_UNIX_JAVA_COMPILER" = "$(JDKBINDIR)/javac"; 
+    "PDO_UNIX_OBJCPLUS_COMPILER" = "$(NEXTDEV_BIN)/gcc"; 
+    PROJECTNAME = ManOpen; 
+    PROJECTTYPE = Application; 
+    PROJECTVERSION = "2.8"; 
+    SYSTEMEXTENSIONS = (); 
+    "WINDOWS_BUILDTOOL" = "$NEXT_ROOT/NextDeveloper/Executables/make"; 
+    "WINDOWS_INSTALLDIR" = "/MyApps"; 
+    "WINDOWS_JAVA_COMPILER" = "$(JDKBINDIR)/javac.exe"; 
+    "WINDOWS_MAINNIB" = "ManOpen-windows.nib"; 
+    "WINDOWS_OBJCPLUS_COMPILER" = "$(DEVDIR)/gcc"; 
+}

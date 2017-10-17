@@ -1,0 +1,95 @@
+{
+    NSInfoPlistVersion = "5.0";
+    NSAppVersion = "Version 2.5.1";
+    NSHumanReadableShortName = "ManOpen";
+    NSHumanReadableCompleteName = "ManOpen";
+    NSHumanReadableCopyright = "Copyright (c) 1999-2005 Carl Lindberg";
+    NSTypes = (
+	{
+	    NSName = "man";
+	    NSHumanReadableName = "Man page (nroff source)";
+	    NSUnixExtensions = ("man");
+	    NSDOSExtensions = ("man");
+	    NSRole = Viewer;
+	    NSDocumentClass = ManDocument;
+	    CFBundleTypeIconFile = "ManOpen.icns";
+	},
+	{
+	    NSName = "mangz";
+	    NSHumanReadableName = "Man page (nroff source), gzipped";
+	    NSUnixExtensions = ("man.gz");
+	    NSRole = Viewer;
+	    NSDocumentClass = ManDocument;
+	    CFBundleTypeIconFile = "ManOpen.icns";
+	},
+	{
+	    NSName = "cat";
+	    NSHumanReadableName = "Cat file (plain text)";
+	    NSUnixExtensions = ("cat");
+	    NSDOSExtensions = ("cat");
+	    NSRole = Viewer;
+	    NSDocumentClass = ManDocument;
+	    CFBundleTypeIconFile = "ManOpen.icns";
+	},
+	{
+	    NSName = "catgz";
+	    NSHumanReadableName = "Cat file (plain text), gzipped";
+	    NSUnixExtensions = ("cat.gz");
+	    NSRole = Viewer;
+	    NSDocumentClass = ManDocument;
+	    CFBundleTypeIconFile = "ManOpen.icns";
+	}
+	);
+    NSServices = (
+	{
+	    NSPortName = ManOpen;
+	    NSMessage = openFiles;
+	    NSSendTypes = (NSFilenamesPboardType);
+	    NSMenuItem = {
+            default = "ManOpen/Open File";
+        };
+	    NSExecutable = ManOpen;
+	},
+	{
+	    NSPortName = ManOpen;
+	    NSMessage = openSelection;
+	    NSSendTypes = (NSStringPboardType);
+	    NSMenuItem = {
+            default = "ManOpen/Open Selection";
+        };
+        NSKeyEquivalent = {
+            default = M;
+        };
+	    NSExecutable = ManOpen;
+	},
+    {
+	    NSPortName = ManOpen;
+	    NSMessage = openApropos;
+	    NSSendTypes = (NSStringPboardType);
+	    NSMenuItem = {
+            default = "ManOpen/Apropos";
+        };
+        NSKeyEquivalent = {
+            default = A;
+        };
+	    NSExecutable = ManOpen;
+	}
+    );
+
+    /* MacOS X Settings... force them for the time being */
+
+    CFBundleIconFile = "ManOpen.icns";
+    CFBundleShortVersionString = "2.5.1";
+    CFBundleGetInfoString = "ManOpen 2.5.1 (c) 2005 Carl Lindberg"; // GetInfo puts "Version: " in front
+    CFBundleIdentifier = "org.clindberg.ManOpen";
+
+    /* Apple introduced an "x-man-page" URL scheme with Panther. */
+    NSAppleScriptEnabled = YES;
+    CFBundleURLTypes = (
+        {
+            CFBundleURLName = "Man Page URL";
+            CFBundleURLSchemes = ("x-man-page");
+        }
+    );
+
+}

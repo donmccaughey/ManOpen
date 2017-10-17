@@ -54,8 +54,8 @@
 		D38A244914E4C3FE00F6AFFE /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279770821FFA400376676 /* openman.m */; settings = {ATTRIBUTES = (); }; };
 		D38A244B14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
-		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; };
-		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; };
+		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A24F414E5AC0600F6AFFE /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279560821FFA400376676 /* cat2rtf.l */; };
 		D38A250514E5B05300F6AFFE /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279690821FFA400376676 /* cat2html.l */; };
 		D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */; };
@@ -544,8 +544,12 @@
 /* Begin PBXProject section */
 		D39279890821FFA400376676 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+			};
 			buildConfigurationList = D38A23BC14E38E1E00F6AFFE /* Build configuration list for PBXProject "ManOpen" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownPlatforms = (
 				macos,
@@ -554,6 +558,9 @@
 				solaris,
 				hpux,
 				macintosh,
+			);
+			knownRegions = (
+				en,
 			);
 			mainGroup = D39278DB0821FF9D00376676 /* ManOpen */;
 			productRefGroup = D39278ED0821FFA400376676 /* Products */;
@@ -758,29 +765,64 @@
 		D38A23AA14E38E1E00F6AFFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				ONLY_ACTIVE_ARCH = NO;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
 			};
 			name = Development;
 		};
 		D38A23AB14E38E1E00F6AFFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-					x86_64,
-				);
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.4u.sdk";
-				"SDKROOT[arch=x86_64]" = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
 			};
 			name = Deployment;
 		};
@@ -831,6 +873,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.clindberg.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
@@ -855,6 +898,7 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = org.clindberg.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (

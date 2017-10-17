@@ -2,33 +2,31 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSSupportsSuddenTermination</key>
-	<true/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDocumentTypes</key>
 	<array>
 		<dict>
+			<key>CFBundleTypeName</key>
+			<string>unknown</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
-			<key>LSTypeIsPackage</key>
-			<false/>
 			<key>LSItemContentTypes</key>
 			<array>
 				<string>public.data</string>
 			</array>
-			<key>CFBundleTypeName</key>
-			<string>unknown</string>
+			<key>LSTypeIsPackage</key>
+			<false/>
 			<key>NSDocumentClass</key>
 			<string>ManDocument</string>
 		</dict>
 		<dict>
+			<key>CFBundleTypeName</key>
+			<string>apropos</string>
 			<key>CFBundleTypeRole</key>
 			<string>Viewer</string>
 			<key>NSDocumentClass</key>
 			<string>AproposDocument</string>
-			<key>CFBundleTypeName</key>
-			<string>apropos</string>
 		</dict>
 		<dict>
 			<key>CFBundleTypeExtensions</key>
@@ -59,12 +57,12 @@
 			<string>ManDocument</string>
 		</dict>
 		<dict>
-			<key>CFBundleTypeIconFile</key>
-			<string>ManOpen.icns</string>
 			<key>CFBundleTypeExtensions</key>
 			<array>
 				<string>man.gz</string>
 			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>ManOpen.icns</string>
 			<key>CFBundleTypeName</key>
 			<string>mangz</string>
 			<key>CFBundleTypeRole</key>
@@ -94,7 +92,7 @@
 	<key>CFBundleIconFile</key>
 	<string>ManOpen.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.clindberg.ManOpen</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -196,5 +194,7 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSSupportsSuddenTermination</key>
+	<true/>
 </dict>
 </plist>

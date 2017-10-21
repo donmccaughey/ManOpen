@@ -49,10 +49,10 @@
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A24F414E5AC0600F6AFFE /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279560821FFA400376676 /* cat2rtf.l */; };
-		D38A250514E5B05300F6AFFE /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279690821FFA400376676 /* cat2html.l */; };
 		D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */; };
 		D46C8FF91F9C1136008EB62F /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FF81F9C1136008EB62F /* openman.m */; };
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
+		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
 		D4B0D2E21F9BC81200B5CE00 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7371F9BC6280047373C /* Apropos.xib */; };
 		D4B0D2E31F9BC81200B5CE00 /* DocController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F73B1F9BC6280047373C /* DocController.xib */; };
 		D4B0D2E41F9BC81200B5CE00 /* ManOpen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7391F9BC6280047373C /* ManOpen.xib */; };
@@ -142,12 +142,12 @@
 		D39279370821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
 		D392793A0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D39279560821FFA400376676 /* cat2rtf.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; path = cat2rtf.l; sourceTree = "<group>"; };
-		D39279690821FFA400376676 /* cat2html.l */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = helpQMark.tiff; sourceTree = "<group>"; };
 		D46C8FF71F9C1136008EB62F /* openman.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = openman.1; sourceTree = "<group>"; };
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
+		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
 		D487F7361F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefPanel.xib; sourceTree = "<group>"; };
 		D487F7381F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
 		D487F73A1F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManOpen.xib; sourceTree = "<group>"; };
@@ -194,6 +194,7 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
+				D46C8FFB1F9C1266008EB62F /* cat2html */,
 				D46C8FF61F9C1136008EB62F /* openman */,
 				D39278E00821FFA400376676 /* Supporting Files */,
 				D39278E40821FFA400376676 /* Subprojects */,
@@ -324,7 +325,6 @@
 			isa = PBXGroup;
 			children = (
 				D39279430821FFA400376676 /* cat2rtf */,
-				D39279570821FFA400376676 /* cat2html */,
 			);
 			name = Subprojects;
 			sourceTree = "<group>";
@@ -354,31 +354,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D39279570821FFA400376676 /* cat2html */ = {
-			isa = PBXGroup;
-			children = (
-				D39279620821FFA400376676 /* Other Sources */,
-				D39279650821FFA400376676 /* Supporting Files */,
-			);
-			name = cat2html;
-			path = cat2html.tproj;
-			sourceTree = "<group>";
-		};
-		D39279620821FFA400376676 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				D39279690821FFA400376676 /* cat2html.l */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		D39279650821FFA400376676 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		D39279800821FFA400376676 /* External Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +370,14 @@
 				D46C8FF81F9C1136008EB62F /* openman.m */,
 			);
 			path = openman;
+			sourceTree = "<group>";
+		};
+		D46C8FFB1F9C1266008EB62F /* cat2html */ = {
+			isa = PBXGroup;
+			children = (
+				D46C8FFC1F9C1266008EB62F /* cat2html.l */,
+			);
+			path = cat2html;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -600,7 +583,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38A250514E5B05300F6AFFE /* cat2html.l in Sources */,
+				D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

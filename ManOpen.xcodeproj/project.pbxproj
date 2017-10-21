@@ -463,7 +463,6 @@
 				D38A240B14E4C3FE00F6AFFE /* Resources */,
 				D38A241A14E4C3FE00F6AFFE /* Sources */,
 				D38A242214E4C3FE00F6AFFE /* Frameworks */,
-				D38A242514E4C3FE00F6AFFE /* Rez */,
 				D38A242614E4C3FE00F6AFFE /* CopyFiles */,
 			);
 			buildRules = (
@@ -485,7 +484,6 @@
 				D38A243014E4C3FE00F6AFFE /* Headers */,
 				D38A243114E4C3FE00F6AFFE /* Sources */,
 				D38A243314E4C3FE00F6AFFE /* Frameworks */,
-				D38A243414E4C3FE00F6AFFE /* Rez */,
 			);
 			buildRules = (
 			);
@@ -503,7 +501,6 @@
 				D38A243B14E4C3FE00F6AFFE /* Headers */,
 				D38A243C14E4C3FE00F6AFFE /* Sources */,
 				D38A243E14E4C3FE00F6AFFE /* Frameworks */,
-				D38A244014E4C3FE00F6AFFE /* Rez */,
 			);
 			buildRules = (
 			);
@@ -521,7 +518,6 @@
 				D38A244714E4C3FE00F6AFFE /* Headers */,
 				D38A244814E4C3FE00F6AFFE /* Sources */,
 				D38A244A14E4C3FE00F6AFFE /* Frameworks */,
-				D38A244D14E4C3FE00F6AFFE /* Rez */,
 				D3EA5C4314EDC3C100AB000A /* CopyFiles */,
 			);
 			buildRules = (
@@ -594,37 +590,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXRezBuildPhase section */
-		D38A242514E4C3FE00F6AFFE /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A243414E4C3FE00F6AFFE /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A244014E4C3FE00F6AFFE /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A244D14E4C3FE00F6AFFE /* Rez */ = {
-			isa = PBXRezBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXRezBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D38A241A14E4C3FE00F6AFFE /* Sources */ = {

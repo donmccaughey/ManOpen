@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -852,7 +852,10 @@
 		D38A242A14E4C3FE00F6AFFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = K39VF43BJL;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -862,8 +865,9 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.clindberg.ManOpen;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -877,7 +881,10 @@
 		D38A242B14E4C3FE00F6AFFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = K39VF43BJL;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "";
@@ -887,8 +894,9 @@
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = org.clindberg.ManOpen;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",

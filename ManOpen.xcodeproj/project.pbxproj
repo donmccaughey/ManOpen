@@ -44,7 +44,6 @@
 		D38A242114E4C3FE00F6AFFE /* ManOpen_main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279100821FFA400376676 /* ManOpen_main.m */; settings = {ATTRIBUTES = (); }; };
 		D38A242314E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A242414E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
-		D38A243F14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A244914E4C3FE00F6AFFE /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279770821FFA400376676 /* openman.m */; settings = {ATTRIBUTES = (); }; };
 		D38A244B14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
@@ -177,7 +176,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38A243F14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,13 @@
 
 #import "SystemType.h"
 #import <AppKit/NSDocument.h>
+#import <AppKit/NSWindow.h>
 
 @class NSMutableArray, NSMutableDictionary;
 @class ManTextView;
 @class NSTextField, NSText, NSButton, NSPopUpButton;
 
-@interface ManDocument : NSDocument
+@interface ManDocument : NSDocument <NSWindowDelegate>
 {
     NSString *shortTitle;
     NSData *taskData;

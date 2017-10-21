@@ -450,8 +450,8 @@ static NSArray *GetWordArray(NSString *string)
     NSArray *words = GetWordArray(string);
     
     if ([words count] > 20) {
-        NSInteger reply = NSRunAlertPanel(@"Warning", @"This will open approximately %d windows!",
-                                          @"Cancel", @"Continue", nil, [words count]);
+        NSInteger reply = NSRunAlertPanel(@"Warning", @"This will open approximately %lu windows!",
+                                          @"Cancel", @"Continue", nil, (unsigned long)[words count]);
         if (reply != NSAlertAlternateReturn)
             return;
     }
@@ -542,7 +542,7 @@ static BOOL IsSectionWord(NSString *word)
     if ([string length] > 0 && [openSectionPopup indexOfSelectedItem] > 0 &&
         [string rangeOfString:@"("].length == 0)
     {
-        string = [string stringByAppendingFormat:@"(%d)", [openSectionPopup indexOfSelectedItem]];
+        string = [string stringByAppendingFormat:@"(%ld)", (long)[openSectionPopup indexOfSelectedItem]];
     }
 
     [self openString:string];
@@ -563,7 +563,7 @@ static BOOL IsSectionWord(NSString *word)
     else if ([sender tag] == 20)
         [self openApropos:@"(n)"];
     else
-        [self openApropos:[NSString stringWithFormat:@"(%d", [sender tag]]];
+        [self openApropos:[NSString stringWithFormat:@"(%ld", (long)[sender tag]]];
 }
 
 - (BOOL)useModalPanels

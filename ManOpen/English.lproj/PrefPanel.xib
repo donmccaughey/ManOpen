@@ -42,7 +42,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             <size key="cellSize" width="261" height="20"/>
-                                            <buttonCell key="prototype" type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" imageScaling="proportionallyDown" inset="2" id="411">
+                                            <buttonCell key="prototype" type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="411">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
@@ -119,7 +119,7 @@
                             <tabViewItem label="Appearance" identifier="2" id="229">
                                 <view key="view" id="230">
                                     <rect key="frame" x="10" y="33" width="295" height="302"/>
-                                    <autoresizingMask key="autoresizingMask"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField verticalHuggingPriority="750" id="138">
                                             <rect key="frame" x="14" y="217" width="267" height="30"/>
@@ -135,7 +135,7 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             <size key="cellSize" width="261" height="22"/>
-                                            <buttonCell key="prototype" type="check" title="Check" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" imageScaling="proportionallyDown" inset="2" id="412">
+                                            <buttonCell key="prototype" type="check" title="Check" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="412">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>

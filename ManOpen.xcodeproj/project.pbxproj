@@ -31,7 +31,6 @@
 		D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790D0821FFA400376676 /* SystemType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279130821FFA400376676 /* ManPage.nib */; };
 		D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279160821FFA400376676 /* PrefPanel.nib */; };
-		D38A240E14E4C3FE00F6AFFE /* FindPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279190821FFA400376676 /* FindPanel.nib */; };
 		D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791C0821FFA400376676 /* Apropos.nib */; };
 		D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791F0821FFA400376676 /* ManOpen.nib */; };
 		D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279240821FFA400376676 /* DocController.nib */; };
@@ -138,7 +137,6 @@
 		D39279100821FFA400376676 /* ManOpen_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
 		D39279150821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManPage.nib; sourceTree = "<group>"; };
 		D39279180821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PrefPanel.nib; sourceTree = "<group>"; };
-		D392791B0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/FindPanel.nib; sourceTree = "<group>"; };
 		D392791E0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Apropos.nib; sourceTree = "<group>"; };
 		D39279210821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManOpen.nib; sourceTree = "<group>"; };
 		D39279260821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DocController.nib; sourceTree = "<group>"; };
@@ -287,7 +285,6 @@
 			children = (
 				D39279130821FFA400376676 /* ManPage.nib */,
 				D39279160821FFA400376676 /* PrefPanel.nib */,
-				D39279190821FFA400376676 /* FindPanel.nib */,
 				D392791C0821FFA400376676 /* Apropos.nib */,
 				D392791F0821FFA400376676 /* ManOpen.nib */,
 				D39279240821FFA400376676 /* DocController.nib */,
@@ -583,7 +580,6 @@
 			files = (
 				D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */,
 				D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */,
-				D38A240E14E4C3FE00F6AFFE /* FindPanel.nib in Resources */,
 				D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */,
 				D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */,
 				D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */,
@@ -709,14 +705,6 @@
 				D39279180821FFA400376676 /* English */,
 			);
 			name = PrefPanel.nib;
-			sourceTree = "<group>";
-		};
-		D39279190821FFA400376676 /* FindPanel.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D392791B0821FFA400376676 /* English */,
-			);
-			name = FindPanel.nib;
 			sourceTree = "<group>";
 		};
 		D392791C0821FFA400376676 /* Apropos.nib */ = {

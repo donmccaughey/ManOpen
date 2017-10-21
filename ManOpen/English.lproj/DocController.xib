@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ManDocumentController">
+            <connections>
+                <outlet property="aproposField" destination="10" id="33"/>
+                <outlet property="aproposPanel" destination="5" id="32"/>
+                <outlet property="helpPanel" destination="56" id="60"/>
+                <outlet property="infoPanel" destination="15" id="30"/>
+                <outlet property="openSectionPopup" destination="41" id="55"/>
+                <outlet property="openTextField" destination="6" id="34"/>
+                <outlet property="openTextPanel" destination="18" id="31"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Apropos" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="AproposPanel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="891" y="1184" width="384" height="102"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <view key="contentView" id="9">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="14">
+                        <rect key="frame" x="6" y="67" width="136" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" alignment="right" title="List pages about:" id="64">
+                            <font key="font" metaFont="systemBold" size="14"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="10">
+                        <rect key="frame" x="147" y="64" width="217" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="63">
+                            <font key="font" size="12" name="Helvetica"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="performClick:" target="24" id="29"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="24">
+                        <rect key="frame" x="276" y="12" width="94" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Apropos" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="65">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="okApropos:" target="-2" id="61"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="454" imageHugsTitle="YES" id="27">
+                        <rect key="frame" x="192" y="12" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" tag="454" inset="2" id="66">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelText:" target="-2" id="35"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" id="40">
+                        <rect key="frame" x="6" y="10" width="175" height="39"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <textFieldCell key="cell" alignment="left" title="`Apropos' lists man pages whose summaries contain the given text" id="67">
+                            <font key="font" metaFont="system" size="10"/>
+                            <color key="textColor" name="controlShadowColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Info" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="15" userLabel="Info" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="432" y="542" width="354" height="146"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <view key="contentView" id="16">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="13">
+                        <rect key="frame" x="141" y="100" width="126" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" alignment="center" title="ManOpen" id="71">
+                            <font key="font" size="24" name="Helvetica-Bold"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="19">
+                        <rect key="frame" x="3" y="4" width="62" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" alignment="left" title="Version 2.1" id="72">
+                            <font key="font" size="10" name="Helvetica"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="8">
+                        <rect key="frame" x="67" y="4" width="285" height="13"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" alignment="right" title="Copyright 2000.  All Rights Reserved." id="68">
+                            <font key="font" size="10" name="Helvetica"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box title="Box" titlePosition="noTitle" id="22">
+                        <rect key="frame" x="1" y="22" width="402" height="2"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="3Hv-PI-0wj">
+                            <rect key="frame" x="2" y="2" width="398" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </view>
+                        <font key="titleFont" size="12" name="Helvetica"/>
+                    </box>
+                    <textField verticalHuggingPriority="750" id="12">
+                        <rect key="frame" x="139" y="99" width="126" height="30"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" alignment="center" title="ManOpen" id="70">
+                            <font key="font" size="24" name="Helvetica-Bold"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="26">
+                        <rect key="frame" x="97" y="72" width="209" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" alignment="center" title="by Carl Lindberg" id="74">
+                            <font key="font" size="14" name="Helvetica"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="20">
+                        <rect key="frame" x="102" y="57" width="201" height="15"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" alignment="center" title="lindberg@clindberg.org" id="73">
+                            <font key="font" size="12" name="Helvetica-Oblique"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <imageView id="11">
+                        <rect key="frame" x="35" y="75" width="48" height="48"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="ManOpen" id="69"/>
+                    </imageView>
+                </subviews>
+            </view>
+        </window>
+        <window title="Open Man Page" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="18" userLabel="OpenTextPanel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="932" y="1198" width="384" height="131"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <view key="contentView" id="23">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField verticalHuggingPriority="750" id="17">
+                        <rect key="frame" x="5" y="93" width="123" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" alignment="right" title="Open man page:" id="77">
+                            <font key="font" metaFont="systemBold" size="14"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" id="6">
+                        <rect key="frame" x="133" y="91" width="231" height="21"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="75">
+                            <font key="font" size="12" name="Helvetica"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="performClick:" target="7" id="28"/>
+                        </connections>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="7">
+                        <rect key="frame" x="286" y="15" width="84" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="76">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+DQ
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="okText:" target="-2" id="38"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" tag="454" imageHugsTitle="YES" id="21">
+                        <rect key="frame" x="204" y="15" width="82" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" tag="454" inset="2" id="78">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                        </buttonCell>
+                        <connections>
+                            <action selector="cancelText:" target="-2" id="37"/>
+                        </connections>
+                    </button>
+                    <popUpButton verticalHuggingPriority="750" imageHugsTitle="YES" id="41">
+                        <rect key="frame" x="130" y="56" width="237" height="26"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="push" title="Any" bezelStyle="rounded" alignment="left" lineBreakMode="clipping" state="on" borderStyle="border" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" selectedItem="45" id="79">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="46">
+                                <items>
+                                    <menuItem title="Any" state="on" id="45"/>
+                                    <menuItem title="1 - User Commands" tag="1" id="43"/>
+                                    <menuItem title="2 - System Calls" tag="2" id="44"/>
+                                    <menuItem title="3 - Library Calls" tag="3" id="48"/>
+                                    <menuItem title="4 - Special Files" tag="4" id="49"/>
+                                    <menuItem title="5 - File Formats" tag="5" id="50"/>
+                                    <menuItem title="6 - Games" tag="6" id="51"/>
+                                    <menuItem title="7 - Macros and Conventions" tag="7" id="52"/>
+                                    <menuItem title="8 - Administrative Commands" tag="8" id="53"/>
+                                    <menuItem title="9 - Kernel Interface" tag="9" id="54"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" id="47">
+                        <rect key="frame" x="5" y="63" width="123" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" alignment="right" title="Section:" id="80">
+                            <font key="font" metaFont="systemBold" size="14"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                </subviews>
+            </view>
+        </window>
+        <window title="Help" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="56" userLabel="Help Panel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="477" y="977" width="490" height="481"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <view key="contentView" id="59">
+                <rect key="frame" x="0.0" y="0.0" width="490" height="481"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="58">
+                        <rect key="frame" x="0.0" y="0.0" width="490" height="481"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="pkT-GN-3n5">
+                            <rect key="frame" x="0.0" y="0.0" width="490" height="481"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <textView editable="NO" verticallyResizable="YES" usesFontPanel="YES" usesRuler="YES" quoteSubstitution="YES" dashSubstitution="YES" textReplacement="YES" spellingCorrection="YES" smartInsertDelete="YES" id="57">
+                                    <rect key="frame" x="0.0" y="84" width="489" height="2118"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <size key="minSize" width="490" height="481"/>
+                                    <size key="maxSize" width="490" height="10000000"/>
+                                    <attributedString key="textStorage">
+                                        <fragment content="ManOpen Help">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+ManOpen is a graphical interface for viewing Unix manual pages, which are the standard documentation for Unix command line programs, programmer libraries, and other system information.  It can open files directly or be given titles, in which case it will display the output from the "man" command-line program.  An apropos interface is also provided, which is basically a quick-and-dirty search of the man page databases.
+
+This application is provided ``AS IS'' and without any warranty.
+
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	Man Pages
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="8" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">Man pages can be opened by title, the same as using the command-line `man' command, or by opening a file from the file system.  To open a page by its title, use the "Open Title..." menu item and enter in the name.
+
+Man pages are organized by type into "sections".  For example, user command-line programs are in section 1, so `man(1)' refers to the command-line man program, `printf(1)' to the "printf" program, and `printf(3)' to the printf() function in the programmer libraries (since section 3 is for standard library routines).  Normally, all sections are searched for a title, with the first one found being displayed.  If a particular manual section is desired, the popup on Open Title panel can be used or it can be typed in manually between parentheses (i.e. "printf(3)") or before the name as on the command line ("3 printf").  A typed-in section will override the popup.
+
+When Open is chosen on the Open Titles panel, the actual man(1) program is used to generate the page, with the results being displayed in a new man page window.  If multiple words are entered, a man page window will be opened for each word.
+
+An explicit man page file (included gzipped man files) can be opened using the standard file panel, available from the "Open File..." menu item.  If the file appears to be nroff(1) source, the Nroff command as specified in the preferences is used to format it, otherwise it is assumed the file is preformatted.  The results are displayed in a man page window.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	Man Page Window</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+The man page window simply shows the contents of the manual page, or a brief message if it was not found.  If a section of text is highlighted, pressing the Open Selection button at the top right of the window will cause each "word" in the selection to be opened as a title (sections names in parentheses should be automatically recognized, even if there is a space between the title and section).  This can be useful to open an entire series of pages at once, particularly from the "SEE ALSO" area of manual pages.
+
+There is a "Section:" pulldown in the toolbar area that has a list of the section headers within that man page (if ManOpen can figure them out at least).  Choosing one of those headers will jump to that section.
+
+Any piece of text that appears to be a reference to another man page will be hyperlinked, and clicking on the hyperlink will open that page in a new document.   Note that referenced pages sometimes do not actually exist, though this should be rare.  Also, in some cases special formatting characters present in the raw man page can confuse the hyperlinking feature, meaning a page reference that looks like it should be hyperlinked isn't.  In this case, use the Open Selection button.  The space bar can be used to page down, and shift-space pages up.
+
+The find panel can be used to search for text in the window, and the contents can be printed.  The default size for a window can be set to the current window's size with the "Set Default Windows Size" menu item.
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	Apropos</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+Apropos(1) (or the "man -k" command) is essentially a basic search mechanism for man pages.  From the "Apropos..." panel a string can be entered, and all man pages whose name or synopsis line contains the string will be displayed in a new window.  A cute side effect is that if no string is entered, a list of all man pages on the system will be displayed.
+
+In the list window, double-clicking on an item will open that manual page.
+
+If this feature never seems to find any results, it's possible that the man page database that apropos(1) uses has not been generated.  The database is normally regenerated every week very early on Saturday mornings, but if there has been a recent problem or you've never left your machine running overnight on Fridays, it's possible this is the problem.  To regenerate the database, either run the "/usr/libexec/makewhatis" program when logged on as the root user (or "sudo /usr/libexec/makewhatis" when logged on as an admin user), or run the full weekly maintenance scripts by running "sudo /etc/weekly".  Of course, you could also just make sure to leave your machine running overnight between Friday/Saturday :-)  
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	Preferences</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+ManOpen has a few preference settings.  There are some basic formatting options for displayed man pages, an option to automatically exit the app when the list window is closed, options to keep the Open Title and Apropos panels open after opening a selection, and an option to open the Open Title panel upon startup.
+
+The font used for display can be set.  For best results, this should be a fixed-width font such as Monaco or Courier.  Note that if the chosen font doesn't have bold and/or italic versions (such as Monaco), then any bold/italic formatting will not show up.
+
+The background color, text color, and link color can be set. 
+
+The nroff formatting command used for opening nroff-source files can be specified.  By default, this is set to the same command that man(1) uses internally.  This is meant for people who have installed other nroff formatting packages on their system and want to use them instead; otherwise this setting should be left alone.  A '%@' in the string will be replaced by the filename.
+
+Finally, the list of paths searched for manual pages can be specified.  By default, these are the standard system path plus the typical path for third-party pages; more paths can be added if necessary.  Drag and drop to change the order of the path, and use the "+" button or drag folders from Finder to add more.  Copy and paste of colon-separated paths is also supported. These paths will be passed to the man(1) command using the -M flag.
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+ManOpen supports the "x-man-page" URL scheme that was introduced by Apple in MacOS X 10.3 (Panther), where Terminal.app handles it by invoking man(1) in a new window.  This is used when hyperlinks like </string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="x-man-page://ls">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <url key="NSLink" string="x-man-page://ls"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content"> are opened.  ManOpen also supports this scheme by opening a new window.  It also includes a preference to set the default application, similar to the Web Browser preference in Safari.app.  If this isn't changed, Terminal.app will continue to be the application used.
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	openman</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cgo
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">There is an "openman" command-line tool provided in this package.  This has a syntax similar to the man(1) command, but it messages the ManOpen application to display the pages there.  To install the tool, put it somewhere in the standard Unix $PATH, such as /usr/local/bin.  It is further documented in its man page.
+
+Starting with MacOS X 10.2, /usr/local/bin is no longer in the default $PATH, so you'll need to add it yourself.  If you use tcsh, in your ~/.[t]cshrc file, add the line:
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	set path = (/usr/local/bin $path)
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Courier"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+If you use tcsh as your shell, you can set openman's completion settings to be similar to man(1)'s, which causes it to complete using command name.  Add the following to your ~/.cshrc or ~/.tchrc:
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	complete openman 'n/-M/d/' 'p/*/c/'
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Courier"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Starting with MacOS X 10.2, the completion for man(1) isn't set up by default.  You can add a similar entry for 'man', or look at the files in /usr/share/tcsh/examples to re-enable the old default setup.
+
+For bash(1) users, you can get nearly the same behavior.  Add the following to ~/.bashrc:
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	complete -c openman
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Courier"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">	Final notes
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+Hopefully you will find this application useful.  I am always interested in any bug reports, suggestions, or other feedback; I can be reached at &lt;lindberg@clindberg.org&gt;.
+
+For those who remember, there was a ManOpen 1.0 application by Harald Schlangmann that ran on NEXTSTEP computers.  This is a much updated version that adds several features.  Thanks are due to Mr. Schlangmann for the inspiration, and his internal cat2rtf tool which is also used in this version.
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops>
+                                                        <textTab alignment="left" location="26.600000381469727">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="53.25">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="80.050003051757812">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="106.75">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="133.35000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="160.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="186.80000305175781">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="213.5">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="240.10000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                        <textTab alignment="left" location="266.85000610351562">
+                                                            <options/>
+                                                        </textTab>
+                                                    </tabStops>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="81">
+                            <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="82">
+                            <rect key="frame" x="474" y="0.0" width="16" height="481"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+    <resources>
+        <image name="ManOpen" width="128" height="128"/>
+    </resources>
+</document>

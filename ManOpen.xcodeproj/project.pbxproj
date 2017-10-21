@@ -29,11 +29,6 @@
 		D38A240814E4C3FE00F6AFFE /* NSData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279090821FFA400376676 /* NSData+Utils.h */; };
 		D38A240914E4C3FE00F6AFFE /* PrefPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790B0821FFA400376676 /* PrefPanelController.h */; };
 		D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790D0821FFA400376676 /* SystemType.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279130821FFA400376676 /* ManPage.nib */; };
-		D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279160821FFA400376676 /* PrefPanel.nib */; };
-		D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791C0821FFA400376676 /* Apropos.nib */; };
-		D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */ = {isa = PBXBuildFile; fileRef = D392791F0821FFA400376676 /* ManOpen.nib */; };
-		D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */ = {isa = PBXBuildFile; fileRef = D39279240821FFA400376676 /* DocController.nib */; };
 		D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D39279280821FFA400376676 /* LinkCursor.tiff */; };
 		D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D392792C0821FFA400376676 /* ManOpen.tiff */; };
 		D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D392792F0821FFA400376676 /* ManOpen.scriptSuite */; };
@@ -59,6 +54,11 @@
 		D38A250514E5B05300F6AFFE /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D39279690821FFA400376676 /* cat2html.l */; };
 		D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */; };
 		D3EA5C4014EDC3BE00AB000A /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D392797F0821FFA400376676 /* openman.1 */; };
+		D4B0D2E21F9BC81200B5CE00 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7371F9BC6280047373C /* Apropos.xib */; };
+		D4B0D2E31F9BC81200B5CE00 /* DocController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F73B1F9BC6280047373C /* DocController.xib */; };
+		D4B0D2E41F9BC81200B5CE00 /* ManOpen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7391F9BC6280047373C /* ManOpen.xib */; };
+		D4B0D2E51F9BC81200B5CE00 /* ManPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F73D1F9BC6290047373C /* ManPage.xib */; };
+		D4B0D2E61F9BC81200B5CE00 /* PrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7351F9BC6280047373C /* PrefPanel.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,11 +135,6 @@
 		D392790B0821FFA400376676 /* PrefPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
 		D392790D0821FFA400376676 /* SystemType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
 		D39279100821FFA400376676 /* ManOpen_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
-		D39279150821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManPage.nib; sourceTree = "<group>"; };
-		D39279180821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/PrefPanel.nib; sourceTree = "<group>"; };
-		D392791E0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/Apropos.nib; sourceTree = "<group>"; };
-		D39279210821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/ManOpen.nib; sourceTree = "<group>"; };
-		D39279260821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/DocController.nib; sourceTree = "<group>"; };
 		D39279280821FFA400376676 /* LinkCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = LinkCursor.tiff; sourceTree = "<group>"; };
 		D392792C0821FFA400376676 /* ManOpen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ManOpen.tiff; sourceTree = "<group>"; };
 		D392792F0821FFA400376676 /* ManOpen.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptSuite; path = ManOpen.scriptSuite; sourceTree = "<group>"; };
@@ -154,6 +149,11 @@
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = helpQMark.tiff; sourceTree = "<group>"; };
+		D487F7361F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefPanel.xib; sourceTree = "<group>"; };
+		D487F7381F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
+		D487F73A1F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManOpen.xib; sourceTree = "<group>"; };
+		D487F73C1F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DocController.xib; sourceTree = "<group>"; };
+		D487F73E1F9BC6290047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManPage.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,11 +283,11 @@
 		D39279120821FFA400376676 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
-				D39279130821FFA400376676 /* ManPage.nib */,
-				D39279160821FFA400376676 /* PrefPanel.nib */,
-				D392791C0821FFA400376676 /* Apropos.nib */,
-				D392791F0821FFA400376676 /* ManOpen.nib */,
-				D39279240821FFA400376676 /* DocController.nib */,
+				D487F7371F9BC6280047373C /* Apropos.xib */,
+				D487F73B1F9BC6280047373C /* DocController.xib */,
+				D487F7391F9BC6280047373C /* ManOpen.xib */,
+				D487F73D1F9BC6290047373C /* ManPage.xib */,
+				D487F7351F9BC6280047373C /* PrefPanel.xib */,
 			);
 			name = Interfaces;
 			sourceTree = "<group>";
@@ -558,6 +558,7 @@
 			);
 			knownRegions = (
 				en,
+				English,
 			);
 			mainGroup = D39278DB0821FF9D00376676 /* ManOpen */;
 			productRefGroup = D39278ED0821FFA400376676 /* Products */;
@@ -578,11 +579,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38A240C14E4C3FE00F6AFFE /* ManPage.nib in Resources */,
-				D38A240D14E4C3FE00F6AFFE /* PrefPanel.nib in Resources */,
-				D38A240F14E4C3FE00F6AFFE /* Apropos.nib in Resources */,
-				D38A241014E4C3FE00F6AFFE /* ManOpen.nib in Resources */,
-				D38A241114E4C3FE00F6AFFE /* DocController.nib in Resources */,
+				D4B0D2E21F9BC81200B5CE00 /* Apropos.xib in Resources */,
+				D4B0D2E31F9BC81200B5CE00 /* DocController.xib in Resources */,
+				D4B0D2E41F9BC81200B5CE00 /* ManOpen.xib in Resources */,
+				D4B0D2E51F9BC81200B5CE00 /* ManPage.xib in Resources */,
+				D4B0D2E61F9BC81200B5CE00 /* PrefPanel.xib in Resources */,
 				D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */,
 				D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */,
 				D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */,
@@ -691,46 +692,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D39279130821FFA400376676 /* ManPage.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39279150821FFA400376676 /* English */,
-			);
-			name = ManPage.nib;
-			sourceTree = "<group>";
-		};
-		D39279160821FFA400376676 /* PrefPanel.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39279180821FFA400376676 /* English */,
-			);
-			name = PrefPanel.nib;
-			sourceTree = "<group>";
-		};
-		D392791C0821FFA400376676 /* Apropos.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D392791E0821FFA400376676 /* English */,
-			);
-			name = Apropos.nib;
-			sourceTree = "<group>";
-		};
-		D392791F0821FFA400376676 /* ManOpen.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39279210821FFA400376676 /* English */,
-			);
-			name = ManOpen.nib;
-			sourceTree = "<group>";
-		};
-		D39279240821FFA400376676 /* DocController.nib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D39279260821FFA400376676 /* English */,
-			);
-			name = DocController.nib;
-			sourceTree = "<group>";
-		};
 		D39279350821FFA400376676 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -745,6 +706,46 @@
 				D392793A0821FFA400376676 /* English */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D487F7351F9BC6280047373C /* PrefPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D487F7361F9BC6280047373C /* English */,
+			);
+			name = PrefPanel.xib;
+			sourceTree = "<group>";
+		};
+		D487F7371F9BC6280047373C /* Apropos.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D487F7381F9BC6280047373C /* English */,
+			);
+			name = Apropos.xib;
+			sourceTree = "<group>";
+		};
+		D487F7391F9BC6280047373C /* ManOpen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D487F73A1F9BC6280047373C /* English */,
+			);
+			name = ManOpen.xib;
+			sourceTree = "<group>";
+		};
+		D487F73B1F9BC6280047373C /* DocController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D487F73C1F9BC6280047373C /* English */,
+			);
+			name = DocController.xib;
+			sourceTree = "<group>";
+		};
+		D487F73D1F9BC6290047373C /* ManPage.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D487F73E1F9BC6290047373C /* English */,
+			);
+			name = ManPage.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

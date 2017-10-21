@@ -127,7 +127,7 @@
 	<key>NSHumanReadableShortName</key>
 	<string>ManOpen</string>
 	<key>NSMainNibFile</key>
-	<string>ManOpen.nib</string>
+	<string>ManOpen</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSServices</key>

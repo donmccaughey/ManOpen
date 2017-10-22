@@ -215,7 +215,7 @@ NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
 {
     NSFileHandle  *handle;
     NSFileManager *manager = [NSFileManager defaultManager];
-    NSDictionary  *attributes = [manager fileAttributesAtPath:filename traverseLink:YES];
+    NSDictionary  *attributes = [manager attributesOfItemAtPath:filename error:nil];
     NSUInteger    maxLength = MIN(150, (NSUInteger)[attributes fileSize]);
     NSData        *fileHeader;
     NSString      *catType = @"cat";

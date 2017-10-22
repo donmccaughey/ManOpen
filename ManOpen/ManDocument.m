@@ -475,20 +475,6 @@
     return YES;
 }
 
-- (void)textView:(NSTextView *)textView clickedOnCell:(id <NSTextAttachmentCell>)cell inRect:(NSRect)cellFrame
-{
-    NSString *filename = nil;
-
-    /* NSHelpAttachment stores the string in the fileName variable */
-    if ([[cell attachment] respondsToSelector:@selector(fileName)])
-        filename = [(id)[cell attachment] fileName];
-
-    if ([filename hasPrefix:@"manpage:"]) {
-        filename = [filename substringFromIndex:8];
-        [[ManDocumentController sharedDocumentController] openString:filename];
-    }
-}
-
 - (void)windowDidUpdate:(NSNotification *)notification
 {
     /* Disable the Open Selection button if there's no selection to work on */

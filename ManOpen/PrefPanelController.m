@@ -779,7 +779,6 @@ static NSString *currentAppID = nil;
         }
         [appPopup addItemWithTitle:displayName];
 
-        [image setScalesWhenResized:YES];
         [image setSize:NSMakeSize(16, 16)];
         [[appPopup itemAtIndex:i] setImage:image];
         [image release];

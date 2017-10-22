@@ -395,15 +395,14 @@ static NSString *ManPathArrayKey = @"manPathArray";
     [panel setCanChooseDirectories:YES];
     [panel setCanChooseFiles:NO];
 
-    [panel beginSheetForDirectory:nil file:nil
-         modalForWindow:[self window]
-         modalDelegate:self
-         didEndSelector:@selector(didAddManPathFromPanel:code:context:)
-         contextInfo:NULL];
+    [panel beginSheetModalForWindow:[self window] completionHandler:^(NSModalResponse result) {
+        [self didAddManPathFromPanel:panel result:result];
+    }];
 }
-- (void)didAddManPathFromPanel:(NSOpenPanel *)panel code:(int)returnCode context:(void *)context
+
+- (void)didAddManPathFromPanel:(NSOpenPanel *)panel result:(NSModalResponse)result
 {
-    if (returnCode == NSOKButton)
+    if (NSFileHandlingPanelOKButton == result)
     {
         NSArray *urls = [panel URLs];
         NSUInteger i, count = [urls count];

@@ -848,15 +848,16 @@ static NSString *currentAppID = nil;
         [panel setAllowsMultipleSelection:NO];
         [panel setResolvesAliases:YES];
         [panel setCanChooseFiles:YES];
-        [panel beginSheetForDirectory:nil file:nil types:[NSArray arrayWithObject:@"app"]
-                       modalForWindow:[appPopup window] modalDelegate:self
-                       didEndSelector:@selector(panelDidEnd:code:context:) contextInfo:NULL];
+        [panel setAllowedFileTypes:[NSArray arrayWithObject:@"app"]];
+        [panel beginSheetModalForWindow:[appPopup window] completionHandler:^(NSModalResponse result) {
+            [self panelDidEnd:panel result:result];
+        }];
     }
 }
 
-- (void)panelDidEnd:(NSOpenPanel *)panel code:(int)returnCode context:(void *)context
+- (void)panelDidEnd:(NSOpenPanel *)panel result:(NSModalResponse)result
 {
-    if (returnCode == NSOKButton) {
+    if (NSFileHandlingPanelOKButton == result) {
         NSURL *appURL = [panel URL];
         NSString *appID = [[NSBundle bundleWithPath:[appURL path]] bundleIdentifier];
         if (appID != nil)

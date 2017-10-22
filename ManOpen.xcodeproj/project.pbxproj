@@ -22,35 +22,35 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D39279280821FFA400376676 /* LinkCursor.tiff */; };
-		D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D392792C0821FFA400376676 /* ManOpen.tiff */; };
-		D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D392792F0821FFA400376676 /* ManOpen.scriptSuite */; };
-		D38A241614E4C3FE00F6AFFE /* ManOpen.icns in Resources */ = {isa = PBXBuildFile; fileRef = D39279310821FFA400376676 /* ManOpen.icns */; };
-		D38A241714E4C3FE00F6AFFE /* ManOpen.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = D39279330821FFA400376676 /* ManOpen.scriptTerminology */; };
-		D38A241814E4C3FE00F6AFFE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D39279350821FFA400376676 /* Credits.rtf */; };
-		D38A241914E4C3FE00F6AFFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D39279380821FFA400376676 /* InfoPlist.strings */; };
-		D38A241B14E4C3FE00F6AFFE /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F20821FFA400376676 /* AproposDocument.m */; settings = {ATTRIBUTES = (); }; };
-		D38A241D14E4C3FE00F6AFFE /* ManDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F60821FFA400376676 /* ManDocument.m */; settings = {ATTRIBUTES = (); }; };
-		D38A241E14E4C3FE00F6AFFE /* ManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278F80821FFA400376676 /* ManDocumentController.m */; settings = {ATTRIBUTES = (); }; };
-		D38A241F14E4C3FE00F6AFFE /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278FA0821FFA400376676 /* NSData+Utils.m */; settings = {ATTRIBUTES = (); }; };
-		D38A242014E4C3FE00F6AFFE /* PrefPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39278FC0821FFA400376676 /* PrefPanelController.m */; settings = {ATTRIBUTES = (); }; };
-		D38A242114E4C3FE00F6AFFE /* ManOpen_main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39279100821FFA400376676 /* ManOpen_main.m */; settings = {ATTRIBUTES = (); }; };
 		D38A242314E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A242414E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
 		D38A244B14E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
-		D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */; };
 		D46C8FF91F9C1136008EB62F /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FF81F9C1136008EB62F /* openman.m */; };
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
 		D46C90011F9C1319008EB62F /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C90001F9C1319008EB62F /* cat2rtf.l */; };
-		D4B0D2E21F9BC81200B5CE00 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7371F9BC6280047373C /* Apropos.xib */; };
-		D4B0D2E31F9BC81200B5CE00 /* DocController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F73B1F9BC6280047373C /* DocController.xib */; };
-		D4B0D2E41F9BC81200B5CE00 /* ManOpen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7391F9BC6280047373C /* ManOpen.xib */; };
-		D4B0D2E51F9BC81200B5CE00 /* ManPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F73D1F9BC6290047373C /* ManPage.xib */; };
-		D4B0D2E61F9BC81200B5CE00 /* PrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D487F7351F9BC6280047373C /* PrefPanel.xib */; };
+		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
+		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
+		D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */; };
+		D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8C01F9C1EDC00ECE338 /* DocController.xib */; };
+		D49FB8E01F9C1EDC00ECE338 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8C21F9C1EDC00ECE338 /* InfoPlist.strings */; };
+		D49FB8E11F9C1EDC00ECE338 /* ManOpen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */; };
+		D49FB8E21F9C1EDC00ECE338 /* ManPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */; };
+		D49FB8E31F9C1EDC00ECE338 /* PrefPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */; };
+		D49FB8E41F9C1EDC00ECE338 /* helpQMark.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8CA1F9C1EDC00ECE338 /* helpQMark.tiff */; };
+		D49FB8E61F9C1EDC00ECE338 /* LinkCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8CC1F9C1EDC00ECE338 /* LinkCursor.tiff */; };
+		D49FB8E71F9C1EDC00ECE338 /* ManDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8CE1F9C1EDC00ECE338 /* ManDocument.m */; };
+		D49FB8E81F9C1EDC00ECE338 /* ManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8D01F9C1EDC00ECE338 /* ManDocumentController.m */; };
+		D49FB8E91F9C1EDC00ECE338 /* ManOpen.icns in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8D11F9C1EDC00ECE338 /* ManOpen.icns */; };
+		D49FB8EA1F9C1EDC00ECE338 /* ManOpen.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8D21F9C1EDC00ECE338 /* ManOpen.scriptSuite */; };
+		D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8D31F9C1EDC00ECE338 /* ManOpen.scriptTerminology */; };
+		D49FB8EC1F9C1EDC00ECE338 /* ManOpen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8D41F9C1EDC00ECE338 /* ManOpen.tiff */; };
+		D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */; };
+		D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */; };
+		D49FB8EF1F9C1EDC00ECE338 /* PrefPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,43 +109,43 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D38A242C14E4C3FE00F6AFFE /* Info-ManOpen.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-ManOpen.plist"; sourceTree = "<group>"; };
 		D38A242D14E4C3FE00F6AFFE /* ManOpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManOpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38A243814E4C3FE00F6AFFE /* cat2rtf */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cat2rtf; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38A244414E4C3FE00F6AFFE /* cat2html */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cat2html; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38A245114E4C3FE00F6AFFE /* openman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openman; sourceTree = BUILT_PRODUCTS_DIR; };
-		D39278F20821FFA400376676 /* AproposDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
-		D39278F60821FFA400376676 /* ManDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocument.m; sourceTree = "<group>"; };
-		D39278F80821FFA400376676 /* ManDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocumentController.m; sourceTree = "<group>"; };
-		D39278FA0821FFA400376676 /* NSData+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
-		D39278FC0821FFA400376676 /* PrefPanelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrefPanelController.m; sourceTree = "<group>"; };
-		D39278FF0821FFA400376676 /* AproposDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
-		D39279030821FFA400376676 /* ManDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManDocument.h; sourceTree = "<group>"; };
-		D39279050821FFA400376676 /* ManDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManDocumentController.h; sourceTree = "<group>"; };
-		D39279070821FFA400376676 /* ManOpenProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenProtocol.h; sourceTree = "<group>"; };
-		D39279090821FFA400376676 /* NSData+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
-		D392790B0821FFA400376676 /* PrefPanelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
-		D392790D0821FFA400376676 /* SystemType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
-		D39279100821FFA400376676 /* ManOpen_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
-		D39279280821FFA400376676 /* LinkCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = LinkCursor.tiff; sourceTree = "<group>"; };
-		D392792C0821FFA400376676 /* ManOpen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ManOpen.tiff; sourceTree = "<group>"; };
-		D392792F0821FFA400376676 /* ManOpen.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptSuite; path = ManOpen.scriptSuite; sourceTree = "<group>"; };
-		D39279310821FFA400376676 /* ManOpen.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ManOpen.icns; sourceTree = "<group>"; };
-		D39279330821FFA400376676 /* ManOpen.scriptTerminology */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; path = ManOpen.scriptTerminology; sourceTree = "<group>"; };
-		D39279370821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
-		D392793A0821FFA400376676 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
-		D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = helpQMark.tiff; sourceTree = "<group>"; };
 		D46C8FF71F9C1136008EB62F /* openman.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = openman.1; sourceTree = "<group>"; };
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
 		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
 		D46C90001F9C1319008EB62F /* cat2rtf.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2rtf.l; sourceTree = "<group>"; };
-		D487F7361F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefPanel.xib; sourceTree = "<group>"; };
-		D487F7381F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
-		D487F73A1F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManOpen.xib; sourceTree = "<group>"; };
-		D487F73C1F9BC6280047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DocController.xib; sourceTree = "<group>"; };
-		D487F73E1F9BC6290047373C /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManPage.xib; sourceTree = "<group>"; };
+		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
+		D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
+		D49FB8BD1F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
+		D49FB8BF1F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = English; path = English.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D49FB8C11F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DocController.xib; sourceTree = "<group>"; };
+		D49FB8C31F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D49FB8C51F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManOpen.xib; sourceTree = "<group>"; };
+		D49FB8C71F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ManPage.xib; sourceTree = "<group>"; };
+		D49FB8C91F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PrefPanel.xib; sourceTree = "<group>"; };
+		D49FB8CA1F9C1EDC00ECE338 /* helpQMark.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = helpQMark.tiff; sourceTree = "<group>"; };
+		D49FB8CB1F9C1EDC00ECE338 /* Info-ManOpen.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-ManOpen.plist"; sourceTree = "<group>"; };
+		D49FB8CC1F9C1EDC00ECE338 /* LinkCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = LinkCursor.tiff; sourceTree = "<group>"; };
+		D49FB8CD1F9C1EDC00ECE338 /* ManDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManDocument.h; sourceTree = "<group>"; };
+		D49FB8CE1F9C1EDC00ECE338 /* ManDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManDocument.m; sourceTree = "<group>"; };
+		D49FB8CF1F9C1EDC00ECE338 /* ManDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManDocumentController.h; sourceTree = "<group>"; };
+		D49FB8D01F9C1EDC00ECE338 /* ManDocumentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManDocumentController.m; sourceTree = "<group>"; };
+		D49FB8D11F9C1EDC00ECE338 /* ManOpen.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ManOpen.icns; sourceTree = "<group>"; };
+		D49FB8D21F9C1EDC00ECE338 /* ManOpen.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptSuite; path = ManOpen.scriptSuite; sourceTree = "<group>"; };
+		D49FB8D31F9C1EDC00ECE338 /* ManOpen.scriptTerminology */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; path = ManOpen.scriptTerminology; sourceTree = "<group>"; };
+		D49FB8D41F9C1EDC00ECE338 /* ManOpen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ManOpen.tiff; sourceTree = "<group>"; };
+		D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
+		D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManOpenProtocol.h; sourceTree = "<group>"; };
+		D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
+		D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
+		D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
+		D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPanelController.m; sourceTree = "<group>"; };
+		D49FB8DB1F9C1EDC00ECE338 /* SystemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,44 +187,14 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
+				D49FB8B91F9C1EDC00ECE338 /* ManOpen */,
 				D46C8FFB1F9C1266008EB62F /* cat2html */,
 				D46C8FFF1F9C1319008EB62F /* cat2rtf */,
 				D46C8FF61F9C1136008EB62F /* openman */,
-				D39278E00821FFA400376676 /* Supporting Files */,
-				D39278E40821FFA400376676 /* Subprojects */,
 				D39279800821FFA400376676 /* External Frameworks and Libraries */,
 				D39278ED0821FFA400376676 /* Products */,
 			);
 			name = ManOpen;
-			sourceTree = "<group>";
-		};
-		D39278E00821FFA400376676 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		D39278E40821FFA400376676 /* Subprojects */ = {
-			isa = PBXGroup;
-			children = (
-				D39278E50821FFA400376676 /* ManOpen */,
-			);
-			name = Subprojects;
-			sourceTree = "<group>";
-		};
-		D39278E50821FFA400376676 /* ManOpen */ = {
-			isa = PBXGroup;
-			children = (
-				D39278F10821FFA400376676 /* Classes */,
-				D39278FE0821FFA400376676 /* Headers */,
-				D392790F0821FFA400376676 /* Other Sources */,
-				D39279120821FFA400376676 /* Interfaces */,
-				D39279270821FFA400376676 /* Images */,
-				D392792E0821FFA400376676 /* Resources */,
-				D392793B0821FFA400376676 /* Supporting Files */,
-			);
-			path = ManOpen;
 			sourceTree = "<group>";
 		};
 		D39278ED0821FFA400376676 /* Products */ = {
@@ -236,82 +206,6 @@
 				D38A245114E4C3FE00F6AFFE /* openman */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D39278F10821FFA400376676 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				D39278F20821FFA400376676 /* AproposDocument.m */,
-				D39278F60821FFA400376676 /* ManDocument.m */,
-				D39278F80821FFA400376676 /* ManDocumentController.m */,
-				D39278FA0821FFA400376676 /* NSData+Utils.m */,
-				D39278FC0821FFA400376676 /* PrefPanelController.m */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		D39278FE0821FFA400376676 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				D39278FF0821FFA400376676 /* AproposDocument.h */,
-				D39279030821FFA400376676 /* ManDocument.h */,
-				D39279050821FFA400376676 /* ManDocumentController.h */,
-				D39279070821FFA400376676 /* ManOpenProtocol.h */,
-				D39279090821FFA400376676 /* NSData+Utils.h */,
-				D392790B0821FFA400376676 /* PrefPanelController.h */,
-				D392790D0821FFA400376676 /* SystemType.h */,
-			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
-		D392790F0821FFA400376676 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				D39279100821FFA400376676 /* ManOpen_main.m */,
-			);
-			name = "Other Sources";
-			sourceTree = "<group>";
-		};
-		D39279120821FFA400376676 /* Interfaces */ = {
-			isa = PBXGroup;
-			children = (
-				D487F7371F9BC6280047373C /* Apropos.xib */,
-				D487F73B1F9BC6280047373C /* DocController.xib */,
-				D487F7391F9BC6280047373C /* ManOpen.xib */,
-				D487F73D1F9BC6290047373C /* ManPage.xib */,
-				D487F7351F9BC6280047373C /* PrefPanel.xib */,
-			);
-			name = Interfaces;
-			sourceTree = "<group>";
-		};
-		D39279270821FFA400376676 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				D3EA5B5914E8DA3700AB000A /* helpQMark.tiff */,
-				D39279280821FFA400376676 /* LinkCursor.tiff */,
-				D392792C0821FFA400376676 /* ManOpen.tiff */,
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
-		D392792E0821FFA400376676 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D392792F0821FFA400376676 /* ManOpen.scriptSuite */,
-				D39279310821FFA400376676 /* ManOpen.icns */,
-				D39279330821FFA400376676 /* ManOpen.scriptTerminology */,
-				D39279350821FFA400376676 /* Credits.rtf */,
-				D39279380821FFA400376676 /* InfoPlist.strings */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		D392793B0821FFA400376676 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D38A242C14E4C3FE00F6AFFE /* Info-ManOpen.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D39279800821FFA400376676 /* External Frameworks and Libraries */ = {
@@ -346,6 +240,48 @@
 				D46C90001F9C1319008EB62F /* cat2rtf.l */,
 			);
 			path = cat2rtf;
+			sourceTree = "<group>";
+		};
+		D49FB8B91F9C1EDC00ECE338 /* ManOpen */ = {
+			isa = PBXGroup;
+			children = (
+				D49FB8F11F9C204900ECE338 /* Resources */,
+				D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */,
+				D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */,
+				D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */,
+				D49FB8C01F9C1EDC00ECE338 /* DocController.xib */,
+				D49FB8CB1F9C1EDC00ECE338 /* Info-ManOpen.plist */,
+				D49FB8CD1F9C1EDC00ECE338 /* ManDocument.h */,
+				D49FB8CE1F9C1EDC00ECE338 /* ManDocument.m */,
+				D49FB8CF1F9C1EDC00ECE338 /* ManDocumentController.h */,
+				D49FB8D01F9C1EDC00ECE338 /* ManDocumentController.m */,
+				D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */,
+				D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */,
+				D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */,
+				D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */,
+				D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */,
+				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
+				D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */,
+				D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */,
+				D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */,
+				D49FB8DB1F9C1EDC00ECE338 /* SystemType.h */,
+			);
+			path = ManOpen;
+			sourceTree = "<group>";
+		};
+		D49FB8F11F9C204900ECE338 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */,
+				D49FB8C21F9C1EDC00ECE338 /* InfoPlist.strings */,
+				D49FB8CA1F9C1EDC00ECE338 /* helpQMark.tiff */,
+				D49FB8CC1F9C1EDC00ECE338 /* LinkCursor.tiff */,
+				D49FB8D11F9C1EDC00ECE338 /* ManOpen.icns */,
+				D49FB8D21F9C1EDC00ECE338 /* ManOpen.scriptSuite */,
+				D49FB8D31F9C1EDC00ECE338 /* ManOpen.scriptTerminology */,
+				D49FB8D41F9C1EDC00ECE338 /* ManOpen.tiff */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -465,19 +401,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4B0D2E21F9BC81200B5CE00 /* Apropos.xib in Resources */,
-				D4B0D2E31F9BC81200B5CE00 /* DocController.xib in Resources */,
-				D4B0D2E41F9BC81200B5CE00 /* ManOpen.xib in Resources */,
-				D4B0D2E51F9BC81200B5CE00 /* ManPage.xib in Resources */,
-				D4B0D2E61F9BC81200B5CE00 /* PrefPanel.xib in Resources */,
-				D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */,
-				D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */,
-				D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */,
-				D38A241614E4C3FE00F6AFFE /* ManOpen.icns in Resources */,
-				D38A241714E4C3FE00F6AFFE /* ManOpen.scriptTerminology in Resources */,
-				D38A241814E4C3FE00F6AFFE /* Credits.rtf in Resources */,
-				D38A241914E4C3FE00F6AFFE /* InfoPlist.strings in Resources */,
-				D3EA5B5A14E8DA3700AB000A /* helpQMark.tiff in Resources */,
+				D49FB8E11F9C1EDC00ECE338 /* ManOpen.xib in Resources */,
+				D49FB8E41F9C1EDC00ECE338 /* helpQMark.tiff in Resources */,
+				D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */,
+				D49FB8E01F9C1EDC00ECE338 /* InfoPlist.strings in Resources */,
+				D49FB8E31F9C1EDC00ECE338 /* PrefPanel.xib in Resources */,
+				D49FB8E21F9C1EDC00ECE338 /* ManPage.xib in Resources */,
+				D49FB8E91F9C1EDC00ECE338 /* ManOpen.icns in Resources */,
+				D49FB8EC1F9C1EDC00ECE338 /* ManOpen.tiff in Resources */,
+				D49FB8E61F9C1EDC00ECE338 /* LinkCursor.tiff in Resources */,
+				D49FB8EA1F9C1EDC00ECE338 /* ManOpen.scriptSuite in Resources */,
+				D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */,
+				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
+				D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,12 +424,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D38A241B14E4C3FE00F6AFFE /* AproposDocument.m in Sources */,
-				D38A241D14E4C3FE00F6AFFE /* ManDocument.m in Sources */,
-				D38A241E14E4C3FE00F6AFFE /* ManDocumentController.m in Sources */,
-				D38A241F14E4C3FE00F6AFFE /* NSData+Utils.m in Sources */,
-				D38A242014E4C3FE00F6AFFE /* PrefPanelController.m in Sources */,
-				D38A242114E4C3FE00F6AFFE /* ManOpen_main.m in Sources */,
+				D49FB8E71F9C1EDC00ECE338 /* ManDocument.m in Sources */,
+				D49FB8EF1F9C1EDC00ECE338 /* PrefPanelController.m in Sources */,
+				D49FB8E81F9C1EDC00ECE338 /* ManDocumentController.m in Sources */,
+				D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */,
+				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
+				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,60 +483,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D39279350821FFA400376676 /* Credits.rtf */ = {
+		D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D39279370821FFA400376676 /* English */,
-			);
-			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		D39279380821FFA400376676 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D392793A0821FFA400376676 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D487F7351F9BC6280047373C /* PrefPanel.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D487F7361F9BC6280047373C /* English */,
-			);
-			name = PrefPanel.xib;
-			sourceTree = "<group>";
-		};
-		D487F7371F9BC6280047373C /* Apropos.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D487F7381F9BC6280047373C /* English */,
+				D49FB8BD1F9C1EDC00ECE338 /* English */,
 			);
 			name = Apropos.xib;
 			sourceTree = "<group>";
 		};
-		D487F7391F9BC6280047373C /* ManOpen.xib */ = {
+		D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D487F73A1F9BC6280047373C /* English */,
+				D49FB8BF1F9C1EDC00ECE338 /* English */,
 			);
-			name = ManOpen.xib;
+			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		D487F73B1F9BC6280047373C /* DocController.xib */ = {
+		D49FB8C01F9C1EDC00ECE338 /* DocController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D487F73C1F9BC6280047373C /* English */,
+				D49FB8C11F9C1EDC00ECE338 /* English */,
 			);
 			name = DocController.xib;
 			sourceTree = "<group>";
 		};
-		D487F73D1F9BC6290047373C /* ManPage.xib */ = {
+		D49FB8C21F9C1EDC00ECE338 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D487F73E1F9BC6290047373C /* English */,
+				D49FB8C31F9C1EDC00ECE338 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D49FB8C51F9C1EDC00ECE338 /* English */,
+			);
+			name = ManOpen.xib;
+			sourceTree = "<group>";
+		};
+		D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D49FB8C71F9C1EDC00ECE338 /* English */,
 			);
 			name = ManPage.xib;
+			sourceTree = "<group>";
+		};
+		D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D49FB8C91F9C1EDC00ECE338 /* English */,
+			);
+			name = PrefPanel.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

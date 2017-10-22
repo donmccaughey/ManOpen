@@ -136,7 +136,7 @@ int main (int argc, char * const *argv)
 
     do {
         /* Try to connect to a running version... */
-        server = [NSConnection rootProxyForConnectionWithRegisteredName:@"ManOpenApp" host:nil];
+        server = (NSDistantObject<ManOpen> *)[NSConnection rootProxyForConnectionWithRegisteredName:@"ManOpenApp" host:nil];
 
         if (server == nil) {
             /* 

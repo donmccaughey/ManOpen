@@ -22,13 +22,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		D38A240314E4C3FE00F6AFFE /* AproposDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D39278FF0821FFA400376676 /* AproposDocument.h */; };
-		D38A240514E4C3FE00F6AFFE /* ManDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279030821FFA400376676 /* ManDocument.h */; };
-		D38A240614E4C3FE00F6AFFE /* ManDocumentController.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279050821FFA400376676 /* ManDocumentController.h */; };
-		D38A240714E4C3FE00F6AFFE /* ManOpenProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279070821FFA400376676 /* ManOpenProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D38A240814E4C3FE00F6AFFE /* NSData+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D39279090821FFA400376676 /* NSData+Utils.h */; };
-		D38A240914E4C3FE00F6AFFE /* PrefPanelController.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790B0821FFA400376676 /* PrefPanelController.h */; };
-		D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */ = {isa = PBXBuildFile; fileRef = D392790D0821FFA400376676 /* SystemType.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D38A241214E4C3FE00F6AFFE /* LinkCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D39279280821FFA400376676 /* LinkCursor.tiff */; };
 		D38A241414E4C3FE00F6AFFE /* ManOpen.tiff in Resources */ = {isa = PBXBuildFile; fileRef = D392792C0821FFA400376676 /* ManOpen.tiff */; };
 		D38A241514E4C3FE00F6AFFE /* ManOpen.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D392792F0821FFA400376676 /* ManOpen.scriptSuite */; };
@@ -357,50 +350,11 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		D38A240214E4C3FE00F6AFFE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D38A240314E4C3FE00F6AFFE /* AproposDocument.h in Headers */,
-				D38A240514E4C3FE00F6AFFE /* ManDocument.h in Headers */,
-				D38A240614E4C3FE00F6AFFE /* ManDocumentController.h in Headers */,
-				D38A240714E4C3FE00F6AFFE /* ManOpenProtocol.h in Headers */,
-				D38A240814E4C3FE00F6AFFE /* NSData+Utils.h in Headers */,
-				D38A240914E4C3FE00F6AFFE /* PrefPanelController.h in Headers */,
-				D38A240A14E4C3FE00F6AFFE /* SystemType.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A243014E4C3FE00F6AFFE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A243B14E4C3FE00F6AFFE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D38A244714E4C3FE00F6AFFE /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D38A242914E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "ManOpen (Application)" */;
 			buildPhases = (
-				D38A240214E4C3FE00F6AFFE /* Headers */,
 				D38A240B14E4C3FE00F6AFFE /* Resources */,
 				D38A241A14E4C3FE00F6AFFE /* Sources */,
 				D38A242214E4C3FE00F6AFFE /* Frameworks */,
@@ -422,7 +376,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D38A243514E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2rtf (Tool)" */;
 			buildPhases = (
-				D38A243014E4C3FE00F6AFFE /* Headers */,
 				D38A243114E4C3FE00F6AFFE /* Sources */,
 				D38A243314E4C3FE00F6AFFE /* Frameworks */,
 			);
@@ -439,7 +392,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D38A244114E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "cat2html (Tool)" */;
 			buildPhases = (
-				D38A243B14E4C3FE00F6AFFE /* Headers */,
 				D38A243C14E4C3FE00F6AFFE /* Sources */,
 				D38A243E14E4C3FE00F6AFFE /* Frameworks */,
 			);
@@ -456,7 +408,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D38A244E14E4C3FE00F6AFFE /* Build configuration list for PBXNativeTarget "openman (Tool)" */;
 			buildPhases = (
-				D38A244714E4C3FE00F6AFFE /* Headers */,
 				D38A244814E4C3FE00F6AFFE /* Sources */,
 				D38A244A14E4C3FE00F6AFFE /* Frameworks */,
 				D3EA5C4314EDC3C100AB000A /* CopyFiles */,

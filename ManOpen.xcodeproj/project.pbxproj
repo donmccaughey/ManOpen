@@ -32,6 +32,7 @@
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
 		D46C90011F9C1319008EB62F /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C90001F9C1319008EB62F /* cat2rtf.l */; };
+		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
 		D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */; };
@@ -119,6 +120,8 @@
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
 		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
 		D46C90001F9C1319008EB62F /* cat2rtf.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2rtf.l; sourceTree = "<group>"; };
+		D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLHandlerCommand.h; sourceTree = "<group>"; };
+		D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommand.m; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
 		D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
 		D49FB8BD1F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 				D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */,
 				D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */,
 				D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */,
+				D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */,
+				D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */,
 				D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */,
 				D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */,
 				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
@@ -430,6 +435,7 @@
 				D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */,
 				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
+				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

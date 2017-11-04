@@ -517,7 +517,7 @@ static NSArray *GetWordArray(NSString *string)
     }
 }
 
-static BOOL IsSectionWord(NSString *word)
+BOOL IsSectionWord(NSString *word)
 {
     if ([word length] <= 0) return NO;
     if ([[NSCharacterSet decimalDigitCharacterSet] characterIsMember:[word characterAtIndex:0]])
@@ -757,68 +757,5 @@ static BOOL IsSectionWord(NSString *word)
 {
     [NSApp runPageLayout:sender];
 }
-@end
-
-
-/* Implement our x-man-page: scheme handler */
-#import <Foundation/NSScriptCommand.h>
-#import <Foundation/NSURL.h>
-
-@interface ManOpenURLHandlerCommand : NSScriptCommand
-@end
-
-@implementation ManOpenURLHandlerCommand
-
-#define URL_SCHEME @"x-man-page"
-#define URL_PREFIX URL_SCHEME @":"
-
-/*
- * Terminal seems to accept URLs of the form x-man-page://ls , which means
- * the man page name is essentially the "host" portion, and is passed
- * as an argument to the man(1) command.  The double slash is necessary.
- * Terminal accepts a path portion as well, and will take the first path
- * component and add it to the command as a second argument.  Any other
- * path components are ignored.  Thus, x-man-page://3/printf opens up
- * printf(3), and x-man-page://printf/ls opens both printf(1) and ls(1).
- *
- * We make sure to accept all these forms, and maybe some others.  We'll
- * use all path components, and not require the "//" portion.  We'll build
- * up a string and pass it to our -openString:, which wants things like
- * "printf(3) ls pwd".
- */
-- (id)performDefaultImplementation
-{
-    NSString *param = [self directParameter];
-    NSString *section = nil;
-
-    if ([param rangeOfString:URL_PREFIX options:NSCaseInsensitiveSearch|NSAnchoredSearch].length > 0)
-    {
-        NSString *path = [param substringFromIndex:[URL_PREFIX length]];
-        NSMutableArray *pageNames = [NSMutableArray array];
-        NSArray *components = [path pathComponents];
-        NSUInteger i, count = [components count];
-
-        for (i=0; i<count; i++)
-        {
-            NSString *name = [components objectAtIndex:i];
-            if ([name length] == 0 || [name isEqual:@"/"]) continue;
-            if (IsSectionWord(name)) {
-                section = name;
-            }
-            else {
-                [pageNames addObject:name];
-                if (section != nil) {
-                    [pageNames addObject:[NSString stringWithFormat:@"(%@)", section]];
-                    section = nil;
-                }
-            }
-        }
-
-        if ([pageNames count] > 0)
-            [[ManDocumentController sharedDocumentController] openString:[pageNames componentsJoinedByString:@" "]];
-    }
-    return nil;
-}
-
 @end
 

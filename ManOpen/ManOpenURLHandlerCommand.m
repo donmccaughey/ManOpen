@@ -13,7 +13,7 @@
 {
     self = [super init];
     if (self) {
-        _manDocumentController = [ManDocumentController sharedDocumentController];
+        _manDocumentController = [[ManDocumentController sharedDocumentController] retain];
     }
     return self;
 }
@@ -22,9 +22,15 @@
 {
     self = [super initWithCommandDescription:commandDef];
     if (self) {
-        _manDocumentController = [ManDocumentController sharedDocumentController];
+        _manDocumentController = [[ManDocumentController sharedDocumentController] retain];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [super dealloc];
+    [_manDocumentController release];
 }
 
 - (id)performDefaultImplementation

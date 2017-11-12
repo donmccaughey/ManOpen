@@ -6,21 +6,6 @@
 	objectVersion = 45;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		D38A23F314E4C3FE00F6AFFE /* ManOpen (Aggregate) */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D38A23FA14E4C3FE00F6AFFE /* Build configuration list for PBXAggregateTarget "ManOpen (Aggregate)" */;
-			buildPhases = (
-			);
-			dependencies = (
-				D38A245414E4C3FE00F6AFFE /* PBXTargetDependency */,
-				D38A247D14E4C7FC00F6AFFE /* PBXTargetDependency */,
-			);
-			name = "ManOpen (Aggregate)";
-			productName = "ManOpen (Aggregate)";
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
 		D38A242314E4C3FE00F6AFFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279810821FFA400376676 /* Foundation.framework */; };
 		D38A242414E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
@@ -57,13 +42,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D38A245314E4C3FE00F6AFFE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D39279890821FFA400376676 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D38A23FD14E4C3FE00F6AFFE;
-			remoteInfo = "ManOpen (Application) (Upgraded)";
-		};
 		D38A245714E4C3FE00F6AFFE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D39279890821FFA400376676 /* Project object */;
@@ -78,7 +56,7 @@
 			remoteGlobalIDString = D38A243A14E4C3FE00F6AFFE;
 			remoteInfo = "cat2html (Tool) (Upgraded)";
 		};
-		D38A247C14E4C7FC00F6AFFE /* PBXContainerItemProxy */ = {
+		D45E00621FB82370006B1797 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D39279890821FFA400376676 /* Project object */;
 			proxyType = 1;
@@ -340,6 +318,7 @@
 			dependencies = (
 				D38A245814E4C3FE00F6AFFE /* PBXTargetDependency */,
 				D38A245A14E4C3FE00F6AFFE /* PBXTargetDependency */,
+				D45E00631FB82370006B1797 /* PBXTargetDependency */,
 			);
 			name = "ManOpen (Application)";
 			productInstallPath = "$(HOME)/Apps";
@@ -450,7 +429,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D38A23F314E4C3FE00F6AFFE /* ManOpen (Aggregate) */,
 				D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */,
 				D47212391FB58542005FA157 /* ManOpenTests */,
 				D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */,
@@ -541,11 +519,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D38A245414E4C3FE00F6AFFE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */;
-			targetProxy = D38A245314E4C3FE00F6AFFE /* PBXContainerItemProxy */;
-		};
 		D38A245814E4C3FE00F6AFFE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */;
@@ -556,10 +529,10 @@
 			target = D38A243A14E4C3FE00F6AFFE /* cat2html (Tool) */;
 			targetProxy = D38A245914E4C3FE00F6AFFE /* PBXContainerItemProxy */;
 		};
-		D38A247D14E4C7FC00F6AFFE /* PBXTargetDependency */ = {
+		D45E00631FB82370006B1797 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D38A244614E4C3FE00F6AFFE /* openman (Tool) */;
-			targetProxy = D38A247C14E4C7FC00F6AFFE /* PBXContainerItemProxy */;
+			targetProxy = D45E00621FB82370006B1797 /* PBXContainerItemProxy */;
 		};
 		D47212401FB58542005FA157 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -691,40 +664,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				SDKROOT = macosx;
-			};
-			name = Deployment;
-		};
-		D38A23FB14E4C3FE00F6AFFE /* Development */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ManOpen;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
-			};
-			name = Development;
-		};
-		D38A23FC14E4C3FE00F6AFFE /* Deployment */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = "";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ManOpen;
-				SECTORDER_FLAGS = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Deployment;
 		};
@@ -1042,15 +981,6 @@
 			buildConfigurations = (
 				D38A23AA14E38E1E00F6AFFE /* Development */,
 				D38A23AB14E38E1E00F6AFFE /* Deployment */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Development;
-		};
-		D38A23FA14E4C3FE00F6AFFE /* Build configuration list for PBXAggregateTarget "ManOpen (Aggregate)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D38A23FB14E4C3FE00F6AFFE /* Development */,
-				D38A23FC14E4C3FE00F6AFFE /* Deployment */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;

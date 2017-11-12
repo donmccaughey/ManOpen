@@ -32,6 +32,8 @@
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
 		D46C90011F9C1319008EB62F /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C90001F9C1319008EB62F /* cat2rtf.l */; };
+		D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
+		D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212471FB7DCD8005FA157 /* MockManDocumentController.m */; };
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
@@ -83,6 +85,13 @@
 			remoteGlobalIDString = D38A244614E4C3FE00F6AFFE;
 			remoteInfo = "openman (Tool)";
 		};
+		D472123F1FB58542005FA157 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39279890821FFA400376676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D38A23FD14E4C3FE00F6AFFE;
+			remoteInfo = "ManOpen (Application)";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -120,6 +129,11 @@
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
 		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
 		D46C90001F9C1319008EB62F /* cat2rtf.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2rtf.l; sourceTree = "<group>"; };
+		D472123A1FB58542005FA157 /* ManOpenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManOpenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D472123E1FB58542005FA157 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommandTests.m; sourceTree = "<group>"; };
+		D47212461FB7DCD8005FA157 /* MockManDocumentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockManDocumentController.h; sourceTree = "<group>"; };
+		D47212471FB7DCD8005FA157 /* MockManDocumentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockManDocumentController.m; sourceTree = "<group>"; };
 		D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLHandlerCommand.h; sourceTree = "<group>"; };
 		D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommand.m; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
@@ -184,6 +198,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D47212371FB58542005FA157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -191,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				D49FB8B91F9C1EDC00ECE338 /* ManOpen */,
+				D472123B1FB58542005FA157 /* ManOpenTests */,
 				D46C8FFB1F9C1266008EB62F /* cat2html */,
 				D46C8FFF1F9C1319008EB62F /* cat2rtf */,
 				D46C8FF61F9C1136008EB62F /* openman */,
@@ -207,6 +229,7 @@
 				D38A243814E4C3FE00F6AFFE /* cat2rtf */,
 				D38A244414E4C3FE00F6AFFE /* cat2html */,
 				D38A245114E4C3FE00F6AFFE /* openman */,
+				D472123A1FB58542005FA157 /* ManOpenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -243,6 +266,17 @@
 				D46C90001F9C1319008EB62F /* cat2rtf.l */,
 			);
 			path = cat2rtf;
+			sourceTree = "<group>";
+		};
+		D472123B1FB58542005FA157 /* ManOpenTests */ = {
+			isa = PBXGroup;
+			children = (
+				D472123E1FB58542005FA157 /* Info.plist */,
+				D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */,
+				D47212461FB7DCD8005FA157 /* MockManDocumentController.h */,
+				D47212471FB7DCD8005FA157 /* MockManDocumentController.m */,
+			);
+			path = ManOpenTests;
 			sourceTree = "<group>";
 		};
 		D49FB8B91F9C1EDC00ECE338 /* ManOpen */ = {
@@ -363,6 +397,24 @@
 			productReference = D38A245114E4C3FE00F6AFFE /* openman */;
 			productType = "com.apple.product-type.tool";
 		};
+		D47212391FB58542005FA157 /* ManOpenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D47212431FB58542005FA157 /* Build configuration list for PBXNativeTarget "ManOpenTests" */;
+			buildPhases = (
+				D47212361FB58542005FA157 /* Sources */,
+				D47212371FB58542005FA157 /* Frameworks */,
+				D47212381FB58542005FA157 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D47212401FB58542005FA157 /* PBXTargetDependency */,
+			);
+			name = ManOpenTests;
+			productName = ManOpenTests;
+			productReference = D472123A1FB58542005FA157 /* ManOpenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,6 +422,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					D47212391FB58542005FA157 = {
+						CreatedOnToolsVersion = 9.1;
+						TestTargetID = D38A23FD14E4C3FE00F6AFFE;
+					};
+				};
 			};
 			buildConfigurationList = D38A23BC14E38E1E00F6AFFE /* Build configuration list for PBXProject "ManOpen" */;
 			compatibilityVersion = "Xcode 3.0";
@@ -394,6 +452,7 @@
 			targets = (
 				D38A23F314E4C3FE00F6AFFE /* ManOpen (Aggregate) */,
 				D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */,
+				D47212391FB58542005FA157 /* ManOpenTests */,
 				D38A242F14E4C3FE00F6AFFE /* cat2rtf (Tool) */,
 				D38A243A14E4C3FE00F6AFFE /* cat2html (Tool) */,
 				D38A244614E4C3FE00F6AFFE /* openman (Tool) */,
@@ -419,6 +478,13 @@
 				D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */,
 				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
 				D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D47212381FB58542005FA157 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +529,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D47212361FB58542005FA157 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */,
+				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -485,6 +560,11 @@
 			isa = PBXTargetDependency;
 			target = D38A244614E4C3FE00F6AFFE /* openman (Tool) */;
 			targetProxy = D38A247C14E4C7FC00F6AFFE /* PBXContainerItemProxy */;
+		};
+		D47212401FB58542005FA157 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D38A23FD14E4C3FE00F6AFFE /* ManOpen (Application) */;
+			targetProxy = D472123F1FB58542005FA157 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -835,6 +915,123 @@
 			};
 			name = Deployment;
 		};
+		D47212411FB58542005FA157 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ManOpenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManOpen.app/Contents/MacOS/ManOpen";
+			};
+			name = Development;
+		};
+		D47212421FB58542005FA157 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ManOpenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpenTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ManOpen.app/Contents/MacOS/ManOpen";
+			};
+			name = Deployment;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -888,6 +1085,15 @@
 			buildConfigurations = (
 				D38A244F14E4C3FE00F6AFFE /* Development */,
 				D38A245014E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D47212431FB58542005FA157 /* Build configuration list for PBXNativeTarget "ManOpenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D47212411FB58542005FA157 /* Development */,
+				D47212421FB58542005FA157 /* Deployment */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;

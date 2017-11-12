@@ -1,6 +1,9 @@
 #import <Foundation/Foundation.h>
 
 
+@class ManDocumentController;
+
+
 /* Implement our x-man-page: scheme handler
  *
  * Terminal seems to accept URLs of the form x-man-page://ls , which means
@@ -17,5 +20,7 @@
  * "printf(3) ls pwd".
  */
 @interface ManOpenURLHandlerCommand : NSScriptCommand
+
+@property (retain) ManDocumentController *manDocumentController;
 
 @end

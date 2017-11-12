@@ -9,6 +9,24 @@
 
 @implementation ManOpenURLHandlerCommand
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _manDocumentController = [ManDocumentController sharedDocumentController];
+    }
+    return self;
+}
+
+- (instancetype)initWithCommandDescription:(NSScriptCommandDescription *)commandDef
+{
+    self = [super initWithCommandDescription:commandDef];
+    if (self) {
+        _manDocumentController = [ManDocumentController sharedDocumentController];
+    }
+    return self;
+}
+
 - (id)performDefaultImplementation
 {
     NSString *param = [self directParameter];
@@ -38,7 +56,7 @@
         }
         
         if ([pageNames count] > 0)
-            [[ManDocumentController sharedDocumentController] openString:[pageNames componentsJoinedByString:@" "]];
+            [_manDocumentController openString:[pageNames componentsJoinedByString:@" "]];
     }
     return nil;
 }

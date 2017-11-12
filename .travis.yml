@@ -1,0 +1,10 @@
+language: objective-c
+
+os: osx
+osx_image: xcode9.1
+
+xcode_project: ManOpen.xcodeproj
+
+xcode_scheme:
+    - ManOpen
+

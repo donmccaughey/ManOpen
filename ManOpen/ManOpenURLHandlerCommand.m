@@ -3,10 +3,6 @@
 #import "ManDocumentController.h"
 
 
-#define URL_SCHEME @"x-man-page"
-#define URL_PREFIX URL_SCHEME @":"
-
-
 @implementation ManOpenURLHandlerCommand
 
 - (instancetype)init
@@ -35,35 +31,30 @@
 
 - (id)performDefaultImplementation
 {
-    NSString *param = [self directParameter];
-    NSString *section = nil;
+    NSURL *url = [NSURL URLWithString:self.directParameter];
     
-    if ([param rangeOfString:URL_PREFIX options:NSCaseInsensitiveSearch|NSAnchoredSearch].length > 0)
-    {
-        NSString *path = [param substringFromIndex:[URL_PREFIX length]];
-        NSMutableArray *pageNames = [NSMutableArray array];
-        NSArray *components = [path pathComponents];
-        NSUInteger i, count = [components count];
-        
-        for (i=0; i<count; i++)
-        {
-            NSString *name = [components objectAtIndex:i];
-            if ([name length] == 0 || [name isEqual:@"/"]) continue;
-            if (IsSectionWord(name)) {
-                section = name;
-            }
-            else {
-                [pageNames addObject:name];
-                if (section != nil) {
-                    [pageNames addObject:[NSString stringWithFormat:@"(%@)", section]];
+    if ([@"x-man-page" isEqualToString:url.scheme.lowercaseString]) {
+        NSMutableArray *words = [NSMutableArray array];
+        NSString *section = nil;
+        for (NSString *component in url.resourceSpecifier.pathComponents) {
+            if ([@"" isEqualToString:component]) continue;
+            if ([@"/" isEqualToString:component]) continue;
+            if (IsSectionWord(component)) {
+                section = component;
+            } else {
+                [words addObject:component];
+                if (section) {
+                    [words addObject:[NSString stringWithFormat:@"(%@)", section]];
                     section = nil;
                 }
             }
         }
         
-        if ([pageNames count] > 0)
-            [_manDocumentController openString:[pageNames componentsJoinedByString:@" "]];
+        if (words.count) {
+            [_manDocumentController openString:[words componentsJoinedByString:@" "]];
+        }
     }
+    
     return nil;
 }
 

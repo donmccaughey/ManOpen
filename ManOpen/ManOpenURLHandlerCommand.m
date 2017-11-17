@@ -34,9 +34,18 @@
     NSURL *url = [NSURL URLWithString:self.directParameter];
     
     if ([@"x-man-page" isEqualToString:url.scheme.lowercaseString]) {
+        NSString *resourceSpecifier = url.resourceSpecifier;
+        
+        NSString *aproposSuffix = @";type=a";
+        BOOL isApropos = [resourceSpecifier hasSuffix:aproposSuffix];
+        if (isApropos) {
+            NSUInteger index = resourceSpecifier.length - aproposSuffix.length;
+            resourceSpecifier = [resourceSpecifier substringToIndex:index];
+        }
+        
         NSMutableArray *words = [NSMutableArray array];
         NSString *section = nil;
-        for (NSString *component in url.resourceSpecifier.pathComponents) {
+        for (NSString *component in resourceSpecifier.pathComponents) {
             if ([@"" isEqualToString:component]) continue;
             if ([@"/" isEqualToString:component]) continue;
             if (IsSectionWord(component)) {
@@ -51,7 +60,11 @@
         }
         
         if (words.count) {
-            [_manDocumentController openString:[words componentsJoinedByString:@" "]];
+            if (isApropos) {
+                [_manDocumentController openApropos:words.firstObject];
+            } else {
+                [_manDocumentController openString:[words componentsJoinedByString:@" "]];
+            }
         }
     }
     

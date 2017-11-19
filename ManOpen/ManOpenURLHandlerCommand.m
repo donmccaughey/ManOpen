@@ -66,6 +66,18 @@
                 [_manDocumentController openString:[words componentsJoinedByString:@" "]];
             }
         }
+    } else if ([@"file" isEqualToString:url.scheme.lowercaseString]) {
+        NSString *path = nil;
+        if (url.host.length) {
+            if ([@"localhost" isEqualToString:url.host.lowercaseString]) {
+                path = url.path;
+            }
+        } else {
+            path = url.resourceSpecifier;
+        }
+        if (path.length > 1 && [path hasPrefix:@"/"]) {
+            [_manDocumentController openFile:path];
+        }
     }
     
     return nil;

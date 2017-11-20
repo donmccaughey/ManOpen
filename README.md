@@ -47,7 +47,7 @@ released in March 2012.
 
 ## Related
 
-[_ManDrake][61] is an [open source][62] macOS app by [Sveinbjörn Þórðarson][63]
+[_ManDrake_][61] is an [open source][62] macOS app by [Sveinbjörn Þórðarson][63]
 for creating and editing man pages.
 
 [61]: http://sveinbjorn.org/mandrake

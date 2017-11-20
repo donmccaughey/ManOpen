@@ -13,6 +13,8 @@
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D45E00651FC24510006B1797 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D45E00641FC24510006B1797 /* README.md */; };
+		D45E00681FC29F05006B1797 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D45E00671FC29F05006B1797 /* LICENSE */; };
 		D46C8FF91F9C1136008EB62F /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FF81F9C1136008EB62F /* openman.m */; };
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
@@ -103,6 +105,9 @@
 		D38A245114E4C3FE00F6AFFE /* openman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openman; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		D45E00641FC24510006B1797 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D45E00661FC24531006B1797 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
+		D45E00671FC29F05006B1797 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D46C8FF71F9C1136008EB62F /* openman.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = openman.1; sourceTree = "<group>"; };
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
 		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
@@ -189,11 +194,14 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
+				D45E00671FC29F05006B1797 /* LICENSE */,
+				D45E00641FC24510006B1797 /* README.md */,
 				D49FB8B91F9C1EDC00ECE338 /* ManOpen */,
 				D472123B1FB58542005FA157 /* ManOpenTests */,
 				D46C8FFB1F9C1266008EB62F /* cat2html */,
 				D46C8FFF1F9C1319008EB62F /* cat2rtf */,
 				D46C8FF61F9C1136008EB62F /* openman */,
+				D45E00661FC24531006B1797 /* scripts */,
 				D39279800821FFA400376676 /* External Frameworks and Libraries */,
 				D39278ED0821FFA400376676 /* Products */,
 			);
@@ -452,9 +460,11 @@
 				D49FB8E91F9C1EDC00ECE338 /* ManOpen.icns in Resources */,
 				D49FB8EC1F9C1EDC00ECE338 /* ManOpen.tiff in Resources */,
 				D49FB8E61F9C1EDC00ECE338 /* LinkCursor.tiff in Resources */,
+				D45E00681FC29F05006B1797 /* LICENSE in Resources */,
 				D49FB8EA1F9C1EDC00ECE338 /* ManOpen.scriptSuite in Resources */,
 				D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */,
 				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
+				D45E00651FC24510006B1797 /* README.md in Resources */,
 				D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

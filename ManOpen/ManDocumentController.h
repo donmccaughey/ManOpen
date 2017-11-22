@@ -26,9 +26,6 @@ extern BOOL IsSectionWord(NSString *word);
 
 - (oneway void)openString:(NSString *)string;
 - (oneway void)openString:(NSString *)string oneWordOnly:(BOOL)oneOnly;
-- (oneway void)openName:(NSString *)name;
-- (oneway void)openName:(NSString *)name section:(NSString *)section;
-- (oneway void)openName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath;
 - (oneway void)openApropos:(NSString *)apropos;
 
 - (IBAction)openSection:(id)sender;

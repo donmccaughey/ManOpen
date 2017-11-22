@@ -653,21 +653,6 @@ BOOL IsSectionWord(NSString *word)
     [self openDocumentWithName:name section:section manPath:manPath];
 }
 
-- (oneway void)openName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath
-{
-    [self openName:name section:section manPath:manPath forceToFront:YES];
-}
-
-- (oneway void)openName:(NSString *)name section:(NSString *)section
-{
-    [self openName:name section:section manPath:[[NSUserDefaults standardUserDefaults] manPath]];
-}
-
-- (oneway void)openName:(NSString *)name
-{
-    [self openName:name section:nil];
-}
-
 - (oneway void)openApropos:(NSString *)apropos
 {
     [self openAproposDocument:apropos manPath:[[NSUserDefaults standardUserDefaults] manPath]];

@@ -76,7 +76,8 @@
             path = url.resourceSpecifier;
         }
         if (path.length > 1 && [path hasPrefix:@"/"]) {
-            [_manDocumentController openFile:path];
+            [_manDocumentController openFile:path
+                                forceToFront:YES];
         }
     }
     

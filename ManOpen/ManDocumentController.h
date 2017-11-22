@@ -24,7 +24,6 @@ extern BOOL IsSectionWord(NSString *word);
 
 - (id)openWord:(NSString *)word;
 
-- (oneway void)openFile:(NSString *)filename;
 - (oneway void)openString:(NSString *)string;
 - (oneway void)openString:(NSString *)string oneWordOnly:(BOOL)oneOnly;
 - (oneway void)openName:(NSString *)name;

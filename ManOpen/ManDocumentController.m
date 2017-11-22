@@ -637,12 +637,6 @@ BOOL IsSectionWord(NSString *word)
         [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 }
 
-/*" A simple API method to open a file "*/
-- (oneway void)openFile:(NSString *)filename
-{
-    [self openFile:filename forceToFront:YES];
-}
-
 - (oneway void)openFile:(NSString *)filename forceToFront:(BOOL)force
 {
     if (force)

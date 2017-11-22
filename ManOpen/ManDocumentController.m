@@ -680,11 +680,6 @@ BOOL IsSectionWord(NSString *word)
     [self openAproposDocument:apropos manPath:manPath];
 }
 
-- (oneway void)openApropos:(NSString *)apropos manPath:(NSString *)manPath
-{
-    [self openApropos:apropos manPath:manPath forceToFront:YES];
-}
-
 /*" Methods to do the services entries "*/
 - (void)openFiles:(NSPasteboard *)pboard userData:(NSString *)data error:(NSString **)error
 {

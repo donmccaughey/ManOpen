@@ -30,7 +30,6 @@ extern BOOL IsSectionWord(NSString *word);
 - (oneway void)openName:(NSString *)name section:(NSString *)section;
 - (oneway void)openName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath;
 - (oneway void)openApropos:(NSString *)apropos;
-- (oneway void)openApropos:(NSString *)apropos manPath:(NSString *)manPath;
 
 - (IBAction)openSection:(id)sender;
 - (IBAction)openTextPanel:(id)sender;

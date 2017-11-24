@@ -6,7 +6,7 @@ scheme. There are two versions of `x-man-page:` URLs: _man_ page lookup and
 _apropos_ keyword search. _ManOpen_ supports the `x-man-page:` scheme. The
 [`ManOpenURLHandlerCommand`][1] class implements the  `x-man-page:` support.
 
-[1]: ./ManOpen/ManOpenURLHandlerCommand.m
+[1]: ./../ManOpen/ManOpenURLHandlerCommand.m
 
 ## _man_ Page Lookup
 

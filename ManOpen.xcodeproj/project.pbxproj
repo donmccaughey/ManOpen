@@ -16,6 +16,7 @@
 		D45E00651FC24510006B1797 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D45E00641FC24510006B1797 /* README.md */; };
 		D45E00681FC29F05006B1797 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D45E00671FC29F05006B1797 /* LICENSE */; };
 		D45E006A1FC66294006B1797 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = D45E00691FC66294006B1797 /* TODO.md */; };
+		D45E00701FC78EF9006B1797 /* Documentation in Resources */ = {isa = PBXBuildFile; fileRef = D45E006F1FC78EF9006B1797 /* Documentation */; };
 		D46C8FF91F9C1136008EB62F /* openman.m in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FF81F9C1136008EB62F /* openman.m */; };
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
@@ -110,6 +111,7 @@
 		D45E00661FC24531006B1797 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		D45E00671FC29F05006B1797 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D45E00691FC66294006B1797 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		D45E006F1FC78EF9006B1797 /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
 		D46C8FF71F9C1136008EB62F /* openman.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = openman.1; sourceTree = "<group>"; };
 		D46C8FF81F9C1136008EB62F /* openman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = openman.m; sourceTree = "<group>"; };
 		D46C8FFC1F9C1266008EB62F /* cat2html.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = cat2html.l; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				D45E00671FC29F05006B1797 /* LICENSE */,
 				D45E00641FC24510006B1797 /* README.md */,
 				D45E00691FC66294006B1797 /* TODO.md */,
+				D45E006F1FC78EF9006B1797 /* Documentation */,
 				D49FB8B91F9C1EDC00ECE338 /* ManOpen */,
 				D472123B1FB58542005FA157 /* ManOpenTests */,
 				D46C8FFB1F9C1266008EB62F /* cat2html */,
@@ -469,6 +472,7 @@
 				D45E006A1FC66294006B1797 /* TODO.md in Resources */,
 				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
 				D45E00651FC24510006B1797 /* README.md in Resources */,
+				D45E00701FC78EF9006B1797 /* Documentation in Resources */,
 				D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

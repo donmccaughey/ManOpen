@@ -1,6 +1,7 @@
 #import "ManOpenURLHandlerCommand.h"
 
 #import "ManDocumentController.h"
+#import "NSURL+ManOpen.h"
 
 
 @implementation ManOpenURLHandlerCommand
@@ -33,7 +34,7 @@
 {
     NSURL *url = [NSURL URLWithString:self.directParameter];
     
-    if ([@"x-man-page" isEqualToString:url.scheme.lowercaseString]) {
+    if (url.isXManPageScheme) {
         NSString *resourceSpecifier = url.resourceSpecifier;
         
         NSString *aproposSuffix = @";type=a";
@@ -66,7 +67,7 @@
                 [_manDocumentController openString:[words componentsJoinedByString:@" "]];
             }
         }
-    } else if ([@"file" isEqualToString:url.scheme.lowercaseString]) {
+    } else if (url.isFileScheme) {
         NSString *path = nil;
         if (url.host.length) {
             if ([@"localhost" isEqualToString:url.host.lowercaseString]) {

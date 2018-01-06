@@ -43,6 +43,8 @@
 		D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */; };
 		D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */; };
 		D49FB8EF1F9C1EDC00ECE338 /* PrefPanelController.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */; };
+		D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */; };
+		D4D124691FF0704F00314FBD /* NSURL+ManOpenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D124681FF0704F00314FBD /* NSURL+ManOpenTests.m */; };
 		D4D1246C1FF20C8E00314FBD /* NSDictionary+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */; };
 		D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D1246D1FF20CD700314FBD /* NSDictionary+ManOpenTests.m */; };
 /* End PBXBuildFile section */
@@ -152,6 +154,9 @@
 		D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
 		D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPanelController.m; sourceTree = "<group>"; };
 		D49FB8DB1F9C1EDC00ECE338 /* SystemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
+		D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ManOpen.h"; sourceTree = "<group>"; };
+		D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ManOpen.m"; sourceTree = "<group>"; };
+		D4D124681FF0704F00314FBD /* NSURL+ManOpenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ManOpenTests.m"; sourceTree = "<group>"; };
 		D4D1246A1FF20C8E00314FBD /* NSDictionary+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ManOpen.h"; sourceTree = "<group>"; };
 		D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ManOpen.m"; sourceTree = "<group>"; };
 		D4D1246D1FF20CD700314FBD /* NSDictionary+ManOpenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ManOpenTests.m"; sourceTree = "<group>"; };
@@ -273,6 +278,7 @@
 				D47212461FB7DCD8005FA157 /* MockManDocumentController.h */,
 				D47212471FB7DCD8005FA157 /* MockManDocumentController.m */,
 				D4D1246D1FF20CD700314FBD /* NSDictionary+ManOpenTests.m */,
+				D4D124681FF0704F00314FBD /* NSURL+ManOpenTests.m */,
 			);
 			path = ManOpenTests;
 			sourceTree = "<group>";
@@ -300,6 +306,8 @@
 				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
 				D4D1246A1FF20C8E00314FBD /* NSDictionary+ManOpen.h */,
 				D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */,
+				D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */,
+				D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */,
 				D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */,
 				D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */,
 				D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */,
@@ -507,6 +515,7 @@
 				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
+				D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -538,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D124691FF0704F00314FBD /* NSURL+ManOpenTests.m in Sources */,
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,
 				D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */,
 				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,

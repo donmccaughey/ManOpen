@@ -1,5 +1,6 @@
 #import "ManOpenURLHandlerCommand.h"
 
+#import "FileURLComponents.h"
 #import "ManDocumentController.h"
 #import "NSURL+ManOpen.h"
 
@@ -68,16 +69,9 @@
             }
         }
     } else if (url.isFileScheme) {
-        NSString *path = nil;
-        if (url.host.length) {
-            if ([@"localhost" isEqualToString:url.host.lowercaseString]) {
-                path = url.path;
-            }
-        } else {
-            path = url.resourceSpecifier;
-        }
-        if (path.length > 1 && [path hasPrefix:@"/"]) {
-            [_manDocumentController openFile:path
+        FileURLComponents *components = [[FileURLComponents alloc] initWithURL:url];
+        if (components.isLocalhost && components.isAbsolute && !components.isDirectory) {
+            [_manDocumentController openFile:components.path
                                 forceToFront:YES];
         }
     }

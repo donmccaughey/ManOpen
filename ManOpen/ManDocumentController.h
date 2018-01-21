@@ -8,7 +8,6 @@
 @class NSData, NSMutableString;
 
 extern NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes);
-extern BOOL IsSectionWord(NSString *word);
 
 @interface ManDocumentController : NSDocumentController <ManOpen>
 {

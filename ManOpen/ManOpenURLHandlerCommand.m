@@ -2,6 +2,7 @@
 
 #import "FileURLComponents.h"
 #import "ManDocumentController.h"
+#import "ManPage.h"
 #import "NSURL+ManOpen.h"
 
 
@@ -45,28 +46,33 @@
             resourceSpecifier = [resourceSpecifier substringToIndex:index];
         }
         
-        NSMutableArray *words = [NSMutableArray array];
-        NSString *section = nil;
-        for (NSString *component in resourceSpecifier.pathComponents) {
-            if ([@"" isEqualToString:component]) continue;
-            if ([@"/" isEqualToString:component]) continue;
-            if (IsSectionWord(component)) {
-                section = component;
-            } else {
-                [words addObject:component];
-                if (section) {
-                    [words addObject:[NSString stringWithFormat:@"(%@)", section]];
+        NSPredicate *notRootPredicate = [NSPredicate predicateWithFormat:@"'/' != SELF"];
+        NSArray<NSString *> *pathComponents = [resourceSpecifier.pathComponents filteredArrayUsingPredicate:notRootPredicate];
+        if (!pathComponents.count) return nil;
+        
+        NSMutableArray<ManPage *> *manPages = [NSMutableArray new];
+        if (1 == pathComponents.count) {
+            ManPage *manPage = [[ManPage alloc] initWithName:pathComponents.firstObject];
+            [manPages addObject:manPage];
+        } else {
+            NSString *section = nil;
+            for (NSString *pathComponent in pathComponents) {
+                if (!section && [ManPage isSection:pathComponent]) {
+                    section = pathComponent;
+                } else {
+                    ManPage *manPage = [[ManPage alloc] initWithSection:section
+                                                                andName:pathComponent];
+                    [manPages addObject:manPage];
                     section = nil;
                 }
             }
         }
         
-        if (words.count) {
-            if (isApropos) {
-                [_manDocumentController openApropos:words.firstObject];
-            } else {
-                [_manDocumentController openString:[words componentsJoinedByString:@" "]];
-            }
+        if (isApropos) {
+            [_manDocumentController openApropos:manPages.firstObject.name];
+        } else {
+            NSString *string = [[manPages valueForKey:@"description"] componentsJoinedByString:@" "];
+            [_manDocumentController openString:string];
         }
     } else if (url.isFileScheme) {
         FileURLComponents *components = [[FileURLComponents alloc] initWithURL:url];

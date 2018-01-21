@@ -2,6 +2,7 @@
 #import "ManDocumentController.h"
 #import <AppKit/AppKit.h>
 #import "ManDocument.h"
+#import "ManPage.h"
 #import "AproposDocument.h"
 #import "NSData+Utils.h"
 #import "PrefPanelController.h"
@@ -517,14 +518,6 @@ static NSArray *GetWordArray(NSString *string)
     }
 }
 
-BOOL IsSectionWord(NSString *word)
-{
-    if ([word length] <= 0) return NO;
-    if ([[NSCharacterSet decimalDigitCharacterSet] characterIsMember:[word characterAtIndex:0]])
-        return YES;
-    if ([word isEqual:@"n"]) return YES;
-    return NO;
-}
 - (void)openTitleFromPanel
 {
     NSString *string = [openTextField stringValue];
@@ -533,7 +526,7 @@ BOOL IsSectionWord(NSString *word)
     /* If the string is of the form "3 printf", arrange it better for our parser.  Requested by Eskimo.  Also accept 'n' as a section */
     if ([words count] == 2 &&
         [string rangeOfString:@"("].length == 0 &&
-        IsSectionWord([words objectAtIndex:0]))
+        [ManPage isSection:[words objectAtIndex:0]])
     {
         string = [NSString stringWithFormat:@"%@(%@)", [words objectAtIndex:1], [words objectAtIndex:0]];
     }

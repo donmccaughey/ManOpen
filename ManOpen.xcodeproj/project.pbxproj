@@ -15,6 +15,8 @@
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8A9200C74A600F532A4 /* FileURLComponents.m */; };
 		D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */; };
+		D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
+		D44FE8B620143FAF00F532A4 /* ManPageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B520143FAF00F532A4 /* ManPageTests.m */; };
 		D45E00651FC24510006B1797 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D45E00641FC24510006B1797 /* README.md */; };
 		D45E00681FC29F05006B1797 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D45E00671FC29F05006B1797 /* LICENSE */; };
 		D45E006A1FC66294006B1797 /* TODO.md in Resources */ = {isa = PBXBuildFile; fileRef = D45E00691FC66294006B1797 /* TODO.md */; };
@@ -116,6 +118,9 @@
 		D44FE8A8200C74A600F532A4 /* FileURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileURLComponents.h; sourceTree = "<group>"; };
 		D44FE8A9200C74A600F532A4 /* FileURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileURLComponents.m; sourceTree = "<group>"; };
 		D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileURLComponentsTests.m; sourceTree = "<group>"; };
+		D44FE8B220143CDA00F532A4 /* ManPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManPage.h; sourceTree = "<group>"; };
+		D44FE8B320143CDA00F532A4 /* ManPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManPage.m; sourceTree = "<group>"; };
+		D44FE8B520143FAF00F532A4 /* ManPageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManPageTests.m; sourceTree = "<group>"; };
 		D45E00641FC24510006B1797 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D45E00661FC24531006B1797 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = scripts; sourceTree = "<group>"; };
 		D45E00671FC29F05006B1797 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -281,6 +286,7 @@
 				D472123E1FB58542005FA157 /* Info.plist */,
 				D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */,
 				D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */,
+				D44FE8B520143FAF00F532A4 /* ManPageTests.m */,
 				D47212461FB7DCD8005FA157 /* MockManDocumentController.h */,
 				D47212471FB7DCD8005FA157 /* MockManDocumentController.m */,
 				D4D1246D1FF20CD700314FBD /* NSDictionary+ManOpenTests.m */,
@@ -309,6 +315,8 @@
 				D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */,
 				D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */,
 				D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */,
+				D44FE8B220143CDA00F532A4 /* ManPage.h */,
+				D44FE8B320143CDA00F532A4 /* ManPage.m */,
 				D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */,
 				D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */,
 				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
@@ -523,6 +531,7 @@
 				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
+				D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */,
 				D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */,
 				D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */,
 			);
@@ -561,6 +570,7 @@
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,
 				D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */,
 				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,
+				D44FE8B620143FAF00F532A4 /* ManPageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

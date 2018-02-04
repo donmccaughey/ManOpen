@@ -33,6 +33,13 @@
                       andPath:url.path];
 }
 
+- (void)dealloc
+{
+    [_host release];
+    [_path release];
+    [super dealloc];
+}
+
 - (BOOL)isAbsolute
 {
     return [_path hasPrefix:@"/"];

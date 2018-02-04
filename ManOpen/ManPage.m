@@ -46,6 +46,13 @@
                          andName:name];
 }
 
+- (void)dealloc
+{
+    [_name release];
+    [_section release];
+    [super dealloc];
+}
+
 - (NSString *)description
 {
     if (_section && _name) {

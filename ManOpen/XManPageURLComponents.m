@@ -83,4 +83,11 @@
     }
 }
 
+- (void)dealloc
+{
+    [_aproposKeyword release];
+    [_manPages release];
+    [super dealloc];
+}
+
 @end

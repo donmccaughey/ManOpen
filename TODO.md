@@ -4,14 +4,6 @@
 
 ### Fix warning `'defaultConnection' is deprecated: first deprecated in macOS 10.6`
 
-- Create documentation folder
-- Document `x-man-page:` URL scheme
-    1. Open man page by section and name
-    1. Open apropos search (`;type=a`)
-- Document `manopen:` URL scheme
-    1. Open man page by section and name with `MANPATH` and `background` parameters
-    1. Open apropos search with `MANPATH` and `background` parameters
-    1. Open man file by absolute path with `background` parameter
 - Extend `ManOpenURLHandlerCommand` to handle `manopen:` scheme
 - In `openman`, replace use of `NSConnection` and `NSDistantObject` with LaunchServices
     `LSOpenFromURLSpec()` calls using `manopen:` URLs; see

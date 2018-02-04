@@ -25,10 +25,10 @@
             if (part.length) dictionary[part] = @"";
         } else {
             NSString *key = [part substringToIndex:range.location];
-            key = key.stringByRemovingPercentEncoding ?: @"";
+            key = key.stringByRemovingPercentEncoding ?: key;
             key = [key stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             NSString *value = [part substringFromIndex:range.location + 1];
-            value = value.stringByRemovingPercentEncoding ?: @"";
+            value = value.stringByRemovingPercentEncoding ?: value;
             value = [value stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
             dictionary[key] = value;
         }

@@ -30,6 +30,8 @@
 		D484D59A2025E09A0093B313 /* XManPageURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5992025E09A0093B313 /* XManPageURLComponents.m */; };
 		D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */; };
 		D484D5A02026C61D0093B313 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = D484D59F2026C61D0093B313 /* .travis.yml */; };
+		D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */; };
+		D484D5A52026F0A50093B313 /* ManOpenURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */; };
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
@@ -142,6 +144,9 @@
 		D484D5992025E09A0093B313 /* XManPageURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponents.m; sourceTree = "<group>"; };
 		D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponentsTests.m; sourceTree = "<group>"; };
 		D484D59F2026C61D0093B313 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		D484D5A12026ECEC0093B313 /* ManOpenURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLComponents.h; sourceTree = "<group>"; };
+		D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLComponents.m; sourceTree = "<group>"; };
+		D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLComponentsTests.m; sourceTree = "<group>"; };
 		D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLHandlerCommand.h; sourceTree = "<group>"; };
 		D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommand.m; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
@@ -293,6 +298,7 @@
 			children = (
 				D472123E1FB58542005FA157 /* Info.plist */,
 				D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */,
+				D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */,
 				D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */,
 				D44FE8B520143FAF00F532A4 /* ManPageTests.m */,
 				D47212461FB7DCD8005FA157 /* MockManDocumentController.h */,
@@ -322,6 +328,8 @@
 				D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */,
 				D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */,
 				D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */,
+				D484D5A12026ECEC0093B313 /* ManOpenURLComponents.h */,
+				D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */,
 				D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */,
 				D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */,
 				D44FE8B220143CDA00F532A4 /* ManPage.h */,
@@ -545,6 +553,7 @@
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
 				D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */,
+				D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */,
 				D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */,
 				D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */,
 			);
@@ -578,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D484D5A52026F0A50093B313 /* ManOpenURLComponentsTests.m in Sources */,
 				D4D124691FF0704F00314FBD /* NSURL+ManOpenTests.m in Sources */,
 				D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */,
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,

@@ -4,6 +4,7 @@
 #import "ManDocumentController.h"
 #import "ManPage.h"
 #import "NSURL+ManOpen.h"
+#import "XManPageURLComponents.h"
 
 
 @implementation ManOpenURLHandlerCommand
@@ -37,41 +38,11 @@
     NSURL *url = [NSURL URLWithString:self.directParameter];
     
     if (url.isXManPageScheme) {
-        NSString *resourceSpecifier = url.resourceSpecifier;
-        
-        NSString *aproposSuffix = @";type=a";
-        BOOL isApropos = [resourceSpecifier hasSuffix:aproposSuffix];
-        if (isApropos) {
-            NSUInteger index = resourceSpecifier.length - aproposSuffix.length;
-            resourceSpecifier = [resourceSpecifier substringToIndex:index];
-        }
-        
-        NSPredicate *notRootPredicate = [NSPredicate predicateWithFormat:@"'/' != SELF"];
-        NSArray<NSString *> *pathComponents = [resourceSpecifier.pathComponents filteredArrayUsingPredicate:notRootPredicate];
-        if (!pathComponents.count) return nil;
-        
-        NSMutableArray<ManPage *> *manPages = [NSMutableArray new];
-        if (1 == pathComponents.count) {
-            ManPage *manPage = [[ManPage alloc] initWithName:pathComponents.firstObject];
-            [manPages addObject:manPage];
-        } else {
-            NSString *section = nil;
-            for (NSString *pathComponent in pathComponents) {
-                if (!section && [ManPage isSection:pathComponent]) {
-                    section = pathComponent;
-                } else {
-                    ManPage *manPage = [[ManPage alloc] initWithSection:section
-                                                                andName:pathComponent];
-                    [manPages addObject:manPage];
-                    section = nil;
-                }
-            }
-        }
-        
-        if (isApropos) {
-            [_manDocumentController openApropos:manPages.firstObject.name];
-        } else {
-            NSString *string = [[manPages valueForKey:@"description"] componentsJoinedByString:@" "];
+        XManPageURLComponents *components = [[XManPageURLComponents alloc] initWithURL:url];
+        if (components.aproposKeyword) {
+            [_manDocumentController openApropos:components.aproposKeyword];
+        } else if (components.manPages.count) {
+            NSString *string = [[components.manPages valueForKey:@"description"] componentsJoinedByString:@" "];
             [_manDocumentController openString:string];
         }
     } else if (url.isFileScheme) {

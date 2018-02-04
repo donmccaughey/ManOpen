@@ -13,16 +13,6 @@
 
 @implementation XManPageURLComponents
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _aproposKeyword = nil;
-        _manPages = nil;
-    }
-    return self;
-}
-
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
 {
     self = [super init];

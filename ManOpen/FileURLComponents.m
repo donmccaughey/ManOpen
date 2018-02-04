@@ -10,12 +10,6 @@
 
 @implementation FileURLComponents
 
-- (instancetype)init
-{
-    return [self initWithHost:nil
-                      andPath:@"/"];
-}
-
 - (instancetype)initWithHost:(NSString *)host
                      andPath:(NSString *)path
 {

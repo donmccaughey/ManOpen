@@ -3,12 +3,14 @@
 _ManOpen_ is a macOS GUI application for viewing Unix manual ("man") pages.
 This repository is a fork of [ManOpen 2.6][11] by [Carl Lindberg][12].
 
-[![Build Status][13]][14]
+[![Build Status][13]][14] [![Code Coverage][15]][16]
 
 [11]: http://clindberg.org/projects/ManOpen.html
 [12]: mailto:lindberg@clindberg.org
 [13]: https://travis-ci.org/donmccaughey/ManOpen.svg?branch=master
 [14]: https://travis-ci.org/donmccaughey/ManOpen
+[15]: https://codecov.io/gh/donmccaughey/ManOpen/branch/master/graph/badge.svg
+[16]: https://codecov.io/gh/donmccaughey/ManOpen
 
 ## Features
 

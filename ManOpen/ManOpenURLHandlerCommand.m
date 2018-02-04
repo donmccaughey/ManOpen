@@ -2,6 +2,7 @@
 
 #import "FileURLComponents.h"
 #import "ManDocumentController.h"
+#import "ManOpenURLComponents.h"
 #import "ManPage.h"
 #import "NSURL+ManOpen.h"
 #import "XManPageURLComponents.h"
@@ -29,16 +30,26 @@
 
 - (void)dealloc
 {
-    [super dealloc];
     [_manDocumentController release];
+    [super dealloc];
 }
 
 - (id)performDefaultImplementation
 {
     NSURL *url = [NSURL URLWithString:self.directParameter];
     
-    if (url.isXManPageScheme) {
-        XManPageURLComponents *components = [[XManPageURLComponents alloc] initWithURL:url];
+    if (url.isManOpenScheme) {
+        ManOpenURLComponents *components = [[[ManOpenURLComponents alloc] initWithURL:url] autorelease];
+        if (components.manPage) {
+            [_manDocumentController openString:components.manPage.description];
+        } else if (components.aproposKeyword) {
+            [_manDocumentController openApropos:components.aproposKeyword];
+        } else if (components.filePath) {
+            [_manDocumentController openFile:components.filePath
+                                forceToFront:!components.isBackground];
+        }
+    } else if (url.isXManPageScheme) {
+        XManPageURLComponents *components = [[[XManPageURLComponents alloc] initWithURL:url] autorelease];
         if (components.aproposKeyword) {
             [_manDocumentController openApropos:components.aproposKeyword];
         } else if (components.manPages.count) {
@@ -46,7 +57,7 @@
             [_manDocumentController openString:string];
         }
     } else if (url.isFileScheme) {
-        FileURLComponents *components = [[FileURLComponents alloc] initWithURL:url];
+        FileURLComponents *components = [[[FileURLComponents alloc] initWithURL:url] autorelease];
         if (components.isLocalhost && components.isAbsolute && !components.isDirectory) {
             [_manDocumentController openFile:components.path
                                 forceToFront:YES];

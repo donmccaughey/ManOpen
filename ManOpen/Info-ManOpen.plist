@@ -106,11 +106,23 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
+            <key>CFBundleTypeRole</key>
+            <string>Viewer</string>
 			<key>CFBundleURLName</key>
 			<string>Man Page URL</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>x-man-page</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>ManOpen URL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>manopen</string>
 			</array>
 		</dict>
 	</array>

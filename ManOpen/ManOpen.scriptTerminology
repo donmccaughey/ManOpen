@@ -5,7 +5,7 @@
     Commands = {
         "GetURL" = {
             "Name" = "GetURL";
-            "Description" = "Opens an x-man-page: URL";
+            "Description" = "Opens a manopen:, x-man-page: or file: URL";
         };
     };
 }

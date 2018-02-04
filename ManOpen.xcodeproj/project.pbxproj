@@ -29,6 +29,7 @@
 		D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212471FB7DCD8005FA157 /* MockManDocumentController.m */; };
 		D484D59A2025E09A0093B313 /* XManPageURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5992025E09A0093B313 /* XManPageURLComponents.m */; };
 		D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */; };
+		D484D5A02026C61D0093B313 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = D484D59F2026C61D0093B313 /* .travis.yml */; };
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
@@ -140,6 +141,7 @@
 		D484D5982025E09A0093B313 /* XManPageURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XManPageURLComponents.h; sourceTree = "<group>"; };
 		D484D5992025E09A0093B313 /* XManPageURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponents.m; sourceTree = "<group>"; };
 		D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponentsTests.m; sourceTree = "<group>"; };
+		D484D59F2026C61D0093B313 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLHandlerCommand.h; sourceTree = "<group>"; };
 		D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommand.m; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
+				D484D59F2026C61D0093B313 /* .travis.yml */,
 				D45E00671FC29F05006B1797 /* LICENSE */,
 				D45E00641FC24510006B1797 /* README.md */,
 				D45E00691FC66294006B1797 /* TODO.md */,
@@ -509,6 +512,7 @@
 				D45E00681FC29F05006B1797 /* LICENSE in Resources */,
 				D49FB8EA1F9C1EDC00ECE338 /* ManOpen.scriptSuite in Resources */,
 				D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */,
+				D484D5A02026C61D0093B313 /* .travis.yml in Resources */,
 				D45E006A1FC66294006B1797 /* TODO.md in Resources */,
 				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
 				D45E00651FC24510006B1797 /* README.md in Resources */,

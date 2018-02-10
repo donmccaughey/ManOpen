@@ -97,4 +97,9 @@
     [super dealloc];
 }
 
+- (NSString *)manPathString
+{
+    return [_manPath componentsJoinedByString:@":"];
+}
+
 @end

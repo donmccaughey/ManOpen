@@ -18,6 +18,7 @@
 @property (assign) BOOL isBackground;
 @property (retain) ManPage *manPage;
 @property (copy) NSArray<NSString *> *manPath;
+@property (readonly) NSString *manPathString;
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
                                manPath:(NSArray<NSString *> *)manPath

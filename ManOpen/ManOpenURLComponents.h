@@ -17,18 +17,18 @@
 @property (copy) NSString *filePath;
 @property (assign) BOOL isBackground;
 @property (retain) ManPage *manPage;
-@property (copy) NSArray<NSString *> *manPath;
-@property (readonly) NSString *manPathString;
+@property (readonly) NSString *manPath;
+@property (copy) NSArray<NSString *> *manPathArray;
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
-                               manPath:(NSArray<NSString *> *)manPath
+                          manPathArray:(NSArray<NSString *> *)manPathArray
                           isBackground:(BOOL)isBackground;
 
 - (instancetype)initWithFilePath:(NSString *)filePath
                     isBackground:(BOOL)isBackground;
 
 - (instancetype)initWithManPage:(ManPage *)manPage
-                        manPath:(NSArray<NSString *> *)manPath
+                   manPathArray:(NSArray<NSString *> *)manPathArray
                    isBackground:(BOOL)isBackground;
 
 - (instancetype)initWithURL:(NSURL *)url;

@@ -15,13 +15,13 @@
 @implementation ManOpenURLComponents
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
-                               manPath:(NSArray<NSString *> *)manPath
+                          manPathArray:(NSArray<NSString *> *)manPathArray
                           isBackground:(BOOL)isBackground
 {
     self = [super init];
     if (self) {
         _aproposKeyword = aproposKeyword.length ? [aproposKeyword copy] : nil;
-        _manPath = manPath.count ? [manPath copy] : nil;
+        _manPathArray = manPathArray.count ? [manPathArray copy] : nil;
         _isBackground = isBackground;
     }
     return self;
@@ -39,13 +39,13 @@
 }
 
 - (instancetype)initWithManPage:(ManPage *)manPage
-                        manPath:(NSArray<NSString *> *)manPath
+                   manPathArray:(NSArray<NSString *> *)manPathArray
                    isBackground:(BOOL)isBackground
 {
     self = [super init];
     if (self) {
         _manPage = [manPage retain];
-        _manPath = manPath.count ? [manPath copy] : nil;
+        _manPathArray = manPathArray.count ? [manPathArray copy] : nil;
         _isBackground = isBackground;
     }
     return self;
@@ -68,18 +68,18 @@
         NSString *section = url.host.length ? url.host : @"";
         NSString *name = pathComponents.firstObject;
         
-        NSArray<NSString *> *manPath = [query[@"MANPATH"] componentsSeparatedByString:@":"];
+        NSArray<NSString *> *manPathArray = [query[@"MANPATH"] componentsSeparatedByString:@":"];
         
         if ([@"apropos" isEqualToString:section.lowercaseString]) {
             return [self initWithAproposKeyword:name
-                                        manPath:manPath
+                                   manPathArray:manPathArray
                                    isBackground:isBackground];
         } else {
             ManPage *manPage = [[ManPage alloc] initWithSection:section
                                                         andName:name];
             [manPage autorelease];
             return [self initWithManPage:manPage
-                                 manPath:manPath
+                            manPathArray:manPathArray
                             isBackground:isBackground];
         }
     } else {
@@ -93,13 +93,13 @@
     [_aproposKeyword release];
     [_filePath release];
     [_manPage release];
-    [_manPath release];
+    [_manPathArray release];
     [super dealloc];
 }
 
-- (NSString *)manPathString
+- (NSString *)manPath
 {
-    return [_manPath componentsJoinedByString:@":"];
+    return [_manPathArray componentsJoinedByString:@":"];
 }
 
 @end

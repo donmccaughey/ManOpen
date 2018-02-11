@@ -43,7 +43,9 @@
         if (components.manPage) {
             [_manDocumentController openString:components.manPage.description];
         } else if (components.aproposKeyword) {
-            [_manDocumentController openApropos:components.aproposKeyword];
+            [_manDocumentController openApropos:components.aproposKeyword
+                                        manPath:components.manPath
+                                   forceToFront:!components.isBackground];
         } else if (components.filePath) {
             [_manDocumentController openFile:components.filePath
                                 forceToFront:!components.isBackground];
@@ -51,7 +53,9 @@
     } else if (url.isXManPageScheme) {
         XManPageURLComponents *components = [[[XManPageURLComponents alloc] initWithURL:url] autorelease];
         if (components.aproposKeyword) {
-            [_manDocumentController openApropos:components.aproposKeyword];
+            [_manDocumentController openApropos:components.aproposKeyword
+                                        manPath:nil
+                                   forceToFront:YES];
         } else if (components.manPages.count) {
             NSString *string = [[components.manPages valueForKey:@"description"] componentsJoinedByString:@" "];
             [_manDocumentController openString:string];

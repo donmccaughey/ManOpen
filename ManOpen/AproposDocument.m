@@ -3,7 +3,7 @@
 #import "AproposDocument.h"
 #import <AppKit/AppKit.h>
 #import "ManDocumentController.h"
-#import "NSUserDefaults+ManOpenPreferences.h"
+#import "NSUserDefaults+ManOpen.h"
 #import "PrefPanelController.h"
 
 @interface NSDocument (LionRestorationMethods)

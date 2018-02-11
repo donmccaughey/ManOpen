@@ -33,7 +33,7 @@
 		D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */; };
 		D484D5A52026F0A50093B313 /* ManOpenURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */; };
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
-		D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.m */; };
+		D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */; };
 		D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
@@ -151,8 +151,8 @@
 		D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLComponentsTests.m; sourceTree = "<group>"; };
 		D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLHandlerCommand.h; sourceTree = "<group>"; };
 		D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLHandlerCommand.m; sourceTree = "<group>"; };
-		D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ManOpenPreferences.h"; sourceTree = "<group>"; };
-		D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpenPreferences.m"; sourceTree = "<group>"; };
+		D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ManOpen.h"; sourceTree = "<group>"; };
+		D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpen.m"; sourceTree = "<group>"; };
 		D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpenPreferencesTests.m"; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
 		D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
@@ -347,8 +347,8 @@
 				D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */,
 				D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */,
 				D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */,
-				D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.h */,
-				D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.m */,
+				D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.h */,
+				D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */,
 				D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */,
 				D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */,
 				D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */,
@@ -559,7 +559,7 @@
 				D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */,
 				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
-				D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpenPreferences.m in Sources */,
+				D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
 				D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */,
 				D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */,

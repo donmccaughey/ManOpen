@@ -1,5 +1,5 @@
 //
-//  NSUserDefaults+ManOpenPreferences.h
+//  NSUserDefaults+ManOpen.h
 //  ManOpen
 //
 //  Created by Don McCaughey on 2/10/18.
@@ -8,7 +8,9 @@
 #import <Cocoa/Cocoa.h>
 
 
-@interface NSUserDefaults (ManOpenPreferences)
+@interface NSUserDefaults (ManOpen)
+
+- (NSColor *)colorForKey:(NSString *)key;
 
 - (NSFont *)manFont;
 
@@ -19,7 +21,5 @@
 - (NSColor *)manLinkColor;
 
 - (NSColor *)manBackgroundColor;
-
-- (NSColor *)_manColorForKey:(NSString *)key;
 
 @end

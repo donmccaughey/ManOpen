@@ -3,7 +3,7 @@
 #import "PrefPanelController.h"
 #import <AppKit/AppKit.h>
 #import "ManDocumentController.h"
-#import "NSUserDefaults+ManOpenPreferences.h"
+#import "NSUserDefaults+ManOpen.h"
 
 
 @interface PrefPanelController (Private)

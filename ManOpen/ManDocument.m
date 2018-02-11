@@ -4,7 +4,7 @@
 #import "ManDocumentController.h"
 #import "PrefPanelController.h"
 #import "NSData+Utils.h"
-#import "NSUserDefaults+ManOpenPreferences.h"
+#import "NSUserDefaults+ManOpen.h"
 
 
 @interface ManTextView : NSTextView

@@ -101,7 +101,7 @@ NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
 
 - (NSMutableString *)manCommandWithManPath:(NSString *)manPath
 {
-    NSMutableString *command = [@"/usr/bin/man" mutableCopy];
+    NSMutableString *command = [[@"/usr/bin/man" mutableCopy] autorelease];
     if (manPath.length) {
         [command appendFormat:@" -M %@", EscapePath(manPath, YES)];
     }

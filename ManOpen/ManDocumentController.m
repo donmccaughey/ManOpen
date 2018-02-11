@@ -5,6 +5,7 @@
 #import "ManPage.h"
 #import "AproposDocument.h"
 #import "NSData+Utils.h"
+#import "NSUserDefaults+ManOpenPreferences.h"
 #import "PrefPanelController.h"
 
 

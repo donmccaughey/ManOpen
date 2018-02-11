@@ -5,6 +5,7 @@
 #import "ManPage.h"
 #import "AproposDocument.h"
 #import "NSData+Utils.h"
+#import "NSString+ManOpen.h"
 #import "NSUserDefaults+ManOpen.h"
 #import "PrefPanelController.h"
 
@@ -103,7 +104,7 @@ NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
 {
     NSMutableString *command = [[@"/usr/bin/man" mutableCopy] autorelease];
     if (manPath.length) {
-        [command appendFormat:@" -M %@", EscapePath(manPath, YES)];
+        [command appendFormat:@" -M %@", manPath.singleQuotedShellWord];
     }
     return command;
 }
@@ -209,7 +210,7 @@ NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
     if ([attributes fileSize] > 1000000) return nil;
 
     if ([fileHeader isGzipData]) {
-        NSString *command = [NSString stringWithFormat:@"/usr/bin/gzip -dc '%@'", EscapePath(filename, NO)];
+        NSString *command = [NSString stringWithFormat:@"/usr/bin/gzip -dc '%@'", [filename singleQuotedShellWordWithSurroundingQuotes:NO]];
         fileHeader = [self dataByExecutingCommand:command maxLength:maxLength];
         manType = @"mangz";
         catType = @"catgz";

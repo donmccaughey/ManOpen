@@ -3,6 +3,7 @@
 #import "AproposDocument.h"
 #import <AppKit/AppKit.h>
 #import "ManDocumentController.h"
+#import "NSString+ManOpen.h"
 #import "NSUserDefaults+ManOpen.h"
 #import "PrefPanelController.h"
 
@@ -43,7 +44,7 @@
 //    [command appendString:@" -k"];
     [command setString:@"/usr/bin/apropos"];
     
-    [command appendFormat:@" %@", EscapePath(apropos, YES)];
+    [command appendFormat:@" %@", apropos.singleQuotedShellWord];
     output = [docController dataByExecutingCommand:command manPath:manPath];
     /* The whatis database appears to not be UTF8 -- at least, UTF8 can fail, even on 10.7 */
     [self parseOutput:[[[NSString alloc] initWithData:output encoding:NSMacOSRomanStringEncoding] autorelease]];

@@ -4,6 +4,7 @@
 #import "ManDocumentController.h"
 #import "PrefPanelController.h"
 #import "NSData+Utils.h"
+#import "NSString+ManOpen.h"
 #import "NSUserDefaults+ManOpen.h"
 
 
@@ -259,7 +260,7 @@
     NSString *tool = @"cat2rtf";
     NSString *command = [[NSBundle mainBundle] pathForResource:tool ofType:nil];
 
-    command = EscapePath(command, YES);
+    command = command.singleQuotedShellWord;
     command = [command stringByAppendingString:@" -lH"]; // generate links, mark headers
     if ([defaults boolForKey:@"UseItalics"])
         command = [command stringByAppendingString:@" -i"];
@@ -302,14 +303,14 @@
         }
     }
     
-    nroffCommand = [NSString stringWithFormat:nroffFormat, EscapePath(filename, !hasQuote)];
+    nroffCommand = [NSString stringWithFormat:nroffFormat, [filename singleQuotedShellWordWithSurroundingQuotes:!hasQuote]];
     [self loadCommand:nroffCommand];
 }
 
 - (void)loadCatFile:(NSString *)filename isGzip:(BOOL)isGzip
 {
     NSString *binary = isGzip? @"/usr/bin/gzip -dc" : @"/bin/cat";
-    [self loadCommand:[NSString stringWithFormat:@"%@ '%@'", binary, EscapePath(filename, NO)]];
+    [self loadCommand:[NSString stringWithFormat:@"%@ '%@'", binary, [filename singleQuotedShellWordWithSurroundingQuotes:NO]]];
 }
 
 - (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)type error:(NSError **)error

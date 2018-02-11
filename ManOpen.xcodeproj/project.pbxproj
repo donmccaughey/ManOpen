@@ -36,6 +36,8 @@
 		D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */; };
 		D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */; };
 		D48A12562030007900EC13E5 /* ManDocumentControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A12552030007900EC13E5 /* ManDocumentControllerTests.m */; };
+		D48A125920300CA300EC13E5 /* NSString+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A125820300CA300EC13E5 /* NSString+ManOpen.m */; };
+		D48A125B20300CC300EC13E5 /* NSString+ManOpenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A125A20300CC300EC13E5 /* NSString+ManOpenTests.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
 		D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */; };
@@ -156,6 +158,9 @@
 		D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpen.m"; sourceTree = "<group>"; };
 		D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpenPreferencesTests.m"; sourceTree = "<group>"; };
 		D48A12552030007900EC13E5 /* ManDocumentControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocumentControllerTests.m; sourceTree = "<group>"; };
+		D48A125720300CA300EC13E5 /* NSString+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ManOpen.h"; sourceTree = "<group>"; };
+		D48A125820300CA300EC13E5 /* NSString+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ManOpen.m"; sourceTree = "<group>"; };
+		D48A125A20300CC300EC13E5 /* NSString+ManOpenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ManOpenTests.m"; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
 		D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
 		D49FB8BD1F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
@@ -312,6 +317,7 @@
 				D47212461FB7DCD8005FA157 /* MockManDocumentController.h */,
 				D47212471FB7DCD8005FA157 /* MockManDocumentController.m */,
 				D4D1246D1FF20CD700314FBD /* NSDictionary+ManOpenTests.m */,
+				D48A125A20300CC300EC13E5 /* NSString+ManOpenTests.m */,
 				D4D124681FF0704F00314FBD /* NSURL+ManOpenTests.m */,
 				D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */,
 				D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */,
@@ -348,6 +354,8 @@
 				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
 				D4D1246A1FF20C8E00314FBD /* NSDictionary+ManOpen.h */,
 				D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */,
+				D48A125720300CA300EC13E5 /* NSString+ManOpen.h */,
+				D48A125820300CA300EC13E5 /* NSString+ManOpen.m */,
 				D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */,
 				D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */,
 				D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.h */,
@@ -565,6 +573,7 @@
 				D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
 				D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */,
+				D48A125920300CA300EC13E5 /* NSString+ManOpen.m in Sources */,
 				D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */,
 				D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */,
 				D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */,
@@ -606,6 +615,7 @@
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,
 				D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */,
 				D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */,
+				D48A125B20300CC300EC13E5 /* NSString+ManOpenTests.m in Sources */,
 				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,
 				D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */,
 				D44FE8B620143FAF00F532A4 /* ManPageTests.m in Sources */,

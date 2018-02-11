@@ -19,7 +19,13 @@
 
 - (NSString *)singleQuotedShellWordWithSurroundingQuotes:(BOOL)addSurroundingQuotes
 {
-    return EscapePath(self, addSurroundingQuotes);
+    NSString *escaped = [self stringByReplacingOccurrencesOfString:@"'"
+                                                        withString:@"'\\''"];
+    if (addSurroundingQuotes) {
+        return [NSString stringWithFormat:@"'%@'", escaped];
+    } else {
+        return escaped;
+    }
 }
 
 @end

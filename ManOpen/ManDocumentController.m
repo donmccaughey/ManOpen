@@ -10,25 +10,6 @@
 #import "PrefPanelController.h"
 
 
-/*
- * We need to make sure we handle all sorts of characters in filenames. The way
- * to do that is surround the path with ' characters -- but then we have to
- * escape any ' characters actually in the string. To do that, you need to add a
- * ' to close the quote section, add an escaped ', then add another ' to start
- * quoting again. Something like '\'' or '"'"'. E.g.: /foo/bar -> '/foo/bar',
- * /foo bar/baz -> '/foo bar/baz', /Apple's Stuff -> '/Apple'\''s Stuff'.
- */
-NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
-{
-    NSString *escapedPath = [path stringByReplacingOccurrencesOfString:@"'"
-                                                            withString:@"'\\''"];
-    if (addSurroundingQuotes) {
-        return [NSString stringWithFormat:@"'%@'", escapedPath];
-    } else {
-        return escapedPath;
-    }
-}
-
 @implementation ManDocumentController
 
 - init

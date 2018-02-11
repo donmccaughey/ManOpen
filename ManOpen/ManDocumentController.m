@@ -9,12 +9,7 @@
 #import "PrefPanelController.h"
 
 
-#define MAN_BINARY     @"/usr/bin/man"
-//#define MANPATH_FORMAT @" -m '%@'"  // There's a bug in man(1) on OSX and OSXS
-#define MANPATH_FORMAT @" -M '%@'"
-
-
-/* 
+/*
  * We need to make sure we handle all sorts of characters in filenames. The way
  * to do that is surround the path with ' characters -- but then we have to
  * escape any ' characters actually in the string. To do that, you need to add a
@@ -24,29 +19,13 @@
  */
 NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
 {
-    if ([path rangeOfString:@"'"].length > 0)
-    {
-        NSMutableString *newString = [NSMutableString string];
-        NSScanner       *scanner = [NSScanner scannerWithString:path];
-
-        [scanner setCharactersToBeSkipped:nil];
-
-        while (![scanner isAtEnd])
-        {
-            NSString *betweenString = nil;
-            if ([scanner scanUpToString:@"'" intoString:&betweenString])
-                [newString appendString:betweenString];
-            if ([scanner scanString:@"'" intoString:NULL])
-                [newString appendString:@"'\\''"];
-        }
-
-        path = newString;
+    NSString *escapedPath = [path stringByReplacingOccurrencesOfString:@"'"
+                                                            withString:@"'\\''"];
+    if (addSurroundingQuotes) {
+        return [NSString stringWithFormat:@"'%@'", escapedPath];
+    } else {
+        return escapedPath;
     }
-
-    if (addSurroundingQuotes)
-        path = [NSString stringWithFormat:@"'%@'", path];
-
-    return path;
 }
 
 @implementation ManDocumentController
@@ -122,11 +101,10 @@ NSString *EscapePath(NSString *path, BOOL addSurroundingQuotes)
 
 - (NSMutableString *)manCommandWithManPath:(NSString *)manPath
 {
-    NSMutableString *command = [NSMutableString stringWithString:MAN_BINARY];
-
-    if (manPath && [manPath length] > 0)
-        [command appendFormat:MANPATH_FORMAT, EscapePath(manPath, NO)];
-
+    NSMutableString *command = [@"/usr/bin/man" mutableCopy];
+    if (manPath.length) {
+        [command appendFormat:@" -M %@", EscapePath(manPath, YES)];
+    }
     return command;
 }
 

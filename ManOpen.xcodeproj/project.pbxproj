@@ -35,6 +35,7 @@
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
 		D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */; };
 		D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */; };
+		D48A12562030007900EC13E5 /* ManDocumentControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D48A12552030007900EC13E5 /* ManDocumentControllerTests.m */; };
 		D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */; };
 		D49FB8DD1F9C1EDC00ECE338 /* Apropos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */; };
 		D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D49FB8BE1F9C1EDC00ECE338 /* Credits.rtf */; };
@@ -154,6 +155,7 @@
 		D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+ManOpen.h"; sourceTree = "<group>"; };
 		D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpen.m"; sourceTree = "<group>"; };
 		D48A1253202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+ManOpenPreferencesTests.m"; sourceTree = "<group>"; };
+		D48A12552030007900EC13E5 /* ManDocumentControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManDocumentControllerTests.m; sourceTree = "<group>"; };
 		D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AproposDocument.h; sourceTree = "<group>"; };
 		D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AproposDocument.m; sourceTree = "<group>"; };
 		D49FB8BD1F9C1EDC00ECE338 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Apropos.xib; sourceTree = "<group>"; };
@@ -303,6 +305,7 @@
 			children = (
 				D472123E1FB58542005FA157 /* Info.plist */,
 				D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */,
+				D48A12552030007900EC13E5 /* ManDocumentControllerTests.m */,
 				D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */,
 				D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */,
 				D44FE8B520143FAF00F532A4 /* ManPageTests.m */,
@@ -597,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D484D5A52026F0A50093B313 /* ManOpenURLComponentsTests.m in Sources */,
+				D48A12562030007900EC13E5 /* ManDocumentControllerTests.m in Sources */,
 				D4D124691FF0704F00314FBD /* NSURL+ManOpenTests.m in Sources */,
 				D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */,
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,

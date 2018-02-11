@@ -18,7 +18,9 @@
     but this should be `x-man-page:///grep`
 - The _Edit_ | _Find_ | _Find..._ command shows a Find dialog with Replace field and actions,
     show a Find only dialog instead
-
+- In the `ManDocument` class, the `copyURL` instance variable will be mistakenly set to
+    something like `x-man-doc://2/open(2)`
+    
 ## Modernize Code
 
 - Convert `ManOpen.scriptSuite` and `ManOpen.scriptTerminology` to `sdef` format,

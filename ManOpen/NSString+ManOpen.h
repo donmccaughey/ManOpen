@@ -10,9 +10,12 @@
 
 @interface NSString (ManOpen)
 
+@property (readonly) NSArray<NSString *> *manPageWords;
 @property (readonly) NSString *singleQuotedShellWord;
 @property (readonly) NSArray<NSString *> *wordsSeparatedByWhitespaceAndNewlineCharacters;
 
 - (NSString *)singleQuotedShellWordWithSurroundingQuotes:(BOOL)addSurroundingQuotes;
+
+- (NSString *)stringByRemovingSuffix:(NSString *)suffix;
 
 @end

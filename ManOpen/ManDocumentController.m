@@ -409,52 +409,13 @@
 "*/
 - (void)openString:(NSString *)string oneWordOnly:(BOOL)oneOnly
 {
-    NSScanner      *scanner = [NSScanner scannerWithString:string];
-    NSCharacterSet *whitespaceSet = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-    NSCharacterSet *nonwhitespaceSet = [whitespaceSet invertedSet];
-    NSString       *aWord;
-    NSString       *lastWord = nil;
-
-    [scanner setCharactersToBeSkipped:whitespaceSet];
-
-    while (![scanner isAtEnd])
-    {
-        if ([scanner scanCharactersFromSet:nonwhitespaceSet intoString:&aWord])
-        {
-            if (lastWord == nil)
-            {
-                lastWord = aWord;
-            }
-            /* If there was a space between the name and section, join them */
-            else if ([aWord hasPrefix:@"("] && [aWord hasSuffix:@")"])
-            {
-                [self openWord:[lastWord stringByAppendingString:aWord]];
-                lastWord = nil;
-                if (oneOnly) break;
-            }
-            /* If (g)nroff hyphenated a word across lines, rejoin them */
-            else if ([lastWord hasSuffix:@"-"])
-            {
-                lastWord = [lastWord substringToIndex:[lastWord length] - 1];
-                lastWord = [lastWord stringByAppendingString:aWord];
-            }
-            else
-            {
-                /* SEE ALSO sections often have commas between items, ignore it */
-                if ([lastWord hasSuffix:@","])
-                    lastWord = [lastWord substringToIndex:[lastWord length] - 1];
-                [self openWord:lastWord];
-                lastWord = nil;
-                if (oneOnly) break;
-                lastWord = aWord;
-            }
-        }
+    NSArray<NSString *> *words = string.manPageWords;
+    if (oneOnly && words.count) {
+        words = [NSArray arrayWithObject:words.firstObject];
     }
-
-    if (lastWord != nil) {
-        if ([lastWord hasSuffix:@","])
-            lastWord = [lastWord substringToIndex:[lastWord length] - 1];
-        [self openWord:lastWord];
+    
+    for (NSString *word in words) {
+        [self openWord:word];
     }
 }
 

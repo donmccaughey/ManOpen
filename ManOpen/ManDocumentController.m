@@ -388,23 +388,11 @@
 }
 
 
-static NSArray *GetWordArray(NSString *string)
+NSArray *GetWordArray(NSString *string)
 {
-    NSCharacterSet *spaceSet    = [NSCharacterSet whitespaceAndNewlineCharacterSet];
-    NSCharacterSet *nonspaceSet = [spaceSet invertedSet];
-    NSMutableArray *wordArray   = [NSMutableArray array];
-    NSScanner      *scanner     = [NSScanner scannerWithString:string];
-    NSString       *aWord;
-    
-    [scanner setCharactersToBeSkipped:spaceSet];
-    
-    while (![scanner isAtEnd])
-    {
-        if ([scanner scanCharactersFromSet:nonspaceSet intoString:&aWord])
-            [wordArray addObject:aWord];
-    }
-    
-    return wordArray;
+    NSArray<NSString *> *components = [string componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSPredicate *notEmptyPredicate = [NSPredicate predicateWithFormat:@"length != 0"];
+    return [components filteredArrayUsingPredicate:notEmptyPredicate];
 }
 
 - (void)openString:(NSString *)string

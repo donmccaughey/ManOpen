@@ -135,8 +135,12 @@
         [NSException raise:NSFileHandleOperationException format:@"%s: %s", __FUNCTION__, strerror(errno)];
     }
 
-    bytes = reallocf(bytes, offset);
-    return [NSData dataWithBytesNoCopy:bytes length:(NSUInteger)offset];
+    if (offset) {
+        bytes = reallocf(bytes, offset);
+        return [NSData dataWithBytesNoCopy:bytes length:(NSUInteger)offset];
+    } else {
+        return [NSData data];
+    }
 }
 
 @end

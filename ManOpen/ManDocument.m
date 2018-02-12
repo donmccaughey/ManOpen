@@ -64,12 +64,17 @@
 }
 
 - initWithName:(NSString *)name
-	section:(NSString *)section
-	manPath:(NSString *)manPath
-	title:(NSString *)title
+       section:(NSString *)section
+       manPath:(NSString *)manPath
+         title:(NSString *)title
 {
-    [super init];
-    [self _loadDocumentWithName:name section:section manPath:manPath title:title];
+    self = [super init];
+    if (self) {
+        [self _loadDocumentWithName:name
+                            section:section
+                            manPath:manPath
+                              title:title];
+    }
     return self;
 }
 

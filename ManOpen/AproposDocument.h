@@ -17,7 +17,10 @@
     IBOutlet NSTableColumn *titleColumn;
 }
 
-- (id)initWithString:(NSString *)apropos manPath:(NSString *)manPath title:(NSString *)title;
+- (id)initWithString:(NSString *)apropos
+             manPath:(NSString *)manPath
+               title:(NSString *)title;
+
 - (void)parseOutput:(NSString *)output;
 
 - (IBAction)saveCurrentWindowSize:(id)sender;

@@ -50,17 +50,22 @@
     [self parseOutput:[[[NSString alloc] initWithData:output encoding:NSMacOSRomanStringEncoding] autorelease]];
 }
 
-- (id)initWithString:(NSString *)apropos manPath:(NSString *)manPath title:(NSString *)aTitle
+- (id)initWithString:(NSString *)apropos
+             manPath:(NSString *)manPath
+               title:(NSString *)aTitle
 {
-    [super init];
-    [self _loadWithString:apropos manPath:manPath title:aTitle];
-    
-    if ([titles count] == 0) {
-        NSRunAlertPanel(@"Nothing found", @"No pages related to '%@' found", nil, nil, nil, apropos);
-        [self release];
-        return nil;
+    self = [super init];
+    if (self) {
+        [self _loadWithString:apropos
+                      manPath:manPath
+                        title:aTitle];
+        
+        if ([titles count] == 0) {
+            NSRunAlertPanel(@"Nothing found", @"No pages related to '%@' found", nil, nil, nil, apropos);
+            [self release];
+            return nil;
+        }
     }
-
     return self;
 }
 

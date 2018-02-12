@@ -23,7 +23,10 @@
     IBOutlet NSPopUpButton *sectionPopup;
 }
 
-- initWithName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath title:(NSString *)title;
+- initWithName:(NSString *)name
+       section:(NSString *)section
+       manPath:(NSString *)manPath
+         title:(NSString *)title;
 
 - (NSString *)shortTitle;
 - (void)setShortTitle:(NSString *)aString;

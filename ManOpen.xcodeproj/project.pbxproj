@@ -25,7 +25,6 @@
 		D46C8FFA1F9C114B008EB62F /* openman.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = D46C8FF71F9C1136008EB62F /* openman.1 */; };
 		D46C8FFE1F9C1277008EB62F /* cat2html.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C8FFC1F9C1266008EB62F /* cat2html.l */; };
 		D46C90011F9C1319008EB62F /* cat2rtf.l in Sources */ = {isa = PBXBuildFile; fileRef = D46C90001F9C1319008EB62F /* cat2rtf.l */; };
-		D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212471FB7DCD8005FA157 /* MockManDocumentController.m */; };
 		D484D59A2025E09A0093B313 /* XManPageURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5992025E09A0093B313 /* XManPageURLComponents.m */; };
 		D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */; };
@@ -614,7 +613,6 @@
 				D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */,
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,
 				D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */,
-				D47212451FB58582005FA157 /* ManOpenURLHandlerCommandTests.m in Sources */,
 				D48A125B20300CC300EC13E5 /* NSString+ManOpenTests.m in Sources */,
 				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,
 				D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */,

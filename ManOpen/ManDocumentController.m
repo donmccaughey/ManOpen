@@ -387,17 +387,9 @@
     return document;
 }
 
-
-NSArray *GetWordArray(NSString *string)
-{
-    NSArray<NSString *> *components = [string componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    NSPredicate *notEmptyPredicate = [NSPredicate predicateWithFormat:@"length != 0"];
-    return [components filteredArrayUsingPredicate:notEmptyPredicate];
-}
-
 - (void)openString:(NSString *)string
 {
-    NSArray *words = GetWordArray(string);
+    NSArray<NSString *> *words = string.wordsSeparatedByWhitespaceAndNewlineCharacters;
     
     if ([words count] > 20) {
         NSInteger reply = NSRunAlertPanel(@"Warning", @"This will open approximately %lu windows!",
@@ -470,7 +462,7 @@ NSArray *GetWordArray(NSString *string)
 - (void)openTitleFromPanel
 {
     NSString *string = [openTextField stringValue];
-    NSArray *words = GetWordArray(string);
+    NSArray<NSString *> *words = string.wordsSeparatedByWhitespaceAndNewlineCharacters;
 
     /* If the string is of the form "3 printf", arrange it better for our parser.  Requested by Eskimo.  Also accept 'n' as a section */
     if ([words count] == 2 &&

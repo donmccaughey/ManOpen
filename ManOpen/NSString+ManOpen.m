@@ -28,4 +28,11 @@
     }
 }
 
+- (NSArray<NSString *> *)wordsSeparatedByWhitespaceAndNewlineCharacters
+{
+    NSArray<NSString *> *components = [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSPredicate *notEmptyPredicate = [NSPredicate predicateWithFormat:@"length != 0"];
+    return [components filteredArrayUsingPredicate:notEmptyPredicate];
+}
+
 @end

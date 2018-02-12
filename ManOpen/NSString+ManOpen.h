@@ -11,6 +11,7 @@
 @interface NSString (ManOpen)
 
 @property (readonly) NSString *singleQuotedShellWord;
+@property (readonly) NSArray<NSString *> *wordsSeparatedByWhitespaceAndNewlineCharacters;
 
 - (NSString *)singleQuotedShellWordWithSurroundingQuotes:(BOOL)addSurroundingQuotes;
 

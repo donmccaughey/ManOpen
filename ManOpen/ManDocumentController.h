@@ -8,9 +8,6 @@
 @class NSData, NSMutableString;
 
 
-extern NSArray *GetWordArray(NSString *string);
-
-
 @interface ManDocumentController : NSDocumentController <ManOpen>
 {
     IBOutlet NSPanel *openTextPanel;

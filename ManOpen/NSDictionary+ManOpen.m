@@ -10,7 +10,7 @@
 
 @implementation NSDictionary (ManOpen)
 
-+ (nonnull NSDictionary<NSString *, NSString *> *)dictionaryWithURLQuery:(nullable NSString *)urlQuery
++ (NSDictionary<NSString *, NSString *> *)dictionaryWithURLQuery:(NSString *)urlQuery
 {
     if (!urlQuery) {
         return nil;
@@ -18,7 +18,7 @@
     
     urlQuery = [urlQuery stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     NSArray<NSString *> *parts = [urlQuery componentsSeparatedByString:@"&"];
-    NSMutableDictionary<NSString *, NSString *> *dictionary = [NSMutableDictionary new];
+    NSMutableDictionary<NSString *, NSString *> *dictionary = [[NSMutableDictionary new] autorelease];
     for (NSString *part in parts) {
         NSRange range = [part rangeOfString:@"="];
         if (NSNotFound == range.location) {
@@ -33,7 +33,7 @@
             dictionary[key] = value;
         }
     }
-    return [dictionary copy];
+    return [[dictionary copy] autorelease];
 }
 
 @end

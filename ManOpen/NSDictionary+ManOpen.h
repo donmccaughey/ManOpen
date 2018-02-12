@@ -10,6 +10,6 @@
 
 @interface NSDictionary (ManOpen)
 
-+ (nonnull NSDictionary<NSString *, NSString *> *)dictionaryWithURLQuery:(nullable NSString *)urlQuery;
++ (NSDictionary<NSString *, NSString *> *)dictionaryWithURLQuery:(NSString *)urlQuery;
 
 @end

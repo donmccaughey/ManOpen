@@ -48,10 +48,11 @@
     NSArray<NSString *> *pathComponents = [resourceSpecifier.pathComponents filteredArrayUsingPredicate:notRootPredicate];
     if (!pathComponents.count) return nil;
     
-    NSMutableArray<ManPage *> *manPages = [NSMutableArray new];
+    NSMutableArray<ManPage *> *manPages = [[NSMutableArray new] autorelease];
     if (1 == pathComponents.count) {
         ManPage *manPage = [[ManPage alloc] initWithName:pathComponents.firstObject];
         [manPages addObject:manPage];
+        [manPage release];
     } else {
         NSString *section = nil;
         for (NSString *pathComponent in pathComponents) {
@@ -61,6 +62,7 @@
                 ManPage *manPage = [[ManPage alloc] initWithSection:section
                                                             andName:pathComponent];
                 [manPages addObject:manPage];
+                [manPage release];
                 section = nil;
             }
         }

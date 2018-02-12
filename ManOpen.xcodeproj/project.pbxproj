@@ -13,6 +13,7 @@
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8A9200C74A600F532A4 /* FileURLComponents.m */; };
 		D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */; };
 		D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
@@ -613,6 +614,7 @@
 				D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */,
 				D4D1246E1FF20CD700314FBD /* NSDictionary+ManOpenTests.m in Sources */,
 				D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */,
+				D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */,
 				D48A125B20300CC300EC13E5 /* NSString+ManOpenTests.m in Sources */,
 				D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */,
 				D48A1254202FBA5100EC13E5 /* NSUserDefaults+ManOpenPreferencesTests.m in Sources */,

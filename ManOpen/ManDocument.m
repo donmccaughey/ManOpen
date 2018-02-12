@@ -121,7 +121,7 @@
 - (void)setupSectionPopup
 {
     [sectionPopup removeAllItems];
-    [sectionPopup addItemWithTitle:@"Section:"];
+    [sectionPopup addItemWithTitle:NSLocalizedString(@"Section:", @"Section:")];
     [sectionPopup setEnabled:[sections count] > 0];
 
     if ([sectionPopup isEnabled])

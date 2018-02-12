@@ -738,7 +738,7 @@ static NSString *currentAppID = nil;
 
     if ([apps count] > 0)
         [[appPopup menu] addItem:[NSMenuItem separatorItem]];
-    [appPopup addItemWithTitle:@"Select... "];
+    [appPopup addItemWithTitle:NSLocalizedString(@"Select... ", @"Select... ")];
     [self setAppPopupToCurrent];
 }
 

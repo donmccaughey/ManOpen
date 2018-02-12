@@ -41,7 +41,10 @@
     if (url.isManOpenScheme) {
         ManOpenURLComponents *components = [[[ManOpenURLComponents alloc] initWithURL:url] autorelease];
         if (components.manPage) {
-            [_manDocumentController openString:components.manPage.description];
+            [_manDocumentController openName:components.manPage.name
+                                     section:components.manPage.section
+                                     manPath:components.manPath
+                                forceToFront:!components.isBackground];
         } else if (components.aproposKeyword) {
             [_manDocumentController openApropos:components.aproposKeyword
                                         manPath:components.manPath
@@ -57,8 +60,12 @@
                                         manPath:nil
                                    forceToFront:YES];
         } else if (components.manPages.count) {
-            NSString *string = [[components.manPages valueForKey:@"description"] componentsJoinedByString:@" "];
-            [_manDocumentController openString:string];
+            for (ManPage *manPage in components.manPages) {
+                [_manDocumentController openName:manPage.name
+                                         section:manPage.section
+                                         manPath:nil
+                                    forceToFront:YES];
+            }
         }
     } else if (url.isFileScheme) {
         FileURLComponents *components = [[[FileURLComponents alloc] initWithURL:url] autorelease];

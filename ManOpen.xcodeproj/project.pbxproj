@@ -13,6 +13,9 @@
 		D38A244C14E4C3FE00F6AFFE /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D39279850821FFA400376676 /* AppKit.framework */; };
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		D4109DD120340EC20096F5AD /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DCF20340EC10096F5AD /* Application.m */; };
+		D4109DD220340EC20096F5AD /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DCF20340EC10096F5AD /* Application.m */; };
+		D4109DD520340FAF0096F5AD /* ApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DD320340ED30096F5AD /* ApplicationTests.m */; };
 		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D420E68B203384A400178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
 		D420E6B020338AD100178C47 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E6AF20338AD100178C47 /* VersionTests.m */; };
@@ -129,6 +132,9 @@
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		D4109DCE20340D980096F5AD /* openManTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "openManTests-Info.plist"; sourceTree = "<group>"; };
+		D4109DCF20340EC10096F5AD /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
+		D4109DD020340EC10096F5AD /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		D4109DD320340ED30096F5AD /* ApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplicationTests.m; sourceTree = "<group>"; };
 		D420E689203384A400178C47 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
 		D420E68A203384A400178C47 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
 		D420E6A720338A6D00178C47 /* openmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -299,6 +305,9 @@
 		D46C8FF61F9C1136008EB62F /* openman */ = {
 			isa = PBXGroup;
 			children = (
+				D4109DD020340EC10096F5AD /* Application.h */,
+				D4109DCF20340EC10096F5AD /* Application.m */,
+				D4109DD320340ED30096F5AD /* ApplicationTests.m */,
 				D46C8FF71F9C1136008EB62F /* openman.1 */,
 				D46C8FF81F9C1136008EB62F /* openman.m */,
 				D4109DCE20340D980096F5AD /* openManTests-Info.plist */,
@@ -648,6 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4109DD120340EC20096F5AD /* Application.m in Sources */,
 				D46C8FF91F9C1136008EB62F /* openman.m in Sources */,
 				D420E68B203384A400178C47 /* Version.m in Sources */,
 			);
@@ -657,6 +667,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4109DD520340FAF0096F5AD /* ApplicationTests.m in Sources */,
+				D4109DD220340EC20096F5AD /* Application.m in Sources */,
 				D420E6B020338AD100178C47 /* VersionTests.m in Sources */,
 				D420E6B120338AD900178C47 /* Version.m in Sources */,
 			);

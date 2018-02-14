@@ -40,6 +40,16 @@
                ReferencedContainer = "container:ManOpen.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D420E6A620338A6D00178C47"
+               BuildableName = "openmanTests.xctest"
+               BlueprintName = "openmanTests"
+               ReferencedContainer = "container:ManOpen.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

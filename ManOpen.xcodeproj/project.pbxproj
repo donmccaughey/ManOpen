@@ -14,6 +14,9 @@
 		D38A245C14E4C3FE00F6AFFE /* cat2rtf in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A243814E4C3FE00F6AFFE /* cat2rtf */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D38A245D14E4C3FE00F6AFFE /* cat2html in CopyFiles */ = {isa = PBXBuildFile; fileRef = D38A244414E4C3FE00F6AFFE /* cat2html */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
+		D420E68B203384A400178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
+		D420E6B020338AD100178C47 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E6AF20338AD100178C47 /* VersionTests.m */; };
+		D420E6B120338AD900178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
 		D44FE8AA200C74A600F532A4 /* FileURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8A9200C74A600F532A4 /* FileURLComponents.m */; };
 		D44FE8AC200C77BE00F532A4 /* FileURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */; };
 		D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
@@ -125,6 +128,10 @@
 		D38A245114E4C3FE00F6AFFE /* openman */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = openman; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39279810821FFA400376676 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		D39279850821FFA400376676 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		D420E689203384A400178C47 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
+		D420E68A203384A400178C47 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
+		D420E6A720338A6D00178C47 /* openmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D420E6AF20338AD100178C47 /* VersionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VersionTests.m; sourceTree = "<group>"; };
 		D44FE8A8200C74A600F532A4 /* FileURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileURLComponents.h; sourceTree = "<group>"; };
 		D44FE8A9200C74A600F532A4 /* FileURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileURLComponents.m; sourceTree = "<group>"; };
 		D44FE8AB200C77BE00F532A4 /* FileURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileURLComponentsTests.m; sourceTree = "<group>"; };
@@ -229,6 +236,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D420E6A420338A6D00178C47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D47212371FB58542005FA157 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -267,6 +281,7 @@
 				D38A244414E4C3FE00F6AFFE /* cat2html */,
 				D38A245114E4C3FE00F6AFFE /* openman */,
 				D472123A1FB58542005FA157 /* ManOpenTests.xctest */,
+				D420E6A720338A6D00178C47 /* openmanTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -285,6 +300,9 @@
 			children = (
 				D46C8FF71F9C1136008EB62F /* openman.1 */,
 				D46C8FF81F9C1136008EB62F /* openman.m */,
+				D420E689203384A400178C47 /* Version.h */,
+				D420E68A203384A400178C47 /* Version.m */,
+				D420E6AF20338AD100178C47 /* VersionTests.m */,
 			);
 			path = openman;
 			sourceTree = "<group>";
@@ -460,6 +478,23 @@
 			productReference = D38A245114E4C3FE00F6AFFE /* openman */;
 			productType = "com.apple.product-type.tool";
 		};
+		D420E6A620338A6D00178C47 /* openmanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D420E6AE20338A6D00178C47 /* Build configuration list for PBXNativeTarget "openmanTests" */;
+			buildPhases = (
+				D420E6A320338A6D00178C47 /* Sources */,
+				D420E6A420338A6D00178C47 /* Frameworks */,
+				D420E6A520338A6D00178C47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = openmanTests;
+			productName = openmanTests;
+			productReference = D420E6A720338A6D00178C47 /* openmanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D47212391FB58542005FA157 /* ManOpenTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47212431FB58542005FA157 /* Build configuration list for PBXNativeTarget "ManOpenTests" */;
@@ -486,6 +521,9 @@
 			attributes = {
 				LastUpgradeCheck = 0910;
 				TargetAttributes = {
+					D420E6A620338A6D00178C47 = {
+						CreatedOnToolsVersion = 9.2;
+					};
 					D47212391FB58542005FA157 = {
 						CreatedOnToolsVersion = 9.1;
 						TestTargetID = D38A23FD14E4C3FE00F6AFFE;
@@ -518,6 +556,7 @@
 				D38A242F14E4C3FE00F6AFFE /* cat2rtf */,
 				D38A243A14E4C3FE00F6AFFE /* cat2html */,
 				D38A244614E4C3FE00F6AFFE /* openman */,
+				D420E6A620338A6D00178C47 /* openmanTests */,
 			);
 		};
 /* End PBXProject section */
@@ -545,6 +584,13 @@
 				D45E00651FC24510006B1797 /* README.md in Resources */,
 				D45E00701FC78EF9006B1797 /* Documentation in Resources */,
 				D49FB8EB1F9C1EDC00ECE338 /* ManOpen.scriptTerminology in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D420E6A520338A6D00178C47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +647,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D46C8FF91F9C1136008EB62F /* openman.m in Sources */,
+				D420E68B203384A400178C47 /* Version.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D420E6A320338A6D00178C47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D420E6B020338AD100178C47 /* VersionTests.m in Sources */,
+				D420E6B120338AD900178C47 /* Version.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -963,6 +1019,121 @@
 			};
 			name = Deployment;
 		};
+		D420E6AC20338A6D00178C47 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "openman/openmanTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.openmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Development;
+		};
+		D420E6AD20338A6D00178C47 /* Deployment */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "openman/openmanTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.openmanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Deployment;
+		};
 		D47212411FB58542005FA157 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1123,6 +1294,15 @@
 			buildConfigurations = (
 				D38A244F14E4C3FE00F6AFFE /* Development */,
 				D38A245014E4C3FE00F6AFFE /* Deployment */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		D420E6AE20338A6D00178C47 /* Build configuration list for PBXNativeTarget "openmanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D420E6AC20338A6D00178C47 /* Development */,
+				D420E6AD20338A6D00178C47 /* Deployment */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Development;

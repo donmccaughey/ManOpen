@@ -27,7 +27,10 @@
 
 - (void)testInitWithMajorMinorPatch
 {
-    Version *version = [[[Version alloc] initWithMajor:1 minor:2 patch:3] autorelease];
+    Version *version = [[Version alloc] initWithMajor:1
+                                                minor:2
+                                                patch:3];
+    [version autorelease];
     XCTAssertEqual(1, version.major);
     XCTAssertEqual(2, version.minor);
     XCTAssertEqual(3, version.patch);
@@ -37,7 +40,10 @@
 
 - (void)testInitWithMajorMinorPatch_for_patch_zero
 {
-    Version *version = [[[Version alloc] initWithMajor:11 minor:12 patch:0] autorelease];
+    Version *version = [[Version alloc] initWithMajor:11
+                                                minor:12
+                                                patch:0];
+    [version autorelease];
     XCTAssertEqual(11, version.major);
     XCTAssertEqual(12, version.minor);
     XCTAssertEqual(0, version.patch);

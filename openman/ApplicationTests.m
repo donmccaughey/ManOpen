@@ -19,9 +19,10 @@
 {
     NSURL *url = [NSURL URLWithString:@"file:///Applications/MyApp.app"];
     Version *version = [[[Version alloc] initWithVersion:@"1.2.3"] autorelease];
-    Application *application = [[[Application alloc] initWithBundleIdentifier:@"com.example.MyApp"
+    Application *application = [[Application alloc] initWithBundleIdentifier:@"com.example.MyApp"
                                                                           URL:url
-                                                                   andVersion:version] autorelease];
+                                                                   andVersion:version];
+    [application autorelease];
     XCTAssertEqualObjects(@"com.example.MyApp", application.bundleIdentifier);
     XCTAssertEqualObjects(url, application.url);
     XCTAssertEqualObjects(version, application.version);

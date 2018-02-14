@@ -57,6 +57,7 @@
         regex = [NSRegularExpression regularExpressionWithPattern:pattern
                                                           options:0
                                                             error:nil];
+        [regex retain];
         NSAssert(regex, @"Expected to initialize regular expression");
     });
 

@@ -37,6 +37,21 @@
     XCTAssertTrue(application.version.major >= 1);
 }
 
+- (void)testInitWithURL_when_invalid_file
+{
+    NSURL *url = [NSURL URLWithString:@"file:///not/a/real.app"];
+    Application *application = [[Application alloc] initWithURL:url];
+    XCTAssertNil(application);
+}
+
+- (void)testInitWithURL_when_invalid_scheme
+{
+    NSURL *url = [NSURL URLWithString:@"http://www.example.com"];
+    XCTAssertThrows(
+                    [[Application alloc] initWithURL:url]
+                    );
+}
+
 - (void)setUp
 {
     [super setUp];

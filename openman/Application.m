@@ -28,12 +28,15 @@
 - (instancetype)initWithURL:(NSURL *)url
 {
     NSBundle *bundle = [NSBundle bundleWithURL:url];
-    NSString *versionString = [bundle objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
-    Version *version = [[Version alloc] initWithVersion:versionString];
-    
-    return [self initWithBundleIdentifier:bundle.bundleIdentifier
-                                      URL:url
-                               andVersion:version];
+    if (bundle) {
+        NSString *versionString = [bundle objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
+        Version *version = [[Version alloc] initWithVersion:versionString];
+        return [self initWithBundleIdentifier:bundle.bundleIdentifier
+                                          URL:url
+                                   andVersion:version];
+    } else {
+        return nil;
+    }
 }
 
 @end

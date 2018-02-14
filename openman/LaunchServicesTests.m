@@ -21,11 +21,11 @@
     NSError *error = nil;
     NSArray<NSURL *> *urls = [launchServices URLsForBundleIdentifier:@"com.apple.dt.Xcode"
                                                                error:&error];
-    XCTAssertTrue(urls.count >= 1);
+    XCTAssertTrue(urls.count > 0);
     XCTAssertNil(error);
-
-    NSURL *expectedURL = [NSURL URLWithString:@"file:///Applications/Xcode.app/"];
-    XCTAssertTrue([urls containsObject:expectedURL]);
+    
+    NSArray<NSString *> *appNames = [urls valueForKey:@"lastPathComponent"];
+    XCTAssertTrue([appNames containsObject:@"Xcode.app"]);
 }
 
 - (void)testURLsForBundleIdentifierError_when_no_apps_found

@@ -65,7 +65,6 @@
                                                     options:NSMatchingAnchored
                                                       range:range];
     if (!match) return nil;
-    if (!match.range.length) return nil;
     
     NSString *majorString = [version substringWithRange:[match rangeAtIndex:1]];
     major = majorString.integerValue;

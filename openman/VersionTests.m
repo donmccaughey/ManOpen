@@ -59,9 +59,12 @@
 
 - (void)testInitWithVersion_when_not_a_version
 {
-    Version *version = [[Version alloc] initWithVersion:@"foo"];
+    Version *version = [[Version alloc] initWithVersion:@" "];
     XCTAssertNil(version);
     
+    version = [[Version alloc] initWithVersion:@"foo"];
+    XCTAssertNil(version);
+
     version = [[Version alloc] initWithVersion:@"1.foo"];
     XCTAssertNil(version);
     
@@ -74,6 +77,9 @@
     version = [[Version alloc] initWithVersion:@"1.2.3.4"];
     XCTAssertNil(version);
     
+    version = [[Version alloc] initWithVersion:@".2.3.4"];
+    XCTAssertNil(version);
+
     version = [[Version alloc] initWithVersion:@"-1.2.3"];
     XCTAssertNil(version);
     
@@ -142,6 +148,7 @@
     Version *version2 = [[Version alloc] initWithVersion:@"1.2.3"];
     
     XCTAssertFalse([version1 isEqual:nil]);
+    XCTAssertEqual(version1, version1);
     
     XCTAssertEqual(version1.hash, version2.hash);
     XCTAssertEqualObjects(version1, version2);

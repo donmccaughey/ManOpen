@@ -20,6 +20,12 @@
 		D4109DD92034C4FF0096F5AD /* LaunchServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DD72034C4FF0096F5AD /* LaunchServices.m */; };
 		D4109DDB2034F1B60096F5AD /* LaunchServicesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DDA2034F1B60096F5AD /* LaunchServicesTests.m */; };
 		D4109DDE203500380096F5AD /* LaunchServicesFake.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DDD203500380096F5AD /* LaunchServicesFake.m */; };
+		D4109DDF203532410096F5AD /* ManOpenURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */; };
+		D4109DE0203532420096F5AD /* ManOpenURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */; };
+		D4109DE12035324B0096F5AD /* NSDictionary+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */; };
+		D4109DE22035324B0096F5AD /* NSDictionary+ManOpen.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */; };
+		D4109DE3203532640096F5AD /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
+		D4109DE4203532650096F5AD /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
 		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D420E68B203384A400178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
 		D420E6B020338AD100178C47 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E6AF20338AD100178C47 /* VersionTests.m */; };
@@ -674,6 +680,9 @@
 				D4109DD120340EC20096F5AD /* Application.m in Sources */,
 				D46C8FF91F9C1136008EB62F /* openman.m in Sources */,
 				D4109DD82034C4FF0096F5AD /* LaunchServices.m in Sources */,
+				D4109DE12035324B0096F5AD /* NSDictionary+ManOpen.m in Sources */,
+				D4109DE3203532640096F5AD /* ManPage.m in Sources */,
+				D4109DDF203532410096F5AD /* ManOpenURLComponents.m in Sources */,
 				D420E68B203384A400178C47 /* Version.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,11 +691,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4109DE22035324B0096F5AD /* NSDictionary+ManOpen.m in Sources */,
+				D4109DE0203532420096F5AD /* ManOpenURLComponents.m in Sources */,
 				D4109DDB2034F1B60096F5AD /* LaunchServicesTests.m in Sources */,
 				D4109DD520340FAF0096F5AD /* ApplicationTests.m in Sources */,
 				D4109DDE203500380096F5AD /* LaunchServicesFake.m in Sources */,
 				D4109DD220340EC20096F5AD /* Application.m in Sources */,
 				D420E6B020338AD100178C47 /* VersionTests.m in Sources */,
+				D4109DE4203532650096F5AD /* ManPage.m in Sources */,
 				D420E6B120338AD900178C47 /* Version.m in Sources */,
 				D4109DD92034C4FF0096F5AD /* LaunchServices.m in Sources */,
 			);

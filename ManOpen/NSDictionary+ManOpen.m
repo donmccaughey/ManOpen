@@ -36,4 +36,19 @@
     return [[dictionary copy] autorelease];
 }
 
+- (NSString *)urlQuery
+{
+    if (!self.count) return @"";
+    
+    NSMutableString *urlQuery = [NSMutableString stringWithString:@"?"];
+    NSArray<NSString *> *sortedKeys = [self.allKeys sortedArrayUsingSelector:@selector(compare:)];
+    for (NSString *key in sortedKeys) {
+        if (urlQuery.length > 1) [urlQuery appendString:@"&"];
+        NSString *encodedKey = [key stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
+        NSString *encodedValue = [self[key] stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet alphanumericCharacterSet]];
+        [urlQuery appendFormat:@"%@=%@", encodedKey, encodedValue];
+    }
+    return urlQuery;
+}
+
 @end

@@ -10,6 +10,8 @@
 
 @interface NSDictionary (ManOpen)
 
+@property (readonly) NSString *urlQuery;
+
 + (NSDictionary<NSString *, NSString *> *)dictionaryWithURLQuery:(NSString *)urlQuery;
 
 @end

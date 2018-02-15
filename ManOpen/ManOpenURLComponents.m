@@ -102,4 +102,27 @@
     return [_manPathArray componentsJoinedByString:@":"];
 }
 
+- (NSURL *)url
+{
+    NSString *urlString = nil;
+    NSMutableDictionary<NSString *, NSString *> *query = [[NSMutableDictionary new] autorelease];
+    if (_aproposKeyword) {
+        urlString = [NSString stringWithFormat:@"manopen://apropos/%@", _aproposKeyword];
+        if (_manPathArray) query[@"MANPATH"] = self.manPath;
+    } else if (_manPage) {
+        urlString = [NSString stringWithFormat:@"manopen://%@/%@",
+                     _manPage.section ?: @"", _manPage.name];
+        if (_manPathArray) query[@"MANPATH"] = self.manPath;
+    } else if (_filePath) {
+        urlString = [NSString stringWithFormat:@"manopen:%@", _filePath];
+    }
+    if (urlString) {
+        if (_isBackground) query[@"background"] = @"true";
+        urlString = [urlString stringByAppendingString:query.urlQuery];
+        return [NSURL URLWithString:urlString];
+    } else {
+        return nil;
+    }
+}
+
 @end

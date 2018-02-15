@@ -19,6 +19,7 @@
 @property (retain) ManPage *manPage;
 @property (readonly) NSString *manPath;
 @property (copy) NSArray<NSString *> *manPathArray;
+@property (readonly) NSURL *url;
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
                           manPathArray:(NSArray<NSString *> *)manPathArray

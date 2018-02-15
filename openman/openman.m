@@ -3,7 +3,9 @@
 #import <AppKit/NSWorkspace.h>
 #import <libc.h>  // for getopt()
 #import <ctype.h> // for isdigit()
-#import "ManOpenProtocol.h"
+#import "Application.h"
+#import "LaunchServices.h"
+#import "ManOpenURLComponents.h"
 #import "SystemType.h"
 
 
@@ -42,10 +44,7 @@ int main (int argc, char * const *argv)
     int               argIndex;
     NSUInteger        fileIndex;
     char              c;
-    NSDistantObject <ManOpen>  *server;
-    int               maxConnectTries;
-    int               connectCount;
-
+    
     while ((c = getopt(argc,argv,"hbm:M:f:kaCcw")) != EOF)
     {
         switch(c)
@@ -124,47 +123,32 @@ int main (int argc, char * const *argv)
             exit(0);
         }
     }
-
-    /* 
-     * MacOS X Beta seems to take a little longer to start the app, so we try up
-     * to three times with sleep()s in between to give it a chance. First check
-     * to see if there's a version running though.  MacOS X 10.0 takes even longer,
-     * so up it to 8 tries.
-     */
-    maxConnectTries = 8;
-    connectCount = 0;
-
-    do {
-        /* Try to connect to a running version... */
-        server = (NSDistantObject<ManOpen> *)[NSConnection rootProxyForConnectionWithRegisteredName:@"ManOpenApp" host:nil];
-
-        if (server == nil) {
-            /* 
-             * Let Workspace try to start the app, and wait until it's up. If
-             * launchApplication returns NO, then Workspace doesn't know about
-             * the app, so there's no reason to keep waiting, and we bail out.
-             */
-            if (connectCount == 0) {
-                if (![[NSWorkspace sharedWorkspace] launchApplication:@"ManOpen"])
-                    maxConnectTries = 0;
-            }
-
-            [NSThread sleepUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
+    
+    id<LaunchServices> launchServices = [[LaunchServices new] autorelease];
+    NSError *error = nil;
+    Application *latestVersion = [Application latestVersionWithLaunchServices:launchServices
+                                                           bundleIdentifier:@"cc.donm.ManOpen"
+                                                                      error:&error];
+    if (!latestVersion) {
+        if (error) {
+            fprintf(stderr, "%s:%li: %s",
+                    error.domain.UTF8String, (long)error.code,
+                    error.localizedDescription.UTF8String);
+        } else {
+            fprintf(stderr, "Unable to locate ManOpen application\n");
         }
-    } while (server == nil && connectCount++ < maxConnectTries);
-
-    if (server == nil)
-    {
-        fprintf(stderr,"Could not open connection to ManOpen\n");
         [pool release];
         exit(1);
     }
-
-    [server setProtocolForProxy:@protocol(ManOpen)];
+    
+    NSMutableArray<NSURL *> *itemURLs = [[NSMutableArray new] autorelease];
 
     for (fileIndex=0; fileIndex<[files count]; fileIndex++)
     {
-        [server openFile:[files objectAtIndex:fileIndex] forceToFront:forceToFront];
+        ManOpenURLComponents *components = [[ManOpenURLComponents alloc] initWithFilePath:[files objectAtIndex:fileIndex]
+                                                                             isBackground:!forceToFront];
+        [components autorelease];
+        [itemURLs addObject:components.url];
     }
 
     if (manPath == nil && getenv("MANPATH") != NULL)
@@ -173,10 +157,35 @@ int main (int argc, char * const *argv)
     for (argIndex = optind; argIndex < argc; argIndex++)
     {
         NSString *currFile = MakeNSStringFromPath(argv[argIndex]);
-        if (aproposMode)
-            [server openApropos:currFile manPath:manPath forceToFront:forceToFront];
-        else
-            [server openName:currFile section:section manPath:manPath forceToFront:forceToFront];
+        if (aproposMode) {
+            ManOpenURLComponents *components = [[ManOpenURLComponents alloc] initWithAproposKeyword:currFile
+                                                                                            manPath:manPath
+                                                                                       isBackground:!forceToFront];
+            [components autorelease];
+            [itemURLs addObject:components.url];
+        } else {
+            ManOpenURLComponents *components = [[ManOpenURLComponents alloc] initWithSection:section
+                                                                                        name:currFile
+                                                                                     manPath:manPath
+                                                                                isBackground:!forceToFront];
+            [components autorelease];
+            [itemURLs addObject:components.url];
+        }
+    }
+    
+    BOOL success = [launchServices openItemURLs:itemURLs
+                                  inApplication:latestVersion
+                                          error:&error];
+    if (!success) {
+        if (error) {
+            fprintf(stderr, "%s:%li: %s",
+                    error.domain.UTF8String, (long)error.code,
+                    error.localizedDescription.UTF8String);
+        } else {
+            fprintf(stderr, "Unable to launch ManOpen application\n");
+        }
+        [pool release];
+        exit(1);
     }
 
     [pool release];

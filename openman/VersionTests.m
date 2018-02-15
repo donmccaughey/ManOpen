@@ -154,7 +154,7 @@
     Version *version2 = [[[Version alloc] initWithVersion:@"1.2.3"] autorelease];
     
     XCTAssertFalse([version1 isEqual:nil]);
-    XCTAssertEqual(version1, version1);
+    XCTAssertEqualObjects(version1, version1);
     
     XCTAssertEqual(version1.hash, version2.hash);
     XCTAssertEqualObjects(version1, version2);

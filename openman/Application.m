@@ -7,10 +7,28 @@
 
 #import "Application.h"
 
+#import "LaunchServices.h"
 #import "Version.h"
 
 
 @implementation Application
+
++ (instancetype)latestVersionWithLaunchServices:(id<LaunchServices>)launchServices
+                               bundleIdentifier:(NSString *)bundleIdentifier
+                                          error:(NSError **)error
+{
+    NSArray<Application *> *applications = [launchServices applicationsForBundleIdentifier:bundleIdentifier
+                                                                                     error:error];
+    if (applications.count) {
+        NSArray<NSSortDescriptor *> *sortByVersion = @[
+                                                       [NSSortDescriptor sortDescriptorWithKey:@"version" ascending:NO],
+                                                       ];
+        NSArray<Application *> *sorted = [applications sortedArrayUsingDescriptors:sortByVersion];
+        return sorted.firstObject;
+    } else {
+        return nil;
+    }
+}
 
 - (instancetype)initWithBundleIdentifier:(NSString *)bundleIdentifier
                                      URL:(NSURL *)url

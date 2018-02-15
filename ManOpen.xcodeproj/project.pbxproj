@@ -19,6 +19,7 @@
 		D4109DD82034C4FF0096F5AD /* LaunchServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DD72034C4FF0096F5AD /* LaunchServices.m */; };
 		D4109DD92034C4FF0096F5AD /* LaunchServices.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DD72034C4FF0096F5AD /* LaunchServices.m */; };
 		D4109DDB2034F1B60096F5AD /* LaunchServicesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DDA2034F1B60096F5AD /* LaunchServicesTests.m */; };
+		D4109DDE203500380096F5AD /* LaunchServicesFake.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109DDD203500380096F5AD /* LaunchServicesFake.m */; };
 		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D420E68B203384A400178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
 		D420E6B020338AD100178C47 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E6AF20338AD100178C47 /* VersionTests.m */; };
@@ -141,6 +142,8 @@
 		D4109DD62034C4870096F5AD /* LaunchServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchServices.h; sourceTree = "<group>"; };
 		D4109DD72034C4FF0096F5AD /* LaunchServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchServices.m; sourceTree = "<group>"; };
 		D4109DDA2034F1B60096F5AD /* LaunchServicesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchServicesTests.m; sourceTree = "<group>"; };
+		D4109DDC203500380096F5AD /* LaunchServicesFake.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchServicesFake.h; sourceTree = "<group>"; };
+		D4109DDD203500380096F5AD /* LaunchServicesFake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchServicesFake.m; sourceTree = "<group>"; };
 		D420E689203384A400178C47 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
 		D420E68A203384A400178C47 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
 		D420E6A720338A6D00178C47 /* openmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -316,6 +319,8 @@
 				D4109DD320340ED30096F5AD /* ApplicationTests.m */,
 				D4109DD62034C4870096F5AD /* LaunchServices.h */,
 				D4109DD72034C4FF0096F5AD /* LaunchServices.m */,
+				D4109DDC203500380096F5AD /* LaunchServicesFake.h */,
+				D4109DDD203500380096F5AD /* LaunchServicesFake.m */,
 				D4109DDA2034F1B60096F5AD /* LaunchServicesTests.m */,
 				D46C8FF71F9C1136008EB62F /* openman.1 */,
 				D46C8FF81F9C1136008EB62F /* openman.m */,
@@ -679,6 +684,7 @@
 			files = (
 				D4109DDB2034F1B60096F5AD /* LaunchServicesTests.m in Sources */,
 				D4109DD520340FAF0096F5AD /* ApplicationTests.m in Sources */,
+				D4109DDE203500380096F5AD /* LaunchServicesFake.m in Sources */,
 				D4109DD220340EC20096F5AD /* Application.m in Sources */,
 				D420E6B020338AD100178C47 /* VersionTests.m in Sources */,
 				D420E6B120338AD900178C47 /* Version.m in Sources */,

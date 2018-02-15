@@ -1,5 +1,4 @@
 
-#import "ManOpenProtocol.h"
 #import "SystemType.h"
 #import <AppKit/NSDocumentController.h>
 
@@ -8,7 +7,7 @@
 @class NSData, NSMutableString;
 
 
-@interface ManDocumentController : NSDocumentController <ManOpen>
+@interface ManDocumentController : NSDocumentController
 {
     IBOutlet NSPanel *openTextPanel;
     IBOutlet NSPanel *aproposPanel;
@@ -24,7 +23,20 @@
 
 - (oneway void)openString:(NSString *)string;
 - (oneway void)openString:(NSString *)string oneWordOnly:(BOOL)oneOnly;
+
+- (oneway void)openFile:(NSString *)filename
+           forceToFront:(BOOL)force;
+
+- (oneway void)openName:(NSString *)name
+                section:(NSString *)section
+                manPath:(NSString *)manPath
+           forceToFront:(BOOL)force;
+
 - (oneway void)openApropos:(NSString *)apropos;
+
+- (oneway void)openApropos:(NSString *)apropos
+                   manPath:(NSString *)manPath
+              forceToFront:(BOOL)force;
 
 - (IBAction)openSection:(id)sender;
 - (IBAction)openTextPanel:(id)sender;

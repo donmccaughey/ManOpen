@@ -211,7 +211,6 @@
 		D49FB8D31F9C1EDC00ECE338 /* ManOpen.scriptTerminology */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; path = ManOpen.scriptTerminology; sourceTree = "<group>"; };
 		D49FB8D41F9C1EDC00ECE338 /* ManOpen.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = ManOpen.tiff; sourceTree = "<group>"; };
 		D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManOpen_main.m; sourceTree = "<group>"; };
-		D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManOpenProtocol.h; sourceTree = "<group>"; };
 		D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Utils.h"; sourceTree = "<group>"; };
 		D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Utils.m"; sourceTree = "<group>"; };
 		D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
@@ -391,7 +390,6 @@
 				D49FB8D01F9C1EDC00ECE338 /* ManDocumentController.m */,
 				D49FB8C41F9C1EDC00ECE338 /* ManOpen.xib */,
 				D49FB8D51F9C1EDC00ECE338 /* ManOpen_main.m */,
-				D49FB8D61F9C1EDC00ECE338 /* ManOpenProtocol.h */,
 				D484D5A12026ECEC0093B313 /* ManOpenURLComponents.h */,
 				D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */,
 				D4891E5D1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.h */,

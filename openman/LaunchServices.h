@@ -16,6 +16,10 @@
 - (NSArray<Application *> *)applicationsForBundleIdentifier:(NSString *)bundleIdentifier
                                                       error:(NSError **)error;
 
+- (BOOL)openItemURLs:(NSArray<NSURL *> *)itemURLs
+       inApplication:(Application *)application
+               error:(NSError **)error;
+
 @end
 
 
@@ -23,6 +27,10 @@
 
 - (NSArray<NSBundle *> *)bundlesForBundleIdentifier:(NSString *)bundleIdentifier
                                               error:(NSError **)error;
+
+- (BOOL)openItemURLs:(NSArray<NSURL *> *)itemURLs
+            inAppURL:(NSURL *)appURL
+               error:(NSError **)error;
 
 - (NSArray<NSURL *> *)URLsForBundleIdentifier:(NSString *)bundleIdentifier
                                         error:(NSError **)error;

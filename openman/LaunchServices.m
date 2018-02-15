@@ -48,6 +48,39 @@
     }
 }
 
+- (BOOL)openItemURLs:(NSArray<NSURL *> *)itemURLs
+       inApplication:(Application *)application
+               error:(NSError **)error
+{
+    return [self openItemURLs:itemURLs
+                     inAppURL:application.url
+                        error:error];
+}
+
+- (BOOL)openItemURLs:(NSArray<NSURL *> *)itemURLs
+            inAppURL:(NSURL *)appURL
+               error:(NSError **)error
+{
+    LSLaunchFlags launchFlags = kLSLaunchAsync | kLSLaunchDontSwitch;
+    LSLaunchURLSpec launchURLSpec = {
+        .appURL=(CFURLRef)appURL,
+        .itemURLs=(CFArrayRef)itemURLs,
+        .launchFlags=launchFlags,
+    };
+    CFURLRef *launchedAppOut = NULL;
+    OSStatus status = LSOpenFromURLSpec(&launchURLSpec, launchedAppOut);
+    if (status) {
+        if (error) {
+            *error = [NSError errorWithDomain:NSOSStatusErrorDomain
+                                         code:status
+                                     userInfo:nil];
+        }
+        return NO;
+    } else {
+        return YES;
+    }
+}
+
 - (NSArray<NSURL *> *)URLsForBundleIdentifier:(NSString *)bundleIdentifier
                                         error:(NSError **)error
 {

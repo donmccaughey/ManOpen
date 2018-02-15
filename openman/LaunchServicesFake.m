@@ -24,4 +24,12 @@
     return [[_return_applications retain] autorelease];
 }
 
+- (BOOL)openItemURLs:(NSArray<NSURL *> *)itemURLs
+       inApplication:(Application *)application
+               error:(NSError **)error
+{
+    [self doesNotRecognizeSelector:_cmd];
+    return NO;
+}
+
 @end

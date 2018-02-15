@@ -25,18 +25,21 @@
     return self;
 }
 
+- (instancetype)initWithBundle:(NSBundle *)bundle
+{
+    if (!bundle) return nil;
+    
+    NSString *versionString = [bundle objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
+    Version *version = [[[Version alloc] initWithVersion:versionString] autorelease];
+    return [self initWithBundleIdentifier:bundle.bundleIdentifier
+                                      URL:bundle.bundleURL
+                               andVersion:version];
+}
+
 - (instancetype)initWithURL:(NSURL *)url
 {
     NSBundle *bundle = [NSBundle bundleWithURL:url];
-    if (bundle) {
-        NSString *versionString = [bundle objectForInfoDictionaryKey:(NSString *)kCFBundleVersionKey];
-        Version *version = [[[Version alloc] initWithVersion:versionString] autorelease];
-        return [self initWithBundleIdentifier:bundle.bundleIdentifier
-                                          URL:url
-                                   andVersion:version];
-    } else {
-        return nil;
-    }
+    return [self initWithBundle:bundle];
 }
 
 - (void)dealloc

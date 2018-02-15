@@ -21,6 +21,8 @@
                                      URL:(NSURL *)url
                               andVersion:(Version *)version;
 
+- (instancetype)initWithBundle:(NSBundle *)bundle;
+
 - (instancetype)initWithURL:(NSURL *)url;
 
 @end

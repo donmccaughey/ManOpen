@@ -8,15 +8,23 @@
 #import <Foundation/Foundation.h>
 
 
+@class Application;
+
+
 @protocol LaunchServices <NSObject>
 
-- (NSArray<NSURL *> *)URLsForBundleIdentifier:(NSString *)bundleIdentifier
-                                        error:(NSError **)error;
+- (NSArray<Application *> *)applicationsForBundleIdentifier:(NSString *)bundleIdentifier
+                                                      error:(NSError **)error;
 
 @end
 
 
 @interface LaunchServices : NSObject <LaunchServices>
 
-@end
+- (NSArray<NSBundle *> *)bundlesForBundleIdentifier:(NSString *)bundleIdentifier
+                                              error:(NSError **)error;
 
+- (NSArray<NSURL *> *)URLsForBundleIdentifier:(NSString *)bundleIdentifier
+                                        error:(NSError **)error;
+
+@end

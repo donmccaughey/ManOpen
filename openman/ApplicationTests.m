@@ -28,17 +28,36 @@
     XCTAssertEqualObjects(version, application.version);
 }
 
+- (void)testInitWithBundle
+{
+    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"com.apple.dt.Xcode"];
+    XCTAssertNotNil(bundle);
+    
+    Application *application = [[[Application alloc] initWithBundle:bundle] autorelease];
+    XCTAssertNotNil(application);
+    XCTAssertEqualObjects(@"com.apple.dt.Xcode", application.bundleIdentifier);
+    XCTAssertNotNil(application.url);
+    XCTAssertNotNil(application.version);
+    XCTAssertTrue(application.version.major > 0);
+}
+
+- (void)testInitWithBundle_when_nil
+{
+    Application *application = [[Application alloc] initWithBundle:nil];
+    XCTAssertNil(application);
+}
+
 - (void)testInitWithURL
 {
     NSURL *url = [NSURL URLWithString:@"file:///Applications/Xcode.app"];
     Application *application = [[[Application alloc] initWithURL:url] autorelease];
     XCTAssertEqualObjects(@"com.apple.dt.Xcode", application.bundleIdentifier);
-    XCTAssertEqualObjects(url, application.url);
+    XCTAssertNotNil(application.url);
     XCTAssertNotNil(application.version);
-    XCTAssertTrue(application.version.major >= 1);
+    XCTAssertTrue(application.version.major > 0);
 }
 
-- (void)testInitWithURL_when_invalid_file
+- (void)testInitWithURL_when_invalid_path
 {
     NSURL *url = [NSURL URLWithString:@"file:///not/a/real.app"];
     Application *application = [[Application alloc] initWithURL:url];

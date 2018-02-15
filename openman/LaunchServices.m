@@ -9,8 +9,44 @@
 
 #import <CoreServices/CoreServices.h>
 
+#import "Application.h"
+
 
 @implementation LaunchServices
+
+- (NSArray<Application *> *)applicationsForBundleIdentifier:(NSString *)bundleIdentifier
+                                                      error:(NSError **)error
+{
+    NSArray<NSBundle *> *bundles = [self bundlesForBundleIdentifier:bundleIdentifier
+                                                              error:error];
+    if (bundles) {
+        NSMutableArray<Application *> *applications = [[NSMutableArray new] autorelease];
+        for (NSBundle *bundle in bundles) {
+            Application *application = [[[Application alloc] initWithBundle:bundle] autorelease];
+            [applications addObject:application];
+        }
+        return applications;
+    } else {
+        return nil;
+    }
+}
+
+- (NSArray<NSBundle *> *)bundlesForBundleIdentifier:(NSString *)bundleIdentifier
+                                              error:(NSError **)error
+{
+    NSArray<NSURL *> *urls = [self URLsForBundleIdentifier:bundleIdentifier
+                                                     error:error];
+    if (urls) {
+        NSMutableArray<NSBundle *> *bundles = [[NSMutableArray new] autorelease];
+        for (NSURL *url in urls) {
+            NSBundle *bundle = [NSBundle bundleWithURL:url];
+            [bundles addObject:bundle];
+        }
+        return bundles;
+    } else {
+        return nil;
+    }
+}
 
 - (NSArray<NSURL *> *)URLsForBundleIdentifier:(NSString *)bundleIdentifier
                                         error:(NSError **)error

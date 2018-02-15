@@ -22,6 +22,10 @@
 @property (readonly) NSURL *url;
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
+                               manPath:(NSString *)manPath
+                          isBackground:(BOOL)isBackground;
+
+- (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
                           manPathArray:(NSArray<NSString *> *)manPathArray
                           isBackground:(BOOL)isBackground;
 
@@ -30,6 +34,11 @@
 
 - (instancetype)initWithManPage:(ManPage *)manPage
                    manPathArray:(NSArray<NSString *> *)manPathArray
+                   isBackground:(BOOL)isBackground;
+
+- (instancetype)initWithSection:(NSString *)section
+                           name:(NSString *)name
+                        manPath:(NSString *)manPath
                    isBackground:(BOOL)isBackground;
 
 - (instancetype)initWithURL:(NSURL *)url;

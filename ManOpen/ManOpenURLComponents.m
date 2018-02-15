@@ -15,6 +15,15 @@
 @implementation ManOpenURLComponents
 
 - (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
+                               manPath:(NSString *)manPath
+                          isBackground:(BOOL)isBackground
+{
+    return [self initWithAproposKeyword:aproposKeyword
+                           manPathArray:[manPath componentsSeparatedByString:@":"]
+                           isBackground:isBackground];
+}
+
+- (instancetype)initWithAproposKeyword:(NSString *)aproposKeyword
                           manPathArray:(NSArray<NSString *> *)manPathArray
                           isBackground:(BOOL)isBackground
 {
@@ -49,6 +58,19 @@
         _isBackground = isBackground;
     }
     return self;
+}
+
+- (instancetype)initWithSection:(NSString *)section
+                           name:(NSString *)name
+                        manPath:(NSString *)manPath
+                   isBackground:(BOOL)isBackground
+{
+    ManPage *manPage = [[ManPage alloc] initWithSection:section
+                                                andName:name];
+    [manPage autorelease];
+    return [self initWithManPage:manPage
+                    manPathArray:[manPath componentsSeparatedByString:@":"]
+                    isBackground:isBackground];
 }
 
 - (instancetype)initWithURL:(NSURL *)url

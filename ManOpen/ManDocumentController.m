@@ -522,7 +522,7 @@
         [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
 }
 
-- (oneway void)openFile:(NSString *)filename forceToFront:(BOOL)force
+- (void)openFile:(NSString *)filename forceToFront:(BOOL)force
 {
     if (force)
         [self ensureActive];
@@ -531,19 +531,19 @@
 
 /*" Simple API methods to open a named man page "*/
 
-- (oneway void)openName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath forceToFront:(BOOL)force
+- (void)openName:(NSString *)name section:(NSString *)section manPath:(NSString *)manPath forceToFront:(BOOL)force
 {
     if (force)
         [self ensureActive];
     [self openDocumentWithName:name section:section manPath:manPath];
 }
 
-- (oneway void)openApropos:(NSString *)apropos
+- (void)openApropos:(NSString *)apropos
 {
     [self openAproposDocument:apropos manPath:[[NSUserDefaults standardUserDefaults] manPath]];
 }
 
-- (oneway void)openApropos:(NSString *)apropos manPath:(NSString *)manPath forceToFront:(BOOL)force
+- (void)openApropos:(NSString *)apropos manPath:(NSString *)manPath forceToFront:(BOOL)force
 {
     if (force)
         [self ensureActive];

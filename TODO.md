@@ -15,7 +15,6 @@
 
 ## Modernize Code
 
-- Remove  `oneway` keyword from `ManDocumentController` method return types
 - Convert `ManOpen.scriptSuite` and `ManOpen.scriptTerminology` to `sdef` format,
     see https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_creating_sdef/SAppsCreateSdef.html
     and https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ScriptableCocoaApplications/SApps_suites/SAppsSuites.html

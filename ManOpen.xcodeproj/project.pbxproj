@@ -881,16 +881,9 @@
 				DEVELOPMENT_TEAM = K39VF43BJL;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Development;
@@ -903,16 +896,9 @@
 				DEVELOPMENT_TEAM = K39VF43BJL;
 				INFOPLIST_FILE = "ManOpen/Info-ManOpen.plist";
 				INSTALL_PATH = "$(HOME)/Apps";
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = cc.donm.ManOpen;
 				PRODUCT_NAME = ManOpen;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 				WRAPPER_EXTENSION = app;
 			};
 			name = Deployment;
@@ -920,94 +906,42 @@
 		D38A243614E4C3FE00F6AFFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cat2rtf;
-				REZ_EXECUTABLE = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Development;
 		};
 		D38A243714E4C3FE00F6AFFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cat2rtf;
-				REZ_EXECUTABLE = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Deployment;
 		};
 		D38A244214E4C3FE00F6AFFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cat2html;
-				REZ_EXECUTABLE = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Development;
 		};
 		D38A244314E4C3FE00F6AFFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = cat2html;
-				REZ_EXECUTABLE = YES;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Deployment;
 		};
 		D38A244F14E4C3FE00F6AFFE /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = openman;
-				REZ_EXECUTABLE = YES;
-				SKIP_INSTALL = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Development;
 		};
 		D38A245014E4C3FE00F6AFFE /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				OTHER_CFLAGS = "";
-				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = openman;
-				REZ_EXECUTABLE = YES;
-				SKIP_INSTALL = NO;
-				WARNING_CFLAGS = (
-					"-Wmost",
-					"-Wno-four-char-constants",
-					"-Wno-unknown-pragmas",
-				);
 			};
 			name = Deployment;
 		};

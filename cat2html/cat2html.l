@@ -102,7 +102,7 @@
 
     static void emitString(char *string)
     {
-        int i, len=strlen(string);
+        int i, len=(int)strlen(string);
         for (i=0;i<len;i++)
             emitChar(string[i]);
     }

@@ -16,15 +16,6 @@
 {
     self = [super init];
     if (self) {
-        /*
-         * Set ourselves up for DO connections.  I do it here so it's done as
-         * early as possible.  If the command-line tool still has problems
-         * connecting, we may be able to do this whole thing in main()...
-         */
-        NSConnection *connection = [NSConnection defaultConnection];
-        [connection registerName:@"ManOpenApp"];
-        [connection setRootObject:self];
-
         [PrefPanelController registerManDefaults];
         [NSBundle loadNibNamed:@"DocController" owner:self];
     }

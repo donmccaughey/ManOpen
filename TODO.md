@@ -42,9 +42,16 @@
 - Convert `openman` to ARC
 - Convert `ManOpen` app to ARC
 - Convert `ManOpenTests` to ARC
+- Replace `NSObject (PoofDragDataSource)` category with a better mechanism for
+    defining the selector `-tableView:performDropOutsideViewAtPoint:`
+- Locate and replace uses of macros `IsLeopard()`, `IsSnowLeopard()` and `IsLion()`
+    defined in `SystemType.h`
+- Audit and remove definitions in `SystemType.h`
 
 ## New Features
 
 - Automatically locate Xcode and search it for man pages
 - Distribute `openman` in app bundle and add command to install it
 - Make sure that `ManOpen.app` can always find the `openman.1` man page.
+- Make sure that `ManOpen.app` registers with Launch Services on startup by calling
+    `LSRegisterURL()`

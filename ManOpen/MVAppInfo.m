@@ -94,7 +94,7 @@ static NSMutableArray *allApps = nil;
 + (void)addAppWithID:(NSString *)aBundleID sort:(BOOL)shouldResort
 {
     MVAppInfo *info = [[MVAppInfo alloc] initWithBundleID:aBundleID];
-    if (![allApps containsObject:info])
+    if ([info appURL] && ![allApps containsObject:info])
     {
         [allApps addObject:info];
         if (shouldResort)

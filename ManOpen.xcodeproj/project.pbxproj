@@ -28,6 +28,9 @@
 		D4109DE4203532650096F5AD /* ManPage.m in Sources */ = {isa = PBXBuildFile; fileRef = D44FE8B320143CDA00F532A4 /* ManPage.m */; };
 		D4109E5020362D1F0096F5AD /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4109E4F20362D1F0096F5AD /* CoreServices.framework */; };
 		D4109E5220362D540096F5AD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4109E5120362D540096F5AD /* Cocoa.framework */; };
+		D4109E5520365C790096F5AD /* MVAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109E5420365C790096F5AD /* MVAppInfo.m */; };
+		D4109E5820365EAB0096F5AD /* DisplayPathFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109E5720365EAB0096F5AD /* DisplayPathFormatter.m */; };
+		D4109E5B20365F420096F5AD /* PoofDragTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D4109E5A20365F420096F5AD /* PoofDragTableView.m */; };
 		D420E6822032301600178C47 /* ManOpenURLHandlerCommandTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212441FB58582005FA157 /* ManOpenURLHandlerCommandTests.m */; };
 		D420E68B203384A400178C47 /* Version.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E68A203384A400178C47 /* Version.m */; };
 		D420E6B020338AD100178C47 /* VersionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D420E6AF20338AD100178C47 /* VersionTests.m */; };
@@ -154,6 +157,13 @@
 		D4109DDD203500380096F5AD /* LaunchServicesFake.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchServicesFake.m; sourceTree = "<group>"; };
 		D4109E4F20362D1F0096F5AD /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		D4109E5120362D540096F5AD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4109E5320365C790096F5AD /* MVAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVAppInfo.h; sourceTree = "<group>"; };
+		D4109E5420365C790096F5AD /* MVAppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVAppInfo.m; sourceTree = "<group>"; };
+		D4109E5620365EAB0096F5AD /* DisplayPathFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayPathFormatter.h; sourceTree = "<group>"; };
+		D4109E5720365EAB0096F5AD /* DisplayPathFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayPathFormatter.m; sourceTree = "<group>"; };
+		D4109E5920365F420096F5AD /* PoofDragTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PoofDragTableView.h; sourceTree = "<group>"; };
+		D4109E5A20365F420096F5AD /* PoofDragTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoofDragTableView.m; sourceTree = "<group>"; };
+		D4109E5C20365FCB0096F5AD /* NSObject+PoofDragDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+PoofDragDataSource.h"; sourceTree = "<group>"; };
 		D420E689203384A400178C47 /* Version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Version.h; sourceTree = "<group>"; };
 		D420E68A203384A400178C47 /* Version.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Version.m; sourceTree = "<group>"; };
 		D420E6A720338A6D00178C47 /* openmanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = openmanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -396,6 +406,8 @@
 				D49FB8BC1F9C1EDC00ECE338 /* Apropos.xib */,
 				D49FB8BA1F9C1EDC00ECE338 /* AproposDocument.h */,
 				D49FB8BB1F9C1EDC00ECE338 /* AproposDocument.m */,
+				D4109E5620365EAB0096F5AD /* DisplayPathFormatter.h */,
+				D4109E5720365EAB0096F5AD /* DisplayPathFormatter.m */,
 				D49FB8C01F9C1EDC00ECE338 /* DocController.xib */,
 				D44FE8A8200C74A600F532A4 /* FileURLComponents.h */,
 				D44FE8A9200C74A600F532A4 /* FileURLComponents.m */,
@@ -413,16 +425,21 @@
 				D44FE8B220143CDA00F532A4 /* ManPage.h */,
 				D44FE8B320143CDA00F532A4 /* ManPage.m */,
 				D49FB8C61F9C1EDC00ECE338 /* ManPage.xib */,
+				D4109E5320365C790096F5AD /* MVAppInfo.h */,
+				D4109E5420365C790096F5AD /* MVAppInfo.m */,
 				D49FB8D71F9C1EDC00ECE338 /* NSData+Utils.h */,
 				D49FB8D81F9C1EDC00ECE338 /* NSData+Utils.m */,
 				D4D1246A1FF20C8E00314FBD /* NSDictionary+ManOpen.h */,
 				D4D1246B1FF20C8E00314FBD /* NSDictionary+ManOpen.m */,
+				D4109E5C20365FCB0096F5AD /* NSObject+PoofDragDataSource.h */,
 				D48A125720300CA300EC13E5 /* NSString+ManOpen.h */,
 				D48A125820300CA300EC13E5 /* NSString+ManOpen.m */,
 				D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */,
 				D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */,
 				D48A1250202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.h */,
 				D48A1251202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m */,
+				D4109E5920365F420096F5AD /* PoofDragTableView.h */,
+				D4109E5A20365F420096F5AD /* PoofDragTableView.m */,
 				D49FB8C81F9C1EDC00ECE338 /* PrefPanel.xib */,
 				D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */,
 				D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */,
@@ -659,11 +676,14 @@
 				D49FB8EF1F9C1EDC00ECE338 /* PrefPanelController.m in Sources */,
 				D49FB8E81F9C1EDC00ECE338 /* ManDocumentController.m in Sources */,
 				D49FB8EE1F9C1EDC00ECE338 /* NSData+Utils.m in Sources */,
+				D4109E5520365C790096F5AD /* MVAppInfo.m in Sources */,
+				D4109E5B20365F420096F5AD /* PoofDragTableView.m in Sources */,
 				D49FB8DC1F9C1EDC00ECE338 /* AproposDocument.m in Sources */,
 				D49FB8ED1F9C1EDC00ECE338 /* ManOpen_main.m in Sources */,
 				D48A1252202FB8CE00EC13E5 /* NSUserDefaults+ManOpen.m in Sources */,
 				D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */,
 				D44FE8B420143CDA00F532A4 /* ManPage.m in Sources */,
+				D4109E5820365EAB0096F5AD /* DisplayPathFormatter.m in Sources */,
 				D48A125920300CA300EC13E5 /* NSString+ManOpen.m in Sources */,
 				D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */,
 				D4D124671FF0702F00314FBD /* NSURL+ManOpen.m in Sources */,

@@ -31,9 +31,3 @@
 @interface PrefPanelController (DefaultManApp)
 - (IBAction)chooseNewApp:(id)sender;
 @end
-
-
-#import <Foundation/NSFormatter.h>
-// This needs to be in the header so IB can find it
-@interface DisplayPathFormatter : NSFormatter
-@end

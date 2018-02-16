@@ -61,7 +61,10 @@
                         title:aTitle];
         
         if ([titles count] == 0) {
-            NSRunAlertPanel(@"Nothing found", @"No pages related to '%@' found", nil, nil, nil, apropos);
+            NSAlert *alert = [[NSAlert new] autorelease];
+            alert.messageText = @"Nothing found";
+            alert.informativeText = [NSString stringWithFormat:@"No pages related to '%@' found", apropos];
+            [alert runModal];
             [self release];
             return nil;
         }

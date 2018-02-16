@@ -7,6 +7,7 @@
 
 #import "PoofDragTableView.h"
 
+#import "NSObject+PoofDragDataSource.h"
 #import "SystemType.h"
 
 

@@ -18,8 +18,11 @@
 
 - (BOOL)containsScreenPoint:(NSPoint)screenPoint
 {
-    NSPoint windowPoint = [[self window] convertScreenToBase:screenPoint];
-    NSPoint viewPoint = [self convertPoint:windowPoint fromView:nil];
+    NSRect screenRect = {
+        .origin=screenPoint,
+    };
+    NSRect windowRect = [self.window convertRectFromScreen:screenRect];
+    NSPoint viewPoint = [self convertPoint:windowRect.origin fromView:nil];
     
     return NSMouseInRect(viewPoint, [self bounds], [self isFlipped]);
 }

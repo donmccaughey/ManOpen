@@ -4,8 +4,6 @@
 
 - In `ManDocument.m`, fix warning
     `'frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:' is deprecated: first deprecated in macOS 10.7 - Use +frameSizeForContentSize:horizontalScrollerClass:verticalScrollerClass:borderType:controlSize:scrollerStyle: instead`
-- In `PrefPanelController.m`, fix warning
-    `'convertScreenToBase:' is deprecated: first deprecated in macOS 10.7 - Use -convertRectFromScreen: instead`
 - In `ManDocumentController.m`, fix warning
     `'loadNibNamed:owner:' is deprecated: first deprecated in macOS 10.8`
 - In `ManDocumentController.m`, fix warning

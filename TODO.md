@@ -1,5 +1,22 @@
 # ManOpen To Do
 
+## Fix Warnings
+
+- In `ManDocument.m`, fix warning
+    `'frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:' is deprecated: first deprecated in macOS 10.7 - Use +frameSizeForContentSize:horizontalScrollerClass:verticalScrollerClass:borderType:controlSize:scrollerStyle: instead`
+- In `PrefPanelController.m`, fix warning
+    `'convertScreenToBase:' is deprecated: first deprecated in macOS 10.7 - Use -convertRectFromScreen: instead`
+- In `ManDocumentController.m`, fix warning
+    `'loadNibNamed:owner:' is deprecated: first deprecated in macOS 10.8`
+- In `ManDocumentController.m`, fix warning
+    `'openDocumentWithContentsOfURL:display:error:' is deprecated: first deprecated in macOS 10.7 - Use -openDocumentWithContentsOfURL:display:completionHandler: instead`
+- In `ManDocumentController.m` and `AproposDocument.m`, fix warning
+    `'NSRunAlertPanel' is deprecated: first deprecated in macOS 10.10 - Use NSAlert instead`
+- In `ManDocumentController.m`, fix warnings like
+    `'NSOKButton' is deprecated: first deprecated in macOS 10.10 - Use NSModalResponseOK instead`
+- In `ManDocumentController.m`, fix warnings like
+    `'openDocumentWithContentsOfURL:display:error:' is deprecated: first deprecated in macOS 10.7 - Use -openDocumentWithContentsOfURL:display:completionHandler: instead`
+
 ## Fix Bugs
 
 - The _Edit_ | _Copy URL_ command produces clipboard text like `<x-man-doc://grep>`,

@@ -53,5 +53,6 @@
 - (NSMutableString *)manCommandWithManPath:(NSString *)manPath;
 - (NSData *)dataByExecutingCommand:(NSString *)command;
 - (NSData *)dataByExecutingCommand:(NSString *)command manPath:(NSString *)manPath;
+- (NSString *)typeFromFilename:(NSString *)filename;
 
 @end

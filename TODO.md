@@ -2,9 +2,6 @@
 
 ## Fix Bugs
 
-- In `ManDocumentController`, the overrides of methods `-openDocumentWithContentsOfURL:`
-    and `-reopenDocumentForURL:` are doing something dodgy. There's some strange
-    interaction with the Quick Look framework. Understand what's going on and fix.
 - The _Edit_ | _Copy URL_ command produces clipboard text like `<x-man-doc://grep>`,
     but this should be `x-man-page:///grep`
 - The _Edit_ | _Find_ | _Find..._ command shows a Find dialog with Replace field and actions,
@@ -18,6 +15,11 @@
 - In `ManDocumentController`'s `-openString:` method, employ a definitive method for
     breaking the string into man pages to open, removing _approximately_ from the
     `informativeText` of the alert.
+- When opening or re-opening man pages that are aliases for the same file (e.g. `grep` and
+    `egrep`), locate the already-opened man page for that alias.
+- When opening man pages from the File | Open Recent menu, the ManDocument window
+    shows the filename as the title (e.g. `mkfifo.1`) and a default document icon; figure out
+    how to reopen the document with the same title and icon used to originally open it.
 
 ## Modernize Code
 

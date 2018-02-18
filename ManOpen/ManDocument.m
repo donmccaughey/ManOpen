@@ -320,6 +320,11 @@
 
 - (BOOL)readFromURL:(NSURL *)url ofType:(NSString *)type error:(NSError **)error
 {
+    if ([type hasPrefix:@"dyn."]) {
+        NSString *filename = url.path.stringByStandardizingPath;
+        type = [[ManDocumentController sharedDocumentController] typeFromFilename:filename];
+    }
+
     if ([type isEqual:@"man"])
         [self loadManFile:[url path] isGzip:NO];
     else if ([type isEqual:@"mangz"])

@@ -17,9 +17,18 @@
     self = [super init];
     if (self) {
         [PrefPanelController registerManDefaults];
-        [NSBundle loadNibNamed:@"DocController" owner:self];
+        [[NSBundle mainBundle] loadNibNamed:@"DocController"
+                                      owner:self
+                            topLevelObjects:&docControllerObjects];
+        [docControllerObjects retain];
     }
     return self;
+}
+
+- (void)dealloc
+{
+    [docControllerObjects release];
+    [super dealloc];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification

@@ -17,6 +17,7 @@
     IBOutlet NSTextField *openTextField;
     IBOutlet NSPopUpButton *openSectionPopup;
     BOOL startedUp;
+    NSArray *docControllerObjects;
 }
 
 - (id)openWord:(NSString *)word;

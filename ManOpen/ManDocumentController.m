@@ -382,10 +382,13 @@
     NSArray<NSString *> *words = string.wordsSeparatedByWhitespaceAndNewlineCharacters;
     
     if ([words count] > 20) {
-        NSInteger reply = NSRunAlertPanel(@"Warning", @"This will open approximately %lu windows!",
-                                          @"Cancel", @"Continue", nil, (unsigned long)[words count]);
-        if (reply != NSAlertAlternateReturn)
-            return;
+        NSAlert *alert = [[NSAlert new] autorelease];
+        alert.messageText = @"Warning";
+        alert.informativeText = [NSString stringWithFormat:@"This will open approximately %lu windows!", (unsigned long)words.count];
+        [alert addButtonWithTitle:@"Cancel"];
+        [alert addButtonWithTitle:@"Continue"];
+        NSModalResponse response = [alert runModal];
+        if (NSAlertSecondButtonReturn != response) return;
     }
 
     [self openString:string oneWordOnly:NO];

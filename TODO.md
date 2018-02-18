@@ -8,8 +8,6 @@
     `'loadNibNamed:owner:' is deprecated: first deprecated in macOS 10.8`
 - In `ManDocumentController.m`, fix warning
     `'openDocumentWithContentsOfURL:display:error:' is deprecated: first deprecated in macOS 10.7 - Use -openDocumentWithContentsOfURL:display:completionHandler: instead`
-- In `ManDocumentController.m` and `AproposDocument.m`, fix warning
-    `'NSRunAlertPanel' is deprecated: first deprecated in macOS 10.10 - Use NSAlert instead`
 - In `ManDocumentController.m`, fix warnings like
     `'NSOKButton' is deprecated: first deprecated in macOS 10.10 - Use NSModalResponseOK instead`
 - In `ManDocumentController.m`, fix warnings like
@@ -27,6 +25,10 @@
     `MANPATH` stored in user defaults; currently only some code paths do this.
 - Validate that  `manopen:` scheme handles all  `MANSECT`s given in `man.conf` and section
     names in `openman.m`.
+- In `ManDocumentController`'s `-openString:` method, employ a definitive method for
+    breaking the string into man pages to open, removing _approximately_ from the
+    `informativeText` of the alert.
+
 
 ## Modernize Code
 

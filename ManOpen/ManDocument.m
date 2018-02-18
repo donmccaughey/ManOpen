@@ -511,9 +511,11 @@
     /* Get the size the scrollView should be based on that */
     scrollRect.origin = NSZeroPoint;
     scrollRect.size = [NSScrollView frameSizeForContentSize:textSize
-                                      hasHorizontalScroller:[scrollView hasHorizontalScroller]
-                                        hasVerticalScroller:[scrollView hasVerticalScroller]
-                                                 borderType:[scrollView borderType]];
+                                    horizontalScrollerClass:[scrollView.horizontalScroller class]
+                                      verticalScrollerClass:[scrollView.verticalScroller class]
+                                                 borderType:scrollView.borderType
+                                                controlSize:NSControlSizeRegular
+                                              scrollerStyle:scrollView.scrollerStyle];
 
     /* Get the window's content size -- basically the scrollView size plus our title area */
     contentRect = scrollRect;

@@ -6,11 +6,12 @@
     `'frameSizeForContentSize:hasHorizontalScroller:hasVerticalScroller:borderType:' is deprecated: first deprecated in macOS 10.7 - Use +frameSizeForContentSize:horizontalScrollerClass:verticalScrollerClass:borderType:controlSize:scrollerStyle: instead`
 - In `ManDocumentController.m`, fix warning
     `'loadNibNamed:owner:' is deprecated: first deprecated in macOS 10.8`
-- In `ManDocumentController.m`, fix warning
-    `'openDocumentWithContentsOfURL:display:error:' is deprecated: first deprecated in macOS 10.7 - Use -openDocumentWithContentsOfURL:display:completionHandler: instead`
 
 ## Fix Bugs
 
+- In `ManDocumentController`, the overrides of methods `-openDocumentWithContentsOfURL:`
+    and `-reopenDocumentForURL:` are doing something dodgy. There's some strange
+    interaction with the Quick Look framework. Understand what's going on and fix.
 - The _Edit_ | _Copy URL_ command produces clipboard text like `<x-man-doc://grep>`,
     but this should be `x-man-page:///grep`
 - The _Edit_ | _Find_ | _Find..._ command shows a Find dialog with Replace field and actions,
@@ -25,7 +26,6 @@
     breaking the string into man pages to open, removing _approximately_ from the
     `informativeText` of the alert.
 
-
 ## Modernize Code
 
 - Convert `ManOpen.scriptSuite` and `ManOpen.scriptTerminology` to `sdef` format,
@@ -35,6 +35,10 @@
     1. Remove `ManOpen/` prefix from menu item titles
     1. Add `NSServiceDescription` keys
     1. Add `NSRequiredContext` keys
+    1. In the "Open File" service method  `-openFiles:userData:error:`, the error out-param
+        is no longer working since the asynchronous
+        `-openDocumentWithContentsOfURL:display:completionHandler:` call has replaced
+        the synchronous `-openDocumentWithContentsOfURL:display:error:` call.
 - Convert `openman` to ARC
 - Convert `ManOpen` app to ARC
 - Convert `ManOpenTests` to ARC

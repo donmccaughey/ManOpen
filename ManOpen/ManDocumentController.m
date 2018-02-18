@@ -256,7 +256,7 @@
     NSUInteger numDocuments = [[self documents] count];
     NSDocument *document = [self openDocumentWithContentsOfURL:url display:displayDocument error:&error];
     BOOL docAdded = numDocuments < [[self documents] count];
-    
+
     completionHandler(document, !docAdded, error);
 }
 - (void)reopenDocumentForURL:(NSURL *)url withContentsOfURL:(NSURL*)url2 display:(BOOL)displayDocument completionHandler:(void (^)(NSDocument *document, BOOL documentWasAlreadyOpen, NSError *error))completionHandler
@@ -529,7 +529,13 @@
 {
     if (force)
         [self ensureActive];
-    [self openDocumentWithContentsOfURL:[NSURL fileURLWithPath:filename] display:YES error:NULL];
+    
+    [self openDocumentWithContentsOfURL:[NSURL fileURLWithPath:filename]
+                                display:YES
+                      completionHandler:
+     ^(NSDocument *document, BOOL documentWasAlreadyOpen, NSError *error) {
+         // nothing to do here
+     }];
 }
 
 /*" Simple API methods to open a named man page "*/
@@ -566,7 +572,12 @@
         NSError *openError = nil;
         for (i=0; i<count; i++)
         {
-            [self openDocumentWithContentsOfURL:[NSURL fileURLWithPath:[fileArray objectAtIndex:i]] display:YES error:&openError];
+            [self openDocumentWithContentsOfURL:[NSURL fileURLWithPath:[fileArray objectAtIndex:i]]
+                                        display:YES
+                              completionHandler:
+             ^(NSDocument *document, BOOL documentWasAlreadyOpen, NSError *error) {
+                 // nothing to do here
+             }];
         }
         
         if (error != NULL && openError != nil)

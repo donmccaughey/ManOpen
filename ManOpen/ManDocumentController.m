@@ -466,7 +466,7 @@
     [openTextField selectText:self];
 
     if ([self useModalPanels]) {
-        if ([NSApp runModalForWindow:openTextPanel] == NSOKButton)
+        if ([NSApp runModalForWindow:openTextPanel] == NSModalResponseOK)
             [self openTitleFromPanel];
     }
     else {
@@ -478,7 +478,7 @@
 {
     [aproposField selectText:self];
     if ([self useModalPanels]) {
-        if ([NSApp runModalForWindow:aproposPanel] == NSOKButton)
+        if ([NSApp runModalForWindow:aproposPanel] == NSModalResponseOK)
             [self openAproposFromPanel];
     }
     else {
@@ -492,7 +492,7 @@
         [[sender window] orderOut:self];
 
     if ([[sender window] level] == NSModalPanelWindowLevel) {
-        [NSApp stopModalWithCode:NSOKButton];
+        [NSApp stopModalWithCode:NSModalResponseOK];
     }
     else {
         [self openTitleFromPanel];
@@ -505,7 +505,7 @@
         [[sender window] orderOut:self];
 
     if ([[sender window] level] == NSModalPanelWindowLevel) {
-        [NSApp stopModalWithCode:NSOKButton];
+        [NSApp stopModalWithCode:NSModalResponseOK];
     }
     else {
         [self openAproposFromPanel];
@@ -516,7 +516,7 @@
 {
     [[sender window] orderOut:self];
     if ([[sender window] level] == NSModalPanelWindowLevel)
-        [NSApp stopModalWithCode:NSCancelButton];
+        [NSApp stopModalWithCode:NSModalResponseCancel];
 }
 
 - (void)ensureActive

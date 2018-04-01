@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -42,41 +42,41 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             <size key="cellSize" width="261" height="20"/>
-                                            <buttonCell key="prototype" type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="411">
+                                            <buttonCell key="prototype" type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="411">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <cells>
                                                 <column>
-                                                    <buttonCell type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="287">
+                                                    <buttonCell type="check" title="Quit when last window is closed" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="287">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
                                                             <binding destination="259" name="value" keyPath="values.QuitWhenLastClosed" id="298"/>
                                                         </connections>
                                                     </buttonCell>
-                                                    <buttonCell type="check" title="Keep Title/Apropos panels open" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="294">
+                                                    <buttonCell type="check" title="Keep Title/Apropos panels open" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="294">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
                                                             <binding destination="259" name="value" keyPath="values.KeepPanelsOpen" id="300"/>
                                                         </connections>
                                                     </buttonCell>
-                                                    <buttonCell type="check" title="Open Title panel on startup" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="295">
+                                                    <buttonCell type="check" title="Open Title panel on startup" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="295">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
                                                             <binding destination="259" name="value" keyPath="values.OpenPanelOnStartup" id="302"/>
                                                         </connections>
                                                     </buttonCell>
-                                                    <buttonCell type="check" title="Open Title panel when no windows" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="296">
+                                                    <buttonCell type="check" title="Open Title panel when no windows" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="296">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
                                                             <binding destination="259" name="value" keyPath="values.OpenPanelWhenNoWindows" id="304"/>
                                                         </connections>
                                                     </buttonCell>
-                                                    <buttonCell type="check" title="Save windows on quit" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="369">
+                                                    <buttonCell type="check" title="Save windows on quit" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="369">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
@@ -135,20 +135,20 @@
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             <size key="cellSize" width="261" height="22"/>
-                                            <buttonCell key="prototype" type="check" title="Check" bezelStyle="regularSquare" imagePosition="leading" alignment="left" state="on" inset="2" id="412">
+                                            <buttonCell key="prototype" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" alignment="left" state="on" inset="2" id="412">
                                                 <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <cells>
                                                 <column>
-                                                    <buttonCell type="check" title="Bold section headers" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="237">
+                                                    <buttonCell type="check" title="Bold section headers" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="237">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
                                                             <binding destination="259" name="value" keyPath="values.UseBold" id="261"/>
                                                         </connections>
                                                     </buttonCell>
-                                                    <buttonCell type="check" title="Use italics instead of underline" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="241">
+                                                    <buttonCell type="check" title="Use italics instead of underline" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="241">
                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                         <connections>
@@ -284,7 +284,7 @@
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
-                                                            <tableColumn editable="NO" width="256" minWidth="40" maxWidth="1000" id="280">
+                                                            <tableColumn identifier="" editable="NO" width="256" minWidth="40" maxWidth="1000" id="280">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>

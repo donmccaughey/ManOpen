@@ -449,18 +449,15 @@
     [[NSApplication sharedApplication] runPageLayout:sender];
 }
 
-- (void)printShowingPrintPanel:(BOOL)showPanel
+- (NSPrintOperation *)printOperationWithSettings:(NSDictionary<NSPrintInfoAttributeKey, id> *)printSettings
+                                           error:(NSError **)outError
 {
-    NSPrintOperation *operation = [NSPrintOperation printOperationWithView:textView];
-    NSPrintInfo      *printInfo = [operation printInfo];
-
-    [printInfo setVerticallyCentered:NO];
-    [printInfo setHorizontallyCentered:YES];
-    [printInfo setHorizontalPagination:NSFitPagination];
-    [operation setShowsPrintPanel:showPanel];
-    [operation setShowsProgressPanel:showPanel];
-
-    [operation runOperationModalForWindow:[textView window] delegate:nil didRunSelector:NULL contextInfo:NULL];
+    NSPrintInfo *printInfo = [[[NSPrintInfo alloc] initWithDictionary:printSettings] autorelease];
+    printInfo.verticallyCentered = NO;
+    printInfo.horizontallyCentered = YES;
+    printInfo.horizontalPagination = NSFitPagination;
+    return [NSPrintOperation printOperationWithView:textView
+                                          printInfo:printInfo];
 }
 
 - (BOOL)validateMenuItem:(NSMenuItem *)item

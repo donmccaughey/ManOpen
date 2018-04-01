@@ -161,12 +161,12 @@
     }
 }
 
-- (void)printShowingPrintPanel:(BOOL)showPanel
+- (NSPrintOperation *)printOperationWithSettings:(NSDictionary<NSPrintInfoAttributeKey, id> *)printSettings
+                                           error:(NSError **)outError
 {
-    NSPrintOperation *op = [NSPrintOperation printOperationWithView:tableView];
-    [op setShowsPrintPanel:showPanel];
-    [op setShowsProgressPanel:showPanel];
-    [op runOperationModalForWindow:[tableView window] delegate:nil didRunSelector:NULL contextInfo:NULL];
+    NSPrintInfo *printInfo = [[[NSPrintInfo alloc] initWithDictionary:printSettings] autorelease];
+    return [NSPrintOperation printOperationWithView:tableView
+                                          printInfo:printInfo];
 }
 
 /* NSTableView dataSource */

@@ -25,7 +25,7 @@ This repository is a fork of [ManOpen 2.6][11] by [Carl Lindberg][12].
 
 ## Requirements
 
-_ManOpen_ is built on macOS Sierra 10.12 using Xcode 9.2.  It should run on
+_ManOpen_ is built on macOS High Sierra 10.13 using Xcode 9.3.  It should run on
 OS X Yosemite 10.10 and later.
 
 ## License

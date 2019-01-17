@@ -41,6 +41,8 @@
     [aproposPanel setFrameUsingName:@"AproposPanel"];
     [aproposPanel setFrameAutosaveName:@"AproposPanel"];
 
+    [self setupStatusItem];
+    
     startedUp = YES;
 }
 
@@ -65,6 +67,14 @@
         return YES;
     }
     return NO;
+}
+
+- (void) setupStatusItem {
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+    statusItem.image = [NSImage imageNamed:@"ManOpen"];
+    statusItem.image.size = NSMakeSize(20.0, 20.0);
+    statusItem.button.action = @selector(openTextPanel:);
+    [statusItem retain];
 }
 
 - (void)removeDocument:(NSDocument *)document

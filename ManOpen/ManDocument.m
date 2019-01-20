@@ -371,7 +371,7 @@
     [textView setSelectable:YES];
     [textView setImportsGraphics:NO];
     [textView setRichText:YES];
-    [textView setUsesFindPanel:YES];
+    [textView setUsesFindBar:YES];
 
     if (sizeString != nil)
     {

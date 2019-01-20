@@ -1,6 +1,7 @@
 
 #import "SystemType.h"
 #import <AppKit/NSDocumentController.h>
+#import <AppKit/NSStatusItem.h>
 
 
 @class NSPanel, NSTextField, NSPopUpButton, NSFont;
@@ -18,6 +19,7 @@
     IBOutlet NSPopUpButton *openSectionPopup;
     BOOL startedUp;
     NSArray *docControllerObjects;
+    NSStatusItem* statusItem;
 }
 
 - (id)openWord:(NSString *)word;

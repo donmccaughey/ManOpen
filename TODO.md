@@ -50,3 +50,5 @@
 - Make sure that `ManOpen.app` can always find the `openman.1` man page.
 - Make sure that `ManOpen.app` registers with Launch Services on startup by calling
     `LSRegisterURL()`
+- Redraw open windows after changing font in preferences.
+- Recalculate window sizes after changing font in preferences.

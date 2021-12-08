@@ -1,0 +1,14 @@
+name: Tests
+on: [push, pull_request]
+jobs:
+  Coverage:
+    name: Coverage
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build
+        run: |
+          xcodebuild -project ManOpen.xcodeproj -scheme ManOpen -configuration Development -quiet test
+      - name: Coverage
+        run: |
+              bash <(curl -s https://codecov.io/bash)

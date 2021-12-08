@@ -223,6 +223,7 @@
 		D49FB8D91F9C1EDC00ECE338 /* PrefPanelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefPanelController.h; sourceTree = "<group>"; };
 		D49FB8DA1F9C1EDC00ECE338 /* PrefPanelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefPanelController.m; sourceTree = "<group>"; };
 		D49FB8DB1F9C1EDC00ECE338 /* SystemType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SystemType.h; sourceTree = "<group>"; };
+		D4C3E8E5276161660050B4D9 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
 		D4D124651FF0702F00314FBD /* NSURL+ManOpen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ManOpen.h"; sourceTree = "<group>"; };
 		D4D124661FF0702F00314FBD /* NSURL+ManOpen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ManOpen.m"; sourceTree = "<group>"; };
 		D4D124681FF0704F00314FBD /* NSURL+ManOpenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ManOpenTests.m"; sourceTree = "<group>"; };
@@ -293,6 +294,7 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
+				D4C3E8E5276161660050B4D9 /* .github */,
 				D484D59F2026C61D0093B313 /* .travis.yml */,
 				D45E00671FC29F05006B1797 /* LICENSE */,
 				D45E00641FC24510006B1797 /* README.md */,

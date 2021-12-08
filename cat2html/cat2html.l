@@ -273,7 +273,7 @@ SGRSTART     \x1B\[
     /*
      *    nroff bullets
      */
-o\010"+"               emitRaw("&middot;");   // "&bull;" doesn't work
+o\010"+"               emitRaw("&middot;");   /* "&bull;" doesn't work */
 "+"\010o               emitRaw("&middot;");
 o\010o\010"+"\010"+"   emitRaw("&middot;");
 "+"\010"+\010"o\010o   emitRaw("&middot;");

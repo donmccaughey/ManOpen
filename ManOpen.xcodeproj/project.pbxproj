@@ -969,6 +969,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = cat2rtf;
+				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
 			name = Development;
 		};
@@ -977,6 +978,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = cat2rtf;
+				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
 			name = Deployment;
 		};
@@ -985,6 +987,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = cat2html;
+				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
 			name = Development;
 		};
@@ -993,6 +996,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				PRODUCT_NAME = cat2html;
+				WARNING_CFLAGS = "-Wno-unreachable-code";
 			};
 			name = Deployment;
 		};

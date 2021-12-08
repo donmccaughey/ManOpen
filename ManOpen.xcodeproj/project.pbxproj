@@ -50,7 +50,6 @@
 		D47212481FB7DCD8005FA157 /* MockManDocumentController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47212471FB7DCD8005FA157 /* MockManDocumentController.m */; };
 		D484D59A2025E09A0093B313 /* XManPageURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5992025E09A0093B313 /* XManPageURLComponents.m */; };
 		D484D59C2025E3EB0093B313 /* XManPageURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */; };
-		D484D5A02026C61D0093B313 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = D484D59F2026C61D0093B313 /* .travis.yml */; };
 		D484D5A32026ECEC0093B313 /* ManOpenURLComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */; };
 		D484D5A52026F0A50093B313 /* ManOpenURLComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */; };
 		D4891E5F1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = D4891E5E1FAD7DE40035E3A5 /* ManOpenURLHandlerCommand.m */; };
@@ -191,7 +190,6 @@
 		D484D5982025E09A0093B313 /* XManPageURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XManPageURLComponents.h; sourceTree = "<group>"; };
 		D484D5992025E09A0093B313 /* XManPageURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponents.m; sourceTree = "<group>"; };
 		D484D59B2025E3EB0093B313 /* XManPageURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XManPageURLComponentsTests.m; sourceTree = "<group>"; };
-		D484D59F2026C61D0093B313 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		D484D5A12026ECEC0093B313 /* ManOpenURLComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManOpenURLComponents.h; sourceTree = "<group>"; };
 		D484D5A22026ECEC0093B313 /* ManOpenURLComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLComponents.m; sourceTree = "<group>"; };
 		D484D5A42026F0A50093B313 /* ManOpenURLComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManOpenURLComponentsTests.m; sourceTree = "<group>"; };
@@ -294,11 +292,10 @@
 		D39278DB0821FF9D00376676 /* ManOpen */ = {
 			isa = PBXGroup;
 			children = (
-				D4C3E8E5276161660050B4D9 /* .github */,
-				D484D59F2026C61D0093B313 /* .travis.yml */,
 				D45E00671FC29F05006B1797 /* LICENSE */,
 				D45E00641FC24510006B1797 /* README.md */,
 				D45E00691FC66294006B1797 /* TODO.md */,
+				D4C3E8E5276161660050B4D9 /* .github */,
 				D45E006F1FC78EF9006B1797 /* Documentation */,
 				D49FB8B91F9C1EDC00ECE338 /* ManOpen */,
 				D472123B1FB58542005FA157 /* ManOpenTests */,
@@ -642,7 +639,6 @@
 				D45E00681FC29F05006B1797 /* LICENSE in Resources */,
 				D49FB8EA1F9C1EDC00ECE338 /* ManOpen.scriptSuite in Resources */,
 				D49FB8DE1F9C1EDC00ECE338 /* Credits.rtf in Resources */,
-				D484D5A02026C61D0093B313 /* .travis.yml in Resources */,
 				D45E006A1FC66294006B1797 /* TODO.md in Resources */,
 				D49FB8DF1F9C1EDC00ECE338 /* DocController.xib in Resources */,
 				D45E00651FC24510006B1797 /* README.md in Resources */,

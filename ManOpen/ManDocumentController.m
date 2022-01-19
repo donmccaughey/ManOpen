@@ -41,6 +41,8 @@
     [aproposPanel setFrameUsingName:@"AproposPanel"];
     [aproposPanel setFrameAutosaveName:@"AproposPanel"];
 
+    [self setupStatusItem];
+    
     startedUp = YES;
 }
 
@@ -65,6 +67,14 @@
         return YES;
     }
     return NO;
+}
+
+- (void) setupStatusItem {
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSSquareStatusItemLength];
+    statusItem.image = [NSImage imageNamed:@"ManOpen"];
+    statusItem.image.size = NSMakeSize(20.0, 20.0);
+    statusItem.button.action = @selector(openTextPanel:);
+    [statusItem retain];
 }
 
 - (void)removeDocument:(NSDocument *)document
@@ -402,23 +412,30 @@
     [openTextField selectText:self];
 
     if ([self useModalPanels]) {
-        if ([NSApp runModalForWindow:openTextPanel] == NSModalResponseOK)
+        if ([NSApp runModalForWindow:openTextPanel] == NSModalResponseOK) {
             [self openTitleFromPanel];
+            [NSApp activateIgnoringOtherApps:YES];
+        }
     }
     else {
         [openTextPanel makeKeyAndOrderFront:self];
+        [NSApp activateIgnoringOtherApps:YES];
     }
+    
 }
 
 - (IBAction)openAproposPanel:(id)sender
 {
     [aproposField selectText:self];
     if ([self useModalPanels]) {
-        if ([NSApp runModalForWindow:aproposPanel] == NSModalResponseOK)
+        if ([NSApp runModalForWindow:aproposPanel] == NSModalResponseOK) {
             [self openAproposFromPanel];
+            [NSApp activateIgnoringOtherApps:YES];
+        }
     }
     else {
         [aproposPanel makeKeyAndOrderFront:self];
+        [NSApp activateIgnoringOtherApps:YES];
     }
 }
 
